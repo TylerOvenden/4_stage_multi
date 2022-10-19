@@ -75,50 +75,61 @@ variable tempPos : integer;
 			
 			--Signed Integer Multiply-Add Low with Saturation
 			--y low 16-bit-fields for rs3, rs2
-			if (instrc(22 downto 20) = "000")	then 
-				tempRes := signed(r1(31 downto 0))+signed(r2(15 downto 0))*signed(r3(15 downto 0));
+			if (instrc(22 downto 20) = "000")	then 		  
+				for i in 0 to 3 loop
+				tempPos := 32 * i;
+				tempRes := signed(r1(tempPos+31 downto tempPos))+signed(r2(tempPos+15 downto tempPos))*signed(r3(tempPos+15 downto tempPos));	
 				if(tempRes > max32) then 
-					o(31 downto 0):= std_logic_vector(max32); 
+					o(tempPos+31 downto tempPos):= std_logic_vector(max32); 
 				elsif(tempRes < min32) then 
-					o(31 downto 0):= std_logic_vector(min32); 
+					o(tempPos+31 downto tempPos):= std_logic_vector(min32); 
 				else 	
-				   output(31 downto 0):=  tempRes(31 downto 0);
-	
-							
-				end if;
+				   o(tempPos+31 downto tempPos):=  tempRes(tempPos+31 downto tempPos);
 				
-					tempRes := signed(r1(63 downto 32))+signed(r2(47 downto 32))*signed(r3(47 downto 32));
-				if(tempRes > max32) then 
-					o(63 downto 32):= std_logic_vector(max32); 
-				elsif(tempRes < min32) then 
-					o(63 downto 32):= std_logic_vector(min32); 
-				else 	
-				   output(63 downto 32):=  tempRes(31 downto 0);		
-				   
-				   
-				   tempRes := signed(r1(95 downto 64))+signed(r2(79 downto 64))*signed(r3(79 downto 64));
-				if(tempRes > max32) then 
-					o(95 downto 64):= std_logic_vector(max32); 
-				elsif(tempRes < min32) then 
-					o(95 downto 64):= std_logic_vector(min32); 
-				else 	
-				   output(95 downto 64):=  tempRes(31 downto 0);
-	
-							
-				end if;
 				
-					tempRes := signed(r1(127 downto 96))+signed(r2(111 downto 96))*signed(r3(111 downto 96));
-				if(tempRes > max32) then 
-					o(127 downto 96):= std_logic_vector(max32); 
-				elsif(tempRes < min32) then 
-					o(127 downto 96):= std_logic_vector(min32); 
-				else 	
-				   output(127 downto 96):=  tempRes(31 downto 0);
+			--	tempRes := signed(r1(31 downto 0))+signed(r2(15 downto 0))*signed(r3(15 downto 0));
+			--	if(tempRes > max32) then 
+			--		o(31 downto 0):= std_logic_vector(max32); 
+			--	elsif(tempRes < min32) then 
+			--		o(31 downto 0):= std_logic_vector(min32); 
+			--	else 	
+			--	   output(31 downto 0):=  tempRes(31 downto 0);
+	
+							
+			--	end if;
+				
+			--		tempRes := signed(r1(63 downto 32))+signed(r2(47 downto 32))*signed(r3(47 downto 32));
+			--	if(tempRes > max32) then 
+			--		o(63 downto 32):= std_logic_vector(max32); 
+			--	elsif(tempRes < min32) then 
+			--		o(63 downto 32):= std_logic_vector(min32); 
+			--	else 	
+			--	   o(63 downto 32):=  tempRes(31 downto 0);		
+				   
+				   
+			--	   tempRes := signed(r1(95 downto 64))+signed(r2(79 downto 64))*signed(r3(79 downto 64));
+			--	if(tempRes > max32) then 
+			--		o(95 downto 64):= std_logic_vector(max32); 
+			--	elsif(tempRes < min32) then 
+			--		o(95 downto 64):= std_logic_vector(min32); 
+			--	else 	
+				--   o(95 downto 64):=  tempRes(31 downto 0);
+	
+							
+			---	end if;
+				
+			--		tempRes := signed(r1(127 downto 96))+signed(r2(111 downto 96))*signed(r3(111 downto 96));
+			--	if(tempRes > max32) then 
+			--		o(127 downto 96):= std_logic_vector(max32); 
+			--	elsif(tempRes < min32) then 
+			--		o(127 downto 96):= std_logic_vector(min32); 
+			--	else 	
+			--	   o(127 downto 96):=  tempRes(31 downto 0);
 				   
 				   
 	
 							
-				end if;
+			--	end if;
 			
 				
 				--r3 instructions
