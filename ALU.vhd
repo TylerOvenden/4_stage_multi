@@ -44,7 +44,8 @@ begin
 process(r1, r2, r3, instrc)
 
 variable index : integer;	--temp variable used for storing load index
-variable tempRes: signed (64 downto 0);	   --need to be 64 for possible overflow
+variable tempRes: signed (63 downto 0);	   --need to be 64 for possible overflow
+variable tempRes128: signed (127 downto 0);	
 
 constant max16 : std_logic_vector(15 downto 0) := "0111111111111111";
 constant min16 : std_logic_vector(15 downto 0) := "1000000000000000"; 	
@@ -84,9 +85,87 @@ variable tempPos : integer;
 				elsif(tempRes < min32) then 
 					o(tempPos+31 downto tempPos):= std_logic_vector(min32); 
 				else 	
-				   o(tempPos+31 downto tempPos):=  tempRes(tempPos+31 downto tempPos);
+				   o(tempPos+31 downto tempPos):=  tempRes(tempPos+31 downto tempPos); 	   
+			
+				  
+			elsif (instrc(22 downto 20) = "001")	then 		  
+				for i in 0 to 3 loop
+				tempPos := 32 * i;
+				tempRes := signed(r1(tempPos+31 downto tempPos))+signed(r2(tempPos+31 downto tempPos+15))*signed(r3(tempPos+31 downto tempPos+15));	
+				if(tempRes > max32) then 
+					o(tempPos+31 downto tempPos):= std_logic_vector(max32); 
+				elsif(tempRes < min32) then 
+					o(tempPos+31 downto tempPos):= std_logic_vector(min32); 
+				else 	
+				   o(tempPos+31 downto tempPos):=  tempRes(tempPos+31 downto tempPos); 	   
+				   
+				   
+			elsif (instrc(22 downto 20) = "010")	then 		  
+				for i in 0 to 3 loop
+				tempPos := 32 * i;
+				tempRes := signed(r1(tempPos+31 downto tempPos))-(signed(r2(tempPos+15 downto tempPos))*signed(r3(tempPos+15 downto tempPos)));	
+				if(tempRes > max32) then 
+					o(tempPos+31 downto tempPos):= std_logic_vector(max32); 
+				elsif(tempRes < min32) then 
+					o(tempPos+31 downto tempPos):= std_logic_vector(min32); 
+				else 	
+				   o(tempPos+31 downto tempPos):=  tempRes(tempPos+31 downto tempPos);	   
 				
-				
+			elsif (instrc(22 downto 20) = "011")	then 		  
+				for i in 0 to 3 loop
+				tempPos := 32 * i;
+				tempRes := signed(r1(tempPos+31 downto tempPos))-signed(r2(tempPos+31 downto tempPos+15))*signed(r3(tempPos+31 downto tempPos+15));	
+				if(tempRes > max32) then 
+					o(tempPos+31 downto tempPos):= std_logic_vector(max32); 
+				elsif(tempRes < min32) then 
+					o(tempPos+31 downto tempPos):= std_logic_vector(min32); 
+				else 	
+				   o(tempPos+31 downto tempPos):=  tempRes(tempPos+31 downto tempPos); 	   	 
+				   
+			elsif (instrc(22 downto 20) = "100")	then
+					for i in 0 to 3 loop
+				tempPos := 64 * i;
+				tempRes128 := signed(r1(tempPos+63 downto tempPos))+signed(r2(tempPos+31 downto tempPos))*signed(r3(tempPos+31 downto tempPos));	
+				if(tempRes > max64) then 
+					o(tempPos+63 downto tempPos):= std_logic_vector(max64); 
+				elsif(tempRes < min64) then 
+					o(tempPos+63 downto tempPos):= std_logic_vector(min64); 
+				else 	
+				   o(tempPos+63 downto tempPos):=  tempRes128(tempPos+63 downto tempPos); 	  
+				   
+			elsif (instrc(22 downto 20) = "101")	then
+					for i in 0 to 3 loop
+				tempPos := 64 * i;
+				tempRes128 := signed(r1(tempPos+63 downto tempPos))+signed(r2(tempPos+63 downto tempPos+31))*signed(r3(tempPos+63 downto tempPos+31));	
+				if(tempRes > max64) then 
+					o(tempPos+63 downto tempPos):= std_logic_vector(max64); 
+				elsif(tempRes < min64) then 
+					o(tempPos+63 downto tempPos):= std_logic_vector(min64); 
+				else 	
+				   o(tempPos+63 downto tempPos):=  tempRes128(tempPos+63 downto tempPos); 	 
+				   
+			elsif (instrc(22 downto 20) = "110")	then
+					for i in 0 to 3 loop
+				tempPos := 64 * i;
+				tempRes128 := signed(r1(tempPos+63 downto tempPos))-signed(r2(tempPos+31 downto tempPos))*signed(r3(tempPos+31 downto tempPos));	
+				if(tempRes > max64) then 
+					o(tempPos+63 downto tempPos):= std_logic_vector(max64); 
+				elsif(tempRes < min64) then 
+					o(tempPos+63 downto tempPos):= std_logic_vector(min64); 
+				else 	
+				   o(tempPos+63 downto tempPos):=  tempRes128(tempPos+63 downto tempPos); 	  
+			
+			elsif (instrc(22 downto 20) = "111")	then
+					for i in 0 to 3 loop
+				tempPos := 64 * i;
+				tempRes128 := signed(r1(tempPos+63 downto tempPos))-signed(r2(tempPos+63 downto tempPos+31))*signed(r3(tempPos+63 downto tempPos+31));	
+				if(tempRes > max64) then 
+					o(tempPos+63 downto tempPos):= std_logic_vector(max64); 
+				elsif(tempRes < min64) then 
+					o(tempPos+63 downto tempPos):= std_logic_vector(min64); 
+				else 	
+				   o(tempPos+63 downto tempPos):=  tempRes128(tempPos+63 downto tempPos); 		   
+				   	
 			--	tempRes := signed(r1(31 downto 0))+signed(r2(15 downto 0))*signed(r3(15 downto 0));
 			--	if(tempRes > max32) then 
 			--		o(31 downto 0):= std_logic_vector(max32); 
@@ -165,7 +244,7 @@ variable tempPos : integer;
 					--	o(79 downto 64):= std_logic_vector(unsigned(r1(79 downto 64)) + unsigned(r2(79 downto 64)));  
 					--	o(95 downto 80):= std_logic_vector(unsigned(r1(95 downto 80)) + unsigned(r2(95 downto 80)));   
 					--	o(111 downto 96):= std_logic_vector(unsigned(r1(111 downto 96)) + unsigned(r2(111 downto 96)));   
-					--	o(127 downto 112):= std_logic_vector(unsigned(r1(127 downto 112)) + unsigned(r2(127 downto 112)));		
+					--	o(127 downto 112):= std_logic_vector(unsigned(r1(127 downto 112)) + unsigned(r2(127 downto 112)));	
 						
 						
 						
