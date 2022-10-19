@@ -131,20 +131,30 @@ variable tempPos : integer;
 						
 						 
 					elsif (instruction(18 downto 15) = "0010") then
-						o(31 downto 0):= std_logic_vector(unsigned(r1(31 downto 0)) + unsigned(r2(31 downto 0)));  
-						o(63 downto 32):= std_logic_vector(unsigned(r1(63 downto 32)) + unsigned(r2(63 downto 32)));   
-						o(95 downto 64):= std_logic_vector(unsigned(r1(95 downto 64)) + unsigned(r2(95 downto 64)));   
-						o(127 downto 96):= std_logic_vector(unsigned(r1(127 downto 96)) + unsigned(r2(127 downto 96)));
+						for i in 0 to 3 loop
+							tempPos := 32 * i;
+							o(tempPos+31 downto tempPos):= std_logic_vector(unsigned(r1(tempPos+31 downto tempPos)) + unsigned(r2(tempPos+31 downto tempPos))); 
+						end loop;
+						
+					--	o(31 downto 0):= std_logic_vector(unsigned(r1(31 downto 0)) + unsigned(r2(31 downto 0)));  
+					--	o(63 downto 32):= std_logic_vector(unsigned(r1(63 downto 32)) + unsigned(r2(63 downto 32)));   
+					--	o(95 downto 64):= std_logic_vector(unsigned(r1(95 downto 64)) + unsigned(r2(95 downto 64)));   
+					--	o(127 downto 96):= std_logic_vector(unsigned(r1(127 downto 96)) + unsigned(r2(127 downto 96)));
 						
 					elsif (instruction(18 downto 15) = "0011") then  --add half word 	  
-						o(15 downto 0):= std_logic_vector(unsigned(r1(15 downto 0)) + unsigned(r2(15 downto 0)));  
-						o(31 downto 16):= std_logic_vector(unsigned(r1(31 downto 16)) + unsigned(r2(31 downto 16)));   
-						o(47 downto 32):= std_logic_vector(unsigned(r1(47 downto 32)) + unsigned(r2(47 downto 32)));   
-						o(63 downto 48):= std_logic_vector(unsigned(r1(63 downto 48)) + unsigned(r2(63 downto 48)));
-						o(79 downto 64):= std_logic_vector(unsigned(r1(79 downto 64)) + unsigned(r2(79 downto 64)));  
-						o(95 downto 80):= std_logic_vector(unsigned(r1(95 downto 80)) + unsigned(r2(95 downto 80)));   
-						o(111 downto 96):= std_logic_vector(unsigned(r1(111 downto 96)) + unsigned(r2(111 downto 96)));   
-						o(127 downto 112):= std_logic_vector(unsigned(r1(127 downto 112)) + unsigned(r2(127 downto 112)));	
+						for i in 0 to 7 loop
+							tempPos := 16 * i;
+							o(tempPos+15 downto tempPos):= std_logic_vector(unsigned(r1(tempPos+15 downto tempPos)) + unsigned(r2(tempPos+15 downto tempPos))); 
+						end loop;
+						
+					--	o(15 downto 0):= std_logic_vector(unsigned(r1(15 downto 0)) + unsigned(r2(15 downto 0)));  
+				--		o(31 downto 16):= std_logic_vector(unsigned(r1(31 downto 16)) + unsigned(r2(31 downto 16)));   
+					--	o(47 downto 32):= std_logic_vector(unsigned(r1(47 downto 32)) + unsigned(r2(47 downto 32)));   
+					--	o(63 downto 48):= std_logic_vector(unsigned(r1(63 downto 48)) + unsigned(r2(63 downto 48)));
+					--	o(79 downto 64):= std_logic_vector(unsigned(r1(79 downto 64)) + unsigned(r2(79 downto 64)));  
+					--	o(95 downto 80):= std_logic_vector(unsigned(r1(95 downto 80)) + unsigned(r2(95 downto 80)));   
+					--	o(111 downto 96):= std_logic_vector(unsigned(r1(111 downto 96)) + unsigned(r2(111 downto 96)));   
+					--	o(127 downto 112):= std_logic_vector(unsigned(r1(127 downto 112)) + unsigned(r2(127 downto 112)));		
 						
 						
 						
