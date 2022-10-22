@@ -44,7 +44,9 @@ begin
 process(r1, r2, r3, instrc)
 
 variable index : integer;	--temp variable used for storing load index
-variable tempRes: signed (63 downto 0);	   --need to be 64 for possible overflow
+variable tempRes: signed (63 downto 0);	   --need to be 64 for possible overflow   
+variable temp_int1:integer:=0;
+variable temp_int2:integer:=0;	
 variable tempRes128: signed (127 downto 0);	
 
 constant max16 : std_logic_vector(15 downto 0) := "0111111111111111";
@@ -86,7 +88,9 @@ variable tempPos : integer;
 					o(tempPos+31 downto tempPos):= std_logic_vector(min32); 
 				else 	
 				   o(tempPos+31 downto tempPos):=  tempRes(tempPos+31 downto tempPos); 	   
-			
+				end if;
+			end loop;	
+				 
 				  
 			elsif (instrc(22 downto 20) = "001")	then 		  
 				for i in 0 to 3 loop
@@ -99,7 +103,9 @@ variable tempPos : integer;
 				else 	
 				   o(tempPos+31 downto tempPos):=  tempRes(tempPos+31 downto tempPos); 	   
 				   
-				   
+				end if;
+			end loop;	
+			
 			elsif (instrc(22 downto 20) = "010")	then 		  
 				for i in 0 to 3 loop
 				tempPos := 32 * i;
@@ -111,6 +117,9 @@ variable tempPos : integer;
 				else 	
 				   o(tempPos+31 downto tempPos):=  tempRes(tempPos+31 downto tempPos);	   
 				
+				end if;
+			end loop;	
+				   
 			elsif (instrc(22 downto 20) = "011")	then 		  
 				for i in 0 to 3 loop
 				tempPos := 32 * i;
@@ -120,7 +129,10 @@ variable tempPos : integer;
 				elsif(tempRes < min32) then 
 					o(tempPos+31 downto tempPos):= std_logic_vector(min32); 
 				else 	
-				   o(tempPos+31 downto tempPos):=  tempRes(tempPos+31 downto tempPos); 	   	 
+				   o(tempPos+31 downto tempPos):=  tempRes(tempPos+31 downto tempPos); 
+				 end if;
+			end loop;	  
+				   
 				   
 			elsif (instrc(22 downto 20) = "100")	then
 					for i in 0 to 3 loop
@@ -131,7 +143,9 @@ variable tempPos : integer;
 				elsif(tempRes < min64) then 
 					o(tempPos+63 downto tempPos):= std_logic_vector(min64); 
 				else 	
-				   o(tempPos+63 downto tempPos):=  tempRes128(tempPos+63 downto tempPos); 	  
+				   o(tempPos+63 downto tempPos):=  tempRes128(tempPos+63 downto tempPos); 	  	  
+				  end if;
+			end loop;	 
 				   
 			elsif (instrc(22 downto 20) = "101")	then
 					for i in 0 to 3 loop
@@ -142,7 +156,9 @@ variable tempPos : integer;
 				elsif(tempRes < min64) then 
 					o(tempPos+63 downto tempPos):= std_logic_vector(min64); 
 				else 	
-				   o(tempPos+63 downto tempPos):=  tempRes128(tempPos+63 downto tempPos); 	 
+				   o(tempPos+63 downto tempPos):=  tempRes128(tempPos+63 downto tempPos); 
+				   end if;
+			end loop;	
 				   
 			elsif (instrc(22 downto 20) = "110")	then
 					for i in 0 to 3 loop
@@ -154,6 +170,8 @@ variable tempPos : integer;
 					o(tempPos+63 downto tempPos):= std_logic_vector(min64); 
 				else 	
 				   o(tempPos+63 downto tempPos):=  tempRes128(tempPos+63 downto tempPos); 	  
+				   end if;
+			end loop;	
 			
 			elsif (instrc(22 downto 20) = "111")	then
 					for i in 0 to 3 loop
@@ -164,7 +182,9 @@ variable tempPos : integer;
 				elsif(tempRes < min64) then 
 					o(tempPos+63 downto tempPos):= std_logic_vector(min64); 
 				else 	
-				   o(tempPos+63 downto tempPos):=  tempRes128(tempPos+63 downto tempPos); 		   
+				   o(tempPos+63 downto tempPos):=  tempRes128(tempPos+63 downto tempPos); 		
+				   end if;
+			end loop;	
 				   	
 			--	tempRes := signed(r1(31 downto 0))+signed(r2(15 downto 0))*signed(r3(15 downto 0));
 			--	if(tempRes > max32) then 
@@ -215,12 +235,30 @@ variable tempPos : integer;
 				elsif 	(instrc(24 downto 23) = "11") then 	
 				 	if instruction(18 downto 15) = "0000" then  --nop
 						 
+						 
 						 Null; --? what should nop do		
 						 
+					elsif (instruction(18 downto 15) = "0001") then --leading zeros		
+					
+						for i in 0 to 3 loop
+							tempPos := 32 * i;
+							counter := 0;	 	 								   
+							
+							for j in 0 to 31 loop
+								if r1(j + tempPos) = '0' then 
+									counter := counter + 1;
+								else
+									exit;
+								end if;
+							end loop;
+						o((31 + tempPos) downto (tempPos)) <= std_logic_vector(to_unsigned(counter,32));
+						
+					end loop;	
+						 	 
 						 
 						
 						 
-					elsif (instruction(18 downto 15) = "0010") then
+					elsif (instruction(18 downto 15) = "0010") then		--add word
 						for i in 0 to 3 loop
 							tempPos := 32 * i;
 							o(tempPos+31 downto tempPos):= std_logic_vector(unsigned(r1(tempPos+31 downto tempPos)) + unsigned(r2(tempPos+31 downto tempPos))); 
@@ -246,11 +284,60 @@ variable tempPos : integer;
 					--	o(111 downto 96):= std_logic_vector(unsigned(r1(111 downto 96)) + unsigned(r2(111 downto 96)));   
 					--	o(127 downto 112):= std_logic_vector(unsigned(r1(127 downto 112)) + unsigned(r2(127 downto 112)));	
 						
-						
+					
+					
 						
 					elsif (instruction(18 downto 15) = "0101") then	--and r1 r2
-						o := r1 and r2;	 
+						o := r1 and r2;	 			
+					
+					elsif (instruction(18 downto 15) = "0110") then	--	broadcast word
+							for i in 0 to 3 loop
+							tempPos := 32 * i;
+							o((31 + tempPos) downto (tempPos)) <= r1(31 downto 0);
+							end loop;
+					
 						
+						
+					elsif (instruction(18 downto 15) = "0111") then	--	max signed word
+						for i in 0 to 3 loop   
+							tempPos := 32 * i;
+							temp_int1 := to_integer(signed(r1(tempPos+31 downto tempPos)));
+							temp_int2 := to_integer(signed(r1(tempPos+32 downto tempPos)));
+							if(temp_int1 > temp_int2) then 
+								o((31 + tempPos) downto tempPos) <=  r1(tempPos+31 downto tempPos);
+							else 	
+								o((31 + tempPos) downto tempPos) <=  r2(tempPos+31 downto tempPos);
+							end if;
+						end loop;	
+						
+							
+						
+					elsif (instruction(18 downto 15) = "1000") then	--	min signed word
+						for i in 0 to 3 loop   
+							tempPos := 32 * i;
+							temp_int1 := to_integer(signed(r1(tempPos+31 downto tempPos)));
+							temp_int2 := to_integer(signed(r1(tempPos+32 downto tempPos)));
+							if(temp_int1 < temp_int2) then 
+								o((31 + tempPos) downto tempPos) <=  r1(tempPos+31 downto tempPos);
+							else 	
+								o((31 + tempPos) downto tempPos) <=  r2(tempPos+31 downto tempPos);
+							end if;	
+						end loop;	
+						
+					
+					elsif (instruction(18 downto 15) = "1001") then	--multiply low bits of r1, r2
+							for i in 0 to 3 loop
+							tempPos := 32 * i;
+							o((31 + tempPos) downto (tempPos)) <= std_logic_vector(unsigned(r1((15 + tempPos) downto (tempPos))) * unsigned(r2((15 + tempPos) downto (tempPos))));
+							end loop;
+						
+					elsif (instruction(18 downto 15) = "1010") then	--multiply by constant
+							for i in 0 to 3 loop
+							tempPos := 32 * i;
+							--o((31 + tempPos) downto (tempPos)) <= std_logic_vector(unsigned(r1((15 + tempPos) downto (tempPos))) * resize(unsigned(instruction(14 downto 10)),16));
+							--switch out if need to resize
+							o((31 + tempPos) downto (tempPos)) <= std_logic_vector(unsigned(r1((15 + tempPos) downto (tempPos))) * unsigned(instruction(14 downto 10)));
+							end loop;
 						
 					elsif (instruction(18 downto 15) = "1011") then	--and r1 r2
 						o := r1 or r2;												   
@@ -265,27 +352,17 @@ variable tempPos : integer;
 									counter := counter + 1;	
 								end if;
 							end loop;
-						o((31 + tempPos) downto (0 + tempPos)) <= std_logic_vector(to_unsigned(counter,32));
+						o((31 + tempPos) downto (tempPos)) <= std_logic_vector(to_unsigned(counter,32));
 						
 					end loop;		
 					
-					elsif (instruction(18 downto 15) = "0001") then --leading zeros		
 					
+					elsif (instruction(18 downto 15) = "1110") then		--sub word
 						for i in 0 to 3 loop
 							tempPos := 32 * i;
-							counter := 0;	 	 								   
-							
-							for j in 0 to 31 loop
-								if r1(j + tempPos) = '0' then 
-									counter := counter + 1;
-								else
-									exit;
-								end if;
-							end loop;
-						o((31 + tempPos) downto (0 + tempPos)) <= std_logic_vector(to_unsigned(counter,32));
-						
-					end loop;	
-						 
+							o(tempPos+31 downto tempPos):= std_logic_vector(unsigned(r1(tempPos+31 downto tempPos)) - unsigned(r2(tempPos+31 downto tempPos))); 
+						end loop;
+					
 						 
 				
 		end if;	
