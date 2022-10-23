@@ -2,7 +2,7 @@
 --
 -- Title       : ALU
 -- Design      : ALU
--- Author      : Robert Bacigalupo
+-- Author      : Robert Bacigalupo and Tyler Ovenden
 -- Company     : 
 --
 -------------------------------------------------------------------------------
@@ -57,7 +57,7 @@ constant max64: std_logic_vector(63 downto 0):= X"7FFFFFFFFFFFFFFF";
 constant min64: std_logic_vector(63 downto 0) := X"8000000000000000";	
 variable counter: integer:=0; 		--counter for counting ones
 variable tempPos : integer;  	
-	
+variable temp : integer; -- general temp variable, currently using in ROTW	
 	
 	
 	begin  		
@@ -339,7 +339,7 @@ variable tempPos : integer;
 							o((31 + tempPos) downto (tempPos)) <= std_logic_vector(unsigned(r1((15 + tempPos) downto (tempPos))) * unsigned(instruction(14 downto 10)));
 							end loop;
 						
-					elsif (instruction(18 downto 15) = "1011") then	--and r1 r2
+					elsif (instruction(18 downto 15) = "1011") then	--or r1 r2
 						o := r1 or r2;												   
 						
 					elsif (instruction(18 downto 15) = "1100") then		--counts 1s in word
@@ -354,9 +354,16 @@ variable tempPos : integer;
 							end loop;
 						o((31 + tempPos) downto (tempPos)) <= std_logic_vector(to_unsigned(counter,32));
 						
-					end loop;		
+					end loop;
 					
-					
+					elsif ((instruction 18 downto 15) = "1101") then  --ROTW rotate bits in word 
+						tempPos := 	to_integer(instruction 14 downto 10);
+						temp_int1 := to_integer(signed(r1(tempPos+31 downto tempPos)));  --r1
+						tempPos := 	to_integer(instruction 9 downto 5);					 
+						temp_int2 := to_integer(signed(r2(tempPos+32 downto tempPos)));	 --r2
+						temp := to_integer(temp_int2 5 downt 0);	  --- number to rotate 
+						temp ror temp;
+						
 					elsif (instruction(18 downto 15) = "1110") then		--sub word
 						for i in 0 to 3 loop
 							tempPos := 32 * i;
