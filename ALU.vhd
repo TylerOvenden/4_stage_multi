@@ -113,7 +113,7 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 					elsif(tempRes < min32) then 
 						o(tempPos+31 downto tempPos):= std_logic_vector(min32); 
 					else 	
-					   o(tempPos+31 downto tempPos):=  tempRes(tempPos+31 downto tempPos); 	   
+					   o(tempPos+31 downto tempPos):=  std_logic_vector(tempRes(tempPos+31 downto tempPos)); 	   
 					   
 					end if;
 				end loop;	
@@ -127,7 +127,7 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 					elsif(tempRes < min32) then 
 						o(tempPos+31 downto tempPos):= std_logic_vector(min32); 
 					else 	
-					   o(tempPos+31 downto tempPos):=  tempRes(tempPos+31 downto tempPos);	   
+					   o(tempPos+31 downto tempPos):=  std_logic_vector(tempRes(tempPos+31 downto tempPos));	   
 					
 					end if;
 				end loop;	
@@ -141,7 +141,7 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 					elsif(tempRes < min32) then 
 						o(tempPos+31 downto tempPos):= std_logic_vector(min32); 
 					else 	
-					   o(tempPos+31 downto tempPos):=  tempRes(tempPos+31 downto tempPos); 
+					   o(tempPos+31 downto tempPos):=  std_logic_vector(tempRes(tempPos+31 downto tempPos)); 
 					 end if;
 				end loop;	  
 					   
@@ -154,8 +154,8 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 						o(tempPos+63 downto tempPos):= std_logic_vector(max64); 
 					elsif(tempRes < min64) then 
 						o(tempPos+63 downto tempPos):= std_logic_vector(min64); 
-					else 	
-					   o(tempPos+63 downto tempPos):=  tempRes128(tempPos+63 downto tempPos); 	  	  
+					else 								  
+					   o(tempPos+63 downto tempPos):=  std_logic_vector(tempRes128(tempPos+63 downto tempPos)); 
 					  end if;
 				end loop;	 
 					   
@@ -168,7 +168,7 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 					elsif(tempRes < min64) then 
 						o(tempPos+63 downto tempPos):= std_logic_vector(min64); 
 					else 	
-					   o(tempPos+63 downto tempPos):=  tempRes128(tempPos+63 downto tempPos); 
+					   o(tempPos+63 downto tempPos):=  std_logic_vector(tempRes128(tempPos+63 downto tempPos)); 
 					   end if;
 				end loop;	
 					   
@@ -181,7 +181,7 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 					elsif(tempRes < min64) then 
 						o(tempPos+63 downto tempPos):= std_logic_vector(min64); 
 					else 	
-					   o(tempPos+63 downto tempPos):=  tempRes128(tempPos+63 downto tempPos); 	  
+					   o(tempPos+63 downto tempPos):=  std_logic_vector(tempRes128(tempPos+63 downto tempPos));  
 					   end if;
 				end loop;	
 				
@@ -194,7 +194,7 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 					elsif(tempRes < min64) then 
 						o(tempPos+63 downto tempPos):= std_logic_vector(min64); 
 					else 	
-					   o(tempPos+63 downto tempPos):=  tempRes128(tempPos+63 downto tempPos); 		
+					   o(tempPos+63 downto tempPos):=  std_logic_vector(tempRes128(tempPos+63 downto tempPos));  		
 					   end if;
 				end loop;	
 				   	
@@ -243,15 +243,15 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 			--	end if;		   
 			
 ----------------------------------------------------------------------------------------
----------------------r3 instructions----------------------------------------------------------------				
+---------------------r3 instrcs----------------------------------------------------------------				
 						
 						elsif 	(instrc(24 downto 23) = "11") then 	
-						 	if instruction(18 downto 15) = "0000" then  --nop
+						 	if instrc(18 downto 15) = "0000" then  --nop
 								 
 								 
 								 Null; --? what should nop do		
 								 
-							elsif (instruction(18 downto 15) = "0001") then --leading zeros		
+							elsif (instrc(18 downto 15) = "0001") then --leading zeros		
 							
 								for i in 0 to 3 loop
 									tempPos := 32 * i;
@@ -264,14 +264,14 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 											exit;
 										end if;
 									end loop;
-								o((31 + tempPos) downto (tempPos)) <= std_logic_vector(to_unsigned(counter,32));
+								o((31 + tempPos) downto (tempPos)) := std_logic_vector(to_unsigned(counter,32));
 								
 							end loop;	
 								 	 
 								 
 								
 								 
-							elsif (instruction(18 downto 15) = "0010") then		--add word
+							elsif (instrc(18 downto 15) = "0010") then		--add word
 								for i in 0 to 3 loop
 									tempPos := 32 * i;
 									o(tempPos+31 downto tempPos):= std_logic_vector(unsigned(r1(tempPos+31 downto tempPos)) + unsigned(r2(tempPos+31 downto tempPos))); 
@@ -282,7 +282,7 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 							--	o(95 downto 64):= std_logic_vector(unsigned(r1(95 downto 64)) + unsigned(r2(95 downto 64)));   
 							--	o(127 downto 96):= std_logic_vector(unsigned(r1(127 downto 96)) + unsigned(r2(127 downto 96)));
 								
-							elsif (instruction(18 downto 15) = "0011") then  --add half word 	  
+							elsif (instrc(18 downto 15) = "0011") then  --add half word 	  
 								for i in 0 to 7 loop
 									tempPos := 16 * i;
 									o(tempPos+15 downto tempPos):= std_logic_vector(unsigned(r1(tempPos+15 downto tempPos)) + unsigned(r2(tempPos+15 downto tempPos))); 
@@ -300,62 +300,63 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 							
 							
 								
-							elsif (instruction(18 downto 15) = "0101") then	--and r1 r2
+							elsif (instrc(18 downto 15) = "0101") then	--and r1 r2
 								o := r1 and r2;	 			
 							
-							elsif (instruction(18 downto 15) = "0110") then	--	broadcast word
+							elsif (instrc(18 downto 15) = "0110") then	--	broadcast word
 									for i in 0 to 3 loop
 									tempPos := 32 * i;
-									o((31 + tempPos) downto (tempPos)) <= r1(31 downto 0);
+									o((31 + tempPos) downto (tempPos)) := r1(31 downto 0);
+								--	o(31 downto 0) := r1(31 downto 0);
 									end loop;
 							
 								
 								
-							elsif (instruction(18 downto 15) = "0111") then	--	max signed word
+							elsif (instrc(18 downto 15) = "0111") then	--	max signed word
 								for i in 0 to 3 loop   
 									tempPos := 32 * i;
 									temp_int1 := to_integer(signed(r1(tempPos+31 downto tempPos)));
 									temp_int2 := to_integer(signed(r1(tempPos+32 downto tempPos)));
 									if(temp_int1 > temp_int2) then 
-										o((31 + tempPos) downto tempPos) <=  r1(tempPos+31 downto tempPos);
+										o((31 + tempPos) downto tempPos) :=  r1(tempPos+31 downto tempPos);
 									else 	
-										o((31 + tempPos) downto tempPos) <=  r2(tempPos+31 downto tempPos);
+										o((31 + tempPos) downto tempPos) :=  r2(tempPos+31 downto tempPos);
 									end if;
 								end loop;	
 								
 									
 								
-							elsif (instruction(18 downto 15) = "1000") then	--	min signed word
+							elsif (instrc(18 downto 15) = "1000") then	--	min signed word
 								for i in 0 to 3 loop   
 									tempPos := 32 * i;
 									temp_int1 := to_integer(signed(r1(tempPos+31 downto tempPos)));
 									temp_int2 := to_integer(signed(r1(tempPos+32 downto tempPos)));
 									if(temp_int1 < temp_int2) then 
-										o((31 + tempPos) downto tempPos) <=  r1(tempPos+31 downto tempPos);
+										o((31 + tempPos) downto tempPos) :=  r1(tempPos+31 downto tempPos);
 									else 	
-										o((31 + tempPos) downto tempPos) <=  r2(tempPos+31 downto tempPos);
+										o((31 + tempPos) downto tempPos) :=  r2(tempPos+31 downto tempPos);
 									end if;	
 								end loop;	
 								
 							
-							elsif (instruction(18 downto 15) = "1001") then	--multiply low bits of r1, r2
+							elsif (instrc(18 downto 15) = "1001") then	--multiply low bits of r1, r2
 									for i in 0 to 3 loop
 									tempPos := 32 * i;
-									o((31 + tempPos) downto (tempPos)) <= std_logic_vector(unsigned(r1((15 + tempPos) downto (tempPos))) * unsigned(r2((15 + tempPos) downto (tempPos))));
+									o((31 + tempPos) downto (tempPos)) := std_logic_vector(unsigned(r1((15 + tempPos) downto (tempPos))) * unsigned(r2((15 + tempPos) downto (tempPos))));
 									end loop;
 								
-							elsif (instruction(18 downto 15) = "1010") then	--multiply by constant
+							elsif (instrc(18 downto 15) = "1010") then	--multiply by constant
 									for i in 0 to 3 loop
 									tempPos := 32 * i;
-									--o((31 + tempPos) downto (tempPos)) <= std_logic_vector(unsigned(r1((15 + tempPos) downto (tempPos))) * resize(unsigned(instruction(14 downto 10)),16));
+									--o((31 + tempPos) downto (tempPos)) <= std_logic_vector(unsigned(r1((15 + tempPos) downto (tempPos))) * resize(unsigned(instrc(14 downto 10)),16));
 									--switch out if need to resize
-									o((31 + tempPos) downto (tempPos)) <= std_logic_vector(unsigned(r1((15 + tempPos) downto (tempPos))) * unsigned(instruction(14 downto 10)));
+									o((31 + tempPos) downto (tempPos)) := std_logic_vector(unsigned(r1((15 + tempPos) downto (tempPos))) * unsigned(instrc(14 downto 10)));
 									end loop;
 								
-							elsif (instruction(18 downto 15) = "1011") then	--or r1 r2
+							elsif (instrc(18 downto 15) = "1011") then	--or r1 r2
 								o := r1 or r2;												   
 								
-							elsif (instruction(18 downto 15) = "1100") then		--counts 1s in word
+							elsif (instrc(18 downto 15) = "1100") then		--counts 1s in word
 							
 								for i in 0 to 3 loop
 									tempPos := 32 * i;
@@ -365,19 +366,19 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 											counter := counter + 1;	
 										end if;
 									end loop;
-								o((31 + tempPos) downto (tempPos)) <= std_logic_vector(to_unsigned(counter,32));
+								o((31 + tempPos) downto (tempPos)) := std_logic_vector(to_unsigned(counter,32));
 								
 							end loop;
 							
-							elsif (instruction (18 downto 15) = "1101") then  --ROTW rotate bits in word 
-								tempPos := 	to_integer(instruction (14 downto 10));
+							elsif (instrc (18 downto 15) = "1101") then  --ROTW rotate bits in word 
+								tempPos := 	to_integer(instrc(14 downto 10));
 								temp_int1 := to_integer(signed(r1(tempPos+31 downto tempPos)));  --r1
-								tempPos := 	to_integer(instruction (9 downto 5));					 
+								tempPos := 	to_integer(instrc (9 downto 5));					 
 								temp_int2 := to_integer(signed(r2(tempPos+32 downto tempPos)));	 --r2
 								temp := to_integer(temp_int2 (5 downto 0));	  --- number to rotate 
 								o := temp ror temp;
 								
-							elsif (instruction(18 downto 15) = "1110") then		--sub word
+							elsif (instrc(18 downto 15) = "1110") then		--sub word
 									for i in 0 to 3 loop
 										tempPos := 32 * i;
 										o(tempPos+31 downto tempPos):= std_logic_vector(unsigned(r1(tempPos+31 downto tempPos)) - unsigned(r2(tempPos+31 downto tempPos))); 
