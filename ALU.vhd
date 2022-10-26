@@ -92,24 +92,21 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 					
 					--Signed Integer Multiply-Add Low with Saturation
 				--y low 16-bit-fields for rs3, rs2
-				if (instrc(22 downto 20) = "000")	then 		  
+				if (instrc(22 downto 20) = "000")	then 
+					--using this to check overflow
+					--		o(31 downto 0)<= std_logic_vector(resize(signed(r3(31 downto 0))+ signed(r1(31 downto 0)), 32));
+				
+					
 					for i in 0 to 3 loop
 					
-					--example
+						--example
 					-- std_logic_vector(resize(signed(r1(31 downto 0))+ signed(r2(31 downto 0)), 32)); 
 					tempPos := 32 * i;	 
 					testMult(tempPos+31 downto tempPos) := std_logic_vector(resize(signed(r3(tempPos+15 downto tempPos))* signed(r2(tempPos+15 downto tempPos)), 32));
 					
 					o(tempPos+31 downto tempPos)<= std_logic_vector(resize(signed(testMult(tempPos+31 downto tempPos))+ signed(r1(tempPos+31 downto tempPos)), 32)); 
 					
-					--tempRes := signed(r1(tempPos+31 downto tempPos))+signed(r2(tempPos+15 downto tempPos))*signed(r3(tempPos+15 downto tempPos));	
---					if to_integer(signed(tempRes)) > to_integer(signed(max32)) then 
---						o(tempPos+31 downto tempPos)<=  std_logic_vector(max32); 
---					elsif to_integer(signed(tempRes)) < to_integer(signed(min32)) then 
---						o(tempPos+31 downto tempPos)<=  std_logic_vector(min32); 
---					else 	
---					   o(tempPos+31 downto tempPos)<=   std_logic_vector(tempRes(tempPos+31 downto tempPos)); 	   
---					end if;
+				
 				end loop;	
 					 
 					  
