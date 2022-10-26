@@ -22,16 +22,16 @@
 --   and may be overwritten
 --{entity {ALU} architecture {ALU_Behavior}}
 
-library IEEE;
-use IEEE.std_logic_1164.all;   
+library ieee;
+use ieee.std_logic_1164.all;   
 use ieee.numeric_std.all;
 
 entity ALU is
 	port(
 		 
-		 r1 : inout STD_LOGIC_VECTOR(127 downto 0);
-		 r2 : inout STD_LOGIC_VECTOR(127 downto 0);
-		 r3 : inout STD_LOGIC_VECTOR(127 downto 0);
+		 r1 : in STD_LOGIC_VECTOR(127 downto 0);
+		 r2 : in STD_LOGIC_VECTOR(127 downto 0);
+		 r3 : in STD_LOGIC_VECTOR(127 downto 0);
 		 instrc: in STD_LOGIC_VECTOR(24 downto 0);
 		 o : out STD_LOGIC_VECTOR(127 downto 0)
 	     );
