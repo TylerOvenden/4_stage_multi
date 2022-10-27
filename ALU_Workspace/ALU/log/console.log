@@ -1,0 +1,543 @@
+# Design: Design ALU already active.
+acom -reorder -O3 -e 100 -work ALU -2002  $dsn/src/alu.vhd $dsn/src/alu_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_Behavior" of Entity "ALU"
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd
+# Compile Entity "alu_tb"
+# Compile Architecture "tb" of Entity "alu_tb"
+# Top-level unit(s) detected:
+# Entity => alu_tb
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: Flow Manager: Not Defined
+# Design: Design alu already active.
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_Behavior" of Entity "ALU"
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd
+# Compile Entity "alu_tb"
+# Compile Architecture "tb" of Entity "alu_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# Design: Design alu already active.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+alu_tb alu_tb tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5597 kB (elbread=427 elab2=5030 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location B:\Stony Brook\ESE345\4_stage_multi\ALU_Workspace\ALU\src\wave.asdb
+#  11:31 PM, Wednesday, October 26, 2022
+#  Simulation has been initialized
+run
+# RUNTIME: Info: RUNTIME_0142 alu_tb.vhd (65): finish called.
+# KERNEL: Time: 25 us,  Iteration: 0,  Instance: /alu_tb,  Process: line__18.
+# KERNEL: stopped at time: 25 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+alu_tb alu_tb tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5597 kB (elbread=427 elab2=5030 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location B:\Stony Brook\ESE345\4_stage_multi\ALU_Workspace\ALU\src\wave.asdb
+#  11:31 PM, Wednesday, October 26, 2022
+#  Simulation has been initialized
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+alu_tb alu_tb tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5597 kB (elbread=427 elab2=5030 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location B:\Stony Brook\ESE345\4_stage_multi\ALU_Workspace\ALU\src\wave.asdb
+#  11:31 PM, Wednesday, October 26, 2022
+#  Simulation has been initialized
+run
+# RUNTIME: Info: RUNTIME_0142 alu_tb.vhd (65): finish called.
+# KERNEL: Time: 25 us,  Iteration: 0,  Instance: /alu_tb,  Process: line__18.
+# KERNEL: stopped at time: 25 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+# VSIM: 5 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/wave.asdb'.
+run
+endsim
+# VSIM: Simulation has finished.
+# Error: Accelerated Waveform: Simulation database is not connected. Initialize simulation or load simulation database by opening waveform file (AWC, ASDB).
+# Error: Accelerated Waveform: Simulation database is not connected. Initialize simulation or load simulation database by opening waveform file (AWC, ASDB).
+asim -O5 +access +r +m+alu_tb alu_tb tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5597 kB (elbread=427 elab2=5030 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location B:\Stony Brook\ESE345\4_stage_multi\ALU_Workspace\ALU\src\wave.asdb
+#  11:43 PM, Wednesday, October 26, 2022
+#  Simulation has been initialized
+# VSIM: 5 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/wave.asdb'.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5597 kB (elbread=427 elab2=5030 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location B:\Stony Brook\ESE345\4_stage_multi\ALU_Workspace\ALU\src\wave.asdb
+#  11:44 PM, Wednesday, October 26, 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/wave.asdb'.
+run
+# RUNTIME: Info: RUNTIME_0142 alu_tb.vhd (65): finish called.
+# KERNEL: Time: 25 us,  Iteration: 0,  Instance: /alu_tb,  Process: line__18.
+# KERNEL: stopped at time: 25 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+alu_tb alu_tb tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5597 kB (elbread=427 elab2=5030 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location B:\Stony Brook\ESE345\4_stage_multi\ALU_Workspace\ALU\src\wave.asdb
+#  11:48 PM, Wednesday, October 26, 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/wave.asdb'.
+run
+# RUNTIME: Info: RUNTIME_0142 alu_tb.vhd (65): finish called.
+# KERNEL: Time: 25 us,  Iteration: 0,  Instance: /alu_tb,  Process: line__18.
+# KERNEL: stopped at time: 25 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+run
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+alu_tb alu_tb tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5597 kB (elbread=427 elab2=5030 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location B:\Stony Brook\ESE345\4_stage_multi\ALU_Workspace\ALU\src\wave.asdb
+#  11:54 PM, Wednesday, October 26, 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/wave.asdb'.
+run
+# RUNTIME: Info: RUNTIME_0142 alu_tb.vhd (65): finish called.
+# KERNEL: Time: 25 us,  Iteration: 0,  Instance: /alu_tb,  Process: line__18.
+# KERNEL: stopped at time: 25 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+# WAVEFORM: 0 signal(s) removed.
+run
+# Design: Design alu already active.
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_Behavior" of Entity "ALU"
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd
+# Compile Entity "alu_tb"
+# Compile Architecture "tb" of Entity "alu_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# Design: Design alu already active.
+# Design: Design alu already active.
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_Behavior" of Entity "ALU"
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd
+# Compile Entity "alu_tb"
+# Compile Architecture "tb" of Entity "alu_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# Design: Design alu already active.
+asim -O5 +access +r +m+alu_tb alu_tb tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5597 kB (elbread=427 elab2=5030 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location B:\Stony Brook\ESE345\4_stage_multi\ALU_Workspace\ALU\src\wave.asdb
+#  12:42 AM, Thursday, October 27, 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/wave.asdb'.
+run
+# RUNTIME: Info: RUNTIME_0142 alu_tb.vhd (65): finish called.
+# KERNEL: Time: 25 us,  Iteration: 0,  Instance: /alu_tb,  Process: line__18.
+# KERNEL: stopped at time: 25 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+run
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+alu_tb alu_tb tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work ALU -2002  $dsn/src/alu_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd
+# Compile Entity "alu_tb"
+# Compile Architecture "tb" of Entity "alu_tb"
+# Error: COMP96_0093: alu_tb.vhd : (47, 33): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.TO_SIGNED(ARG : INTEGER; SIZE : NATURAL) return SIGNED" subprogram.
+# Error: COMP96_0617: alu_tb.vhd : (47, 23): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0093: alu_tb.vhd : (48, 32): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.TO_SIGNED(ARG : INTEGER; SIZE : NATURAL) return SIGNED" subprogram.
+# Error: COMP96_0617: alu_tb.vhd : (48, 22): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0093: alu_tb.vhd : (49, 31): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.TO_SIGNED(ARG : INTEGER; SIZE : NATURAL) return SIGNED" subprogram.
+# Error: COMP96_0617: alu_tb.vhd : (49, 21): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0093: alu_tb.vhd : (50, 31): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.TO_SIGNED(ARG : INTEGER; SIZE : NATURAL) return SIGNED" subprogram.
+# Error: COMP96_0617: alu_tb.vhd : (50, 21): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0093: alu_tb.vhd : (51, 31): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.TO_SIGNED(ARG : INTEGER; SIZE : NATURAL) return SIGNED" subprogram.
+# Error: COMP96_0617: alu_tb.vhd : (51, 21): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0093: alu_tb.vhd : (52, 31): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.TO_SIGNED(ARG : INTEGER; SIZE : NATURAL) return SIGNED" subprogram.
+# Error: COMP96_0617: alu_tb.vhd : (52, 21): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0093: alu_tb.vhd : (53, 31): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.TO_SIGNED(ARG : INTEGER; SIZE : NATURAL) return SIGNED" subprogram.
+# Error: COMP96_0617: alu_tb.vhd : (53, 21): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0093: alu_tb.vhd : (54, 30): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.TO_SIGNED(ARG : INTEGER; SIZE : NATURAL) return SIGNED" subprogram.
+# Error: COMP96_0617: alu_tb.vhd : (54, 20): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0093: alu_tb.vhd : (57, 33): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.TO_SIGNED(ARG : INTEGER; SIZE : NATURAL) return SIGNED" subprogram.
+# Error: COMP96_0617: alu_tb.vhd : (57, 23): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0093: alu_tb.vhd : (58, 32): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.TO_SIGNED(ARG : INTEGER; SIZE : NATURAL) return SIGNED" subprogram.
+# Error: COMP96_0617: alu_tb.vhd : (58, 22): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0093: alu_tb.vhd : (59, 31): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.TO_SIGNED(ARG : INTEGER; SIZE : NATURAL) return SIGNED" subprogram.
+# Error: COMP96_0617: alu_tb.vhd : (59, 21): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0093: alu_tb.vhd : (60, 31): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.TO_SIGNED(ARG : INTEGER; SIZE : NATURAL) return SIGNED" subprogram.
+# Error: COMP96_0617: alu_tb.vhd : (60, 21): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0093: alu_tb.vhd : (61, 31): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.TO_SIGNED(ARG : INTEGER; SIZE : NATURAL) return SIGNED" subprogram.
+# Error: COMP96_0617: alu_tb.vhd : (61, 21): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0093: alu_tb.vhd : (62, 31): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.TO_SIGNED(ARG : INTEGER; SIZE : NATURAL) return SIGNED" subprogram.
+# Error: COMP96_0617: alu_tb.vhd : (62, 21): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0093: alu_tb.vhd : (63, 31): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.TO_SIGNED(ARG : INTEGER; SIZE : NATURAL) return SIGNED" subprogram.
+# Error: COMP96_0617: alu_tb.vhd : (63, 21): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0093: alu_tb.vhd : (64, 30): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.TO_SIGNED(ARG : INTEGER; SIZE : NATURAL) return SIGNED" subprogram.
+# Error: COMP96_0617: alu_tb.vhd : (64, 20): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Compile failure 32 Errors 0 Warnings  Analysis time :  16.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5597 kB (elbread=427 elab2=5030 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location B:\Stony Brook\ESE345\4_stage_multi\ALU_Workspace\ALU\src\wave.asdb
+#  1:54 AM, Thursday, October 27, 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/wave.asdb'.
+endsim
+# VSIM: Simulation has finished.
+# Design: Design alu already active.
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_Behavior" of Entity "ALU"
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd
+# Compile Entity "alu_tb"
+# Compile Architecture "tb" of Entity "alu_tb"
+# Error: COMP96_0305: alu_tb.vhd : (47, 23): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (47, 23): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (48, 22): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (48, 22): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (49, 21): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (49, 21): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (50, 21): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (50, 21): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (51, 21): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (51, 21): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (52, 21): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (52, 21): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (53, 21): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (53, 21): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (54, 20): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (54, 20): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (57, 23): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (57, 23): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (58, 22): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (58, 22): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (59, 21): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (59, 21): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (60, 21): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (60, 21): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (61, 21): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (61, 21): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (62, 21): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (62, 21): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (63, 21): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (63, 21): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (64, 20): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (64, 20): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 32 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# Design: Design alu already active.
+# Design: Design alu already active.
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_Behavior" of Entity "ALU"
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd
+# Compile Entity "alu_tb"
+# Compile Architecture "tb" of Entity "alu_tb"
+# Error: COMP96_0015: alu_tb.vhd : (47, 25): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# Design: Design alu already active.
+# Design: Design alu already active.
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_Behavior" of Entity "ALU"
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd
+# Compile Entity "alu_tb"
+# Compile Architecture "tb" of Entity "alu_tb"
+# Error: COMP96_0015: alu_tb.vhd : (47, 25): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  46.0 [ms]
+# Design: Design alu already active.
+# Design: Design alu already active.
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_Behavior" of Entity "ALU"
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd
+# Compile Entity "alu_tb"
+# Compile Architecture "tb" of Entity "alu_tb"
+# Error: COMP96_0015: alu_tb.vhd : (47, 25): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# Design: Design alu already active.
+# Design: Design alu already active.
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_Behavior" of Entity "ALU"
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd
+# Compile Entity "alu_tb"
+# Compile Architecture "tb" of Entity "alu_tb"
+# Error: COMP96_0367: alu_tb.vhd : (47, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0305: alu_tb.vhd : (48, 22): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (48, 22): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (49, 21): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (49, 21): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (50, 21): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (50, 21): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (51, 21): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (51, 21): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (52, 21): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (52, 21): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (53, 21): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (53, 21): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (54, 20): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (54, 20): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (57, 23): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (57, 23): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (58, 22): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (58, 22): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (59, 21): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (59, 21): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (60, 21): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (60, 21): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (61, 21): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (61, 21): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (62, 21): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (62, 21): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (63, 21): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (63, 21): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (64, 20): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (64, 20): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 31 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# Design: Design alu already active.
+# Design: Design alu already active.
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_Behavior" of Entity "ALU"
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd
+# Compile Entity "alu_tb"
+# Compile Architecture "tb" of Entity "alu_tb"
+# Error: COMP96_0015: alu_tb.vhd : (47, 25): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# Design: Design alu already active.
+# Design: Design alu already active.
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_Behavior" of Entity "ALU"
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd
+# Compile Entity "alu_tb"
+# Compile Architecture "tb" of Entity "alu_tb"
+# Error: COMP96_0015: alu_tb.vhd : (47, 25): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# Design: Design alu already active.
+# Design: Design alu already active.
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_Behavior" of Entity "ALU"
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd
+# Compile Entity "alu_tb"
+# Compile Architecture "tb" of Entity "alu_tb"
+# Error: COMP96_0110: alu_tb.vhd : (47, 1): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0367: alu_tb.vhd : (47, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0305: alu_tb.vhd : (48, 22): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (48, 22): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (49, 21): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (49, 21): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (50, 21): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (50, 21): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (51, 21): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (51, 21): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (52, 21): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (52, 21): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (53, 21): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (53, 21): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (54, 20): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (54, 20): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (57, 23): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (57, 23): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (58, 22): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (58, 22): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (59, 21): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (59, 21): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (60, 21): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (60, 21): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (61, 21): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (61, 21): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (62, 21): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (62, 21): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (63, 21): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (63, 21): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: alu_tb.vhd : (64, 20): Cannot find function "to_stdlogicvector" for these actuals.
+# Error: COMP96_0077: alu_tb.vhd : (64, 20): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 32 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# Design: Design alu already active.

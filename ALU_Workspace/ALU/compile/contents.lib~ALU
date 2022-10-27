@@ -1,0 +1,5 @@
+12
+~E 1 "../src/alu.vhd" 29 ALU
+~A 1 "../src/alu.vhd" 42 ALU_Behavior
+~E 1 "../src/alu_tb.vhd" 6 alu_tb
+~A 1 "../src/alu_tb.vhd" 10 tb
