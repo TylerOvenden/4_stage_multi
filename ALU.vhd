@@ -315,11 +315,28 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 ----								temp := to_integer(temp_int2 (5 downto 0));	  --- number to rotate 
 ----								o <=  temp ror temp;
 								
-							elsif (instrc(18 downto 15) = "1110") then		--sub word
+									elsif (instrc(18 downto 15) = "1110") then		--sub word
 									for i in 0 to 3 loop
 										tempPos := 32 * i;
 										o(tempPos+31 downto tempPos)<=  std_logic_vector(unsigned(r1(tempPos+31 downto tempPos)) - unsigned(r2(tempPos+31 downto tempPos))); 
-									end loop;
+									end loop; 
+									
+							elsif (instrc(18 downto 15) = "0100") then			  
+							for i in 0 to 7 loop
+							tempPos := 16 * i;	 
+							
+					
+							o(tempPos+15 downto tempPos)<= std_logic_vector(resize(signed(r2(tempPos+15 downto tempPos))+ signed(r1(tempPos+15 downto tempPos)), 16)); 
+							  end loop;	
+									
+									
+									elsif (instrc(18 downto 15) = "1111") then			  
+							for i in 0 to 7 loop
+							tempPos := 16 * i;	 
+							
+					
+							o(tempPos+15 downto tempPos)<= std_logic_vector(resize(signed(r2(tempPos+15 downto tempPos))- signed(r1(tempPos+15 downto tempPos)), 16)); 
+							  end loop;
 						
 							 
 				
