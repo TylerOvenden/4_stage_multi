@@ -51,12 +51,13 @@ variable tempRes: signed (63 downto 0);	   --need to be 64 for possible overflow
 variable temp_int1:integer:=0;
 variable temp_int2:integer:=0;	
 variable tempRes128: signed (127 downto 0);	
-variable testMult: std_logic_vector(127 downto 0);
+variable testMult: std_logic_vector(130 downto 0);			
+variable testRes: std_logic_vector(130 downto 0);
 variable rd: std_logic_vector(127 downto 0);
 
 constant max16 : std_logic_vector(15 downto 0) := "0111111111111111";
 constant min16 : std_logic_vector(15 downto 0) := "1000000000000000"; 	
-constant max32: std_logic_vector(31 downto 0):= X"7FFFFFFF"; 
+constant max32: std_logic_vector(31 downto 0):= "01111111111111111111111111111111"; 	 
 constant min32: std_logic_vector(31 downto 0) := X"80000000";
 constant max64: std_logic_vector(63 downto 0):= X"7FFFFFFFFFFFFFFF"; 
 constant min64: std_logic_vector(63 downto 0) := X"8000000000000000";
@@ -84,7 +85,6 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 			
 			
 			
-			
 			--r4	
 				elsif 	(instrc(24 downto 23) = "10") then 	
 			
@@ -101,115 +101,151 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 					
 						--example
 					-- std_logic_vector(resize(signed(r1(31 downto 0))+ signed(r2(31 downto 0)), 32)); 
-					tempPos := 32 * i;	 
-					testMult(tempPos+31 downto tempPos) := std_logic_vector(resize(signed(r3(tempPos+15 downto tempPos))* signed(r2(tempPos+15 downto tempPos)), 32));
+					tempPos := 32 * i;	 						
 					
-					o(tempPos+31 downto tempPos)<= std_logic_vector(resize(signed(testMult(tempPos+31 downto tempPos))+ signed(r1(tempPos+31 downto tempPos)), 32)); 
 					
-				
-				end loop;	
+					testMult(tempPos+32 downto tempPos) := std_logic_vector(resize(signed(r3(tempPos+15 downto tempPos))* signed(r2(tempPos+15 downto tempPos)), 33));
+					testRes(tempPos+32 downto tempPos) := std_logic_vector(resize(signed(testMult(tempPos+31 downto tempPos))+ signed(r1(tempPos+31 downto tempPos)), 33)); 
+					
+					
+					if(testRes(tempPos+32 downto tempPos) >   max32) then
+						o(tempPos+31 downto tempPos)<= "01111111111111111111111111111111";		 
+						
+					elsif(testRes(tempPos+32 downto tempPos) <   min32) then
+						o(tempPos+31 downto tempPos)<= "10000000000000000000000000000000";		
+							   
+					else											 
+						
+						o(tempPos+31 downto tempPos)<= testRes(tempPos+31 downto tempPos);
+					
+					 end if;
+				end loop;						 
+			--		o(31 downto 0) <= std_logic_vector(resize(signed(r3(15 downto 0))+ signed(r1(31 downto 0)), 32)); 
+					
 					 
 					  
 				elsif (instrc(22 downto 20) = "001")	then 		  
 					for i in 0 to 3 loop
-						tempPos := 32 * i;	 
-						testMult(tempPos+31 downto tempPos) := std_logic_vector(resize(signed(r2(tempPos+31 downto tempPos+15))* signed(r3(tempPos+31 downto tempPos+15)), 32));
+						tempPos := 32 * i;	 					
+						
+						
+					testMult(tempPos+32 downto tempPos) := std_logic_vector(resize(signed(r3(tempPos+31 downto tempPos+15))* signed(r2(tempPos+31 downto tempPos+15)), 33));
+					testRes(tempPos+32 downto tempPos) := std_logic_vector(resize(signed(testMult(tempPos+31 downto tempPos))+ signed(r1(tempPos+31 downto tempPos)), 33)); 
 					
-						o(tempPos+31 downto tempPos)<= std_logic_vector(resize(signed(testMult(tempPos+31 downto tempPos))+ signed(r1(tempPos+31 downto tempPos)), 32)); 
+					
+					if(testRes(tempPos+32 downto tempPos) >   max32) then
+						o(tempPos+31 downto tempPos)<= "01111111111111111111111111111111";		 
+						
+					elsif(testRes(tempPos+32 downto tempPos) <   min32) then
+						o(tempPos+31 downto tempPos)<= "10000000000000000000000000000000";		
+							   
+					else											 
+						
+						o(tempPos+31 downto tempPos)<= testRes(tempPos+31 downto tempPos);
+						
+						
+					--	testMult(tempPos+31 downto tempPos) := std_logic_vector(resize(signed(r2(tempPos+31 downto tempPos+15))* signed(r3(tempPos+31 downto tempPos+15)), 32));
+--					
+--						o(tempPos+31 downto tempPos)<= std_logic_vector(resize(signed(testMult(tempPos+31 downto tempPos))+ signed(r1(tempPos+31 downto tempPos)), 32)); 
+						end if;
 					
 					
-					--tempRes := signed(r1(tempPos+31 downto tempPos))+signed(r2(tempPos+31 downto tempPos+15))*signed(r3(tempPos+31 downto tempPos+15));	
---					if(tempRes > max32) then 
---						o(tempPos+31 downto tempPos)<=  std_logic_vector(max32); 
---					elsif(tempRes < min32) then 
---						o(tempPos+31 downto tempPos)<=  std_logic_vector(min32); 
---					else 	
---					   o(tempPos+31 downto tempPos)<=   std_logic_vector(tempRes(tempPos+31 downto tempPos)); 	   
---					   
---					end if;
 				end loop;	
 				
-				elsif (instrc(22 downto 20) = "010")	then 		  
+				elsif (instrc(22 downto 20) = "010")	then 
+						if (instrc(22 downto 20) = "000")	then 
+					--using this to check overflow
+					--		o(31 downto 0)<= std_logic_vector(resize(signed(r3(31 downto 0))+ signed(r1(31 downto 0)), 32));
+				
+					
 					for i in 0 to 3 loop
-						tempPos := 32 * i;	 
-					testMult(tempPos+31 downto tempPos) := std_logic_vector(resize(signed(r3(tempPos+15 downto tempPos))* signed(r2(tempPos+15 downto tempPos)), 32));
 					
-					o(tempPos+31 downto tempPos)<= std_logic_vector(resize(signed(testMult(tempPos+31 downto tempPos))- signed(r1(tempPos+31 downto tempPos)), 32)); 
+						--example
+					-- std_logic_vector(resize(signed(r1(31 downto 0))+ signed(r2(31 downto 0)), 32)); 
+					tempPos := 32 * i;	 						
 					
-				--	
---					if(tempRes > max32) then 
---						o(tempPos+31 downto tempPos):= std_logic_vector(max32); 
---					elsif(tempRes < min32) then 
---						o(tempPos+31 downto tempPos):= std_logic_vector(min32); 
---					else 	
---					   o(tempPos+31 downto tempPos):=  std_logic_vector(tempRes(tempPos+31 downto tempPos));	   
+					
+					testMult(tempPos+32 downto tempPos) := std_logic_vector(resize(signed(r3(tempPos+15 downto tempPos))* signed(r2(tempPos+15 downto tempPos)), 33));
+					testRes(tempPos+32 downto tempPos) := std_logic_vector(resize(signed(r1(tempPos+31 downto tempPos))- signed(testMult(tempPos+31 downto tempPos)), 33)); 
+					
+					
+					if(testRes(tempPos+32 downto tempPos) >   max32) then
+						o(tempPos+31 downto tempPos)<= "01111111111111111111111111111111";		 
+						
+					elsif(testRes(tempPos+32 downto tempPos) <   min32) then
+						o(tempPos+31 downto tempPos)<= "10000000000000000000000000000000";		
+							   
+					else											 
+						
+						o(tempPos+31 downto tempPos)<= testRes(tempPos+31 downto tempPos);
+					
+					 end if;
+				end loop;		
+					
+					
+				--	for i in 0 to 3 loop
+--						tempPos := 32 * i;	 
+--					testMult(tempPos+31 downto tempPos) := std_logic_vector(resize(signed(r3(tempPos+15 downto tempPos))* signed(r2(tempPos+15 downto tempPos)), 32));
 --					
-				--	end if;
-				end loop;	
+--					o(tempPos+31 downto tempPos)<= std_logic_vector(resize(signed(r1(tempPos+31 downto tempPos))- signed(testMult(tempPos+31 downto tempPos)), 32)); 
+--					
+--				
+--				end loop;	
 					   
-				elsif (instrc(22 downto 20) = "011")	then 		  
+			elsif (instrc(22 downto 20) = "011")	then 	
+				
+					
+	
 					for i in 0 to 3 loop
 							tempPos := 32 * i;	 
 						testMult(tempPos+31 downto tempPos) := std_logic_vector(resize(signed(r2(tempPos+31 downto tempPos+15))* signed(r3(tempPos+31 downto tempPos+15)), 32));
 					
-						o(tempPos+31 downto tempPos)<= std_logic_vector(resize(signed(testMult(tempPos+31 downto tempPos))- signed(r1(tempPos+31 downto tempPos)), 32)); 
+						o(tempPos+31 downto tempPos)<= std_logic_vector(resize(signed(r1(tempPos+31 downto tempPos))- signed(testMult(tempPos+31 downto tempPos)), 32)); 
 				end loop;	  
 					   
 					   
-				elsif (instrc(22 downto 20) = "100")	then
-						for i in 0 to 3 loop
+			elsif (instrc(22 downto 20) = "100")	then	 
+				
+				--	testMult(63 downto 0) := std_logic_vector(resize(signed(r3(31 downto 0))* signed(r2(31 downto 0)), 64));
+--					
+--				--	o(63 downto 0)<= std_logic_vector(resize(signed(testMult(63 downto 0))+ signed(r1(63 downto 0)), 64)); 
+					
+					for i in 0 to 1 loop
 					tempPos := 64 * i;
 					testMult(tempPos+63 downto tempPos) := std_logic_vector(resize(signed(r3(tempPos+31 downto tempPos))* signed(r2(tempPos+31 downto tempPos)), 64));
 					
 					o(tempPos+63 downto tempPos)<= std_logic_vector(resize(signed(testMult(tempPos+63 downto tempPos))+ signed(r1(tempPos+63 downto tempPos)), 64)); 
-					
-				--	tempRes128 := signed(r1(tempPos+63 downto tempPos))+signed(r2(tempPos+31 downto tempPos))*signed(r3(tempPos+31 downto tempPos));	
---					if(tempRes > max64) then 
---						o(tempPos+63 downto tempPos):= std_logic_vector(max64); 
---					elsif(tempRes < min64) then 
---						o(tempPos+63 downto tempPos):= std_logic_vector(min64); 
---					else 								  
---					   o(tempPos+63 downto tempPos):=  std_logic_vector(tempRes128(tempPos+63 downto tempPos)); 
---					  end if;
+								
 				end loop;	 
 					   
 				elsif (instrc(22 downto 20) = "101")	then
-						for i in 0 to 3 loop
+						for i in 0 to 1 loop
 					tempPos := 64 * i;		 
 					
 				
 					testMult(tempPos+63 downto tempPos) := std_logic_vector(resize(signed(r3(tempPos+63 downto tempPos+31))* signed(r2(tempPos+63 downto tempPos+31)), 64));
 					
 					o(tempPos+63 downto tempPos)<= std_logic_vector(resize(signed(testMult(tempPos+63 downto tempPos))+ signed(r1(tempPos+63 downto tempPos)), 64)); 
-				--	tempRes128 := signed(r1(tempPos+63 downto tempPos))+signed(r2(tempPos+63 downto tempPos+31))*signed(r3(tempPos+63 downto tempPos+31));	
---					
---					
---					if(tempRes > max64) then 
---						o(tempPos+63 downto tempPos):= std_logic_vector(max64); 
---					elsif(tempRes < min64) then 
---						o(tempPos+63 downto tempPos):= std_logic_vector(min64); 
---					else 	
---					   o(tempPos+63 downto tempPos):=  std_logic_vector(tempRes128(tempPos+63 downto tempPos)); 
---					   end if;
+		
 				end loop;	
 					   
 				elsif (instrc(22 downto 20) = "110")	then
-						for i in 0 to 3 loop
+						for i in 0 to 1 loop
 					tempPos := 64 * i;	  
 					testMult(tempPos+63 downto tempPos) := std_logic_vector(resize(signed(r3(tempPos+31 downto tempPos))* signed(r2(tempPos+31 downto tempPos)), 64));
 					
-					o(tempPos+63 downto tempPos)<= std_logic_vector(resize(signed(testMult(tempPos+63 downto tempPos))- signed(r1(tempPos+63 downto tempPos)), 64)); 
-					tempRes128 := signed(r1(tempPos+63 downto tempPos))-signed(r2(tempPos+31 downto tempPos))*signed(r3(tempPos+31 downto tempPos));	
+					o(tempPos+63 downto tempPos)<= std_logic_vector(resize(signed(r1(tempPos+63 downto tempPos))- signed(testMult(tempPos+63 downto tempPos)), 64)); 
+						
 			
 				end loop;	
 				
 				elsif (instrc(22 downto 20) = "111")	then
-						for i in 0 to 3 loop
+						for i in 0 to 1 loop
 					tempPos := 64 * i;
 					
 					testMult(tempPos+63 downto tempPos) := std_logic_vector(resize(signed(r3(tempPos+63 downto tempPos+31))* signed(r2(tempPos+63 downto tempPos+31)), 64));
 					
-					o(tempPos+63 downto tempPos)<= std_logic_vector(resize(signed(testMult(tempPos+63 downto tempPos))- signed(r1(tempPos+63 downto tempPos)), 64)); 
+					o(tempPos+63 downto tempPos)<= std_logic_vector(resize(signed(r1(tempPos+63 downto tempPos))- signed(testMult(tempPos+63 downto tempPos)), 64)); 
 					
 				end loop;	
 				   	
@@ -341,14 +377,14 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 ----								temp := to_integer(temp_int2 (5 downto 0));	  --- number to rotate 
 ----								o <=  temp ror temp;
 								
-							elsif (instrc(18 downto 15) = "1110") then		--sub word
+								elsif (instrc(18 downto 15) = "1110") then		--sub word
 									for i in 0 to 3 loop
 										tempPos := 32 * i;
 										o(tempPos+31 downto tempPos)<=  std_logic_vector(unsigned(r1(tempPos+31 downto tempPos)) - unsigned(r2(tempPos+31 downto tempPos))); 
 									end loop;
 						
 							 
-				
+									   end if;
 		end if;	 
 		end if;
 		end if;
