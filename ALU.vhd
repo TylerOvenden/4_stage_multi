@@ -85,6 +85,7 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 			
 			
 			
+						
 			--r4	
 				elsif 	(instrc(24 downto 23) = "10") then 	
 			
@@ -104,53 +105,66 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 					tempPos := 32 * i;	 						
 					
 					
-					testMult(tempPos+32 downto tempPos) := std_logic_vector(resize(signed(r3(tempPos+15 downto tempPos))* signed(r2(tempPos+15 downto tempPos)), 33));
-					testRes(tempPos+32 downto tempPos) := std_logic_vector(resize(signed(testMult(tempPos+32 downto tempPos))+ signed(r1(tempPos+31 downto tempPos)), 33)); 
+					testMult1(32 downto 0) := std_logic_vector(resize(signed(r3(tempPos+15 downto tempPos))* signed(r2(tempPos+15 downto tempPos)), 33));
+			testRes1(32 downto 0) := std_logic_vector(resize(signed(testMult1(32 downto 0))+ signed(r1(tempPos+31 downto tempPos)), 33)); 
+				--	testRes1(32 downto 0) := std_logic_vector(resize(signed(r1(tempPos+31 downto tempPos))+  (signed(r3(tempPos+15 downto tempPos))* signed(r2(tempPos+15 downto tempPos))), 33)); 
 					
-					
-					if(signed(testRes(tempPos+32 downto tempPos)) >   signed( max32)) then
+					if(signed(testRes1(32 downto 0)) >   signed( max32)) then		   
+						
+						
+					--	if testRes1(32) = '1' then
 						o(tempPos+31 downto tempPos)<= "01111111111111111111111111111111";		 
 						
-					elsif(signed(testRes(tempPos+32 downto tempPos)) <  signed( min32)) then
+					elsif(signed(testRes1(32 downto 0)) <  signed( min32)) then
 						o(tempPos+31 downto tempPos)<= "10000000000000000000000000000000";		
 							   
 					else											 
 						
-						o(tempPos+31 downto tempPos)<= testRes(tempPos+31 downto tempPos);
+						o(tempPos+31 downto tempPos)<= testRes1(31 downto 0);
 					
 					 end if;
 				end loop;						 
 			--		o(31 downto 0) <= std_logic_vector(resize(signed(r3(15 downto 0))+ signed(r1(31 downto 0)), 32)); 
 					
 					 
-					  
+   		  
+				
+				
 				elsif (instrc(22 downto 20) = "001")	then 		  
 					for i in 0 to 3 loop
 						tempPos := 32 * i;	 					
 						
 						
-					testMult(tempPos+32 downto tempPos) := std_logic_vector(resize(signed(r3(tempPos+31 downto tempPos+15))* signed(r2(tempPos+31 downto tempPos+15)), 33));
-					testRes(tempPos+32 downto tempPos) := std_logic_vector(resize(signed(testMult(tempPos+32 downto tempPos))+ signed(r1(tempPos+31 downto tempPos)), 33)); 
+						
+		--			testMult1(32 downto 0) := std_logic_vector(resize(signed(r3(tempPos+31 downto tempPos+15))* signed(r2(tempPos+31 downto tempPos+15)), 33));
+		--	testRes1(32 downto 0) := std_logic_vector(resize(signed(testMult1(32 downto 0))+ signed(r1(tempPos+31 downto tempPos)), 33)); 	
+						
+					testMult1(32 downto 0) := std_logic_vector(resize(signed(r3(tempPos+31 downto tempPos+16))* signed(r2(tempPos+31 downto tempPos+16)), 33));
+					testRes1(32 downto 0) := std_logic_vector(resize(signed(testMult1(32 downto 0))+ signed(r1(tempPos+31 downto tempPos)), 33)); 
 					
 					
-						if(signed(testRes(tempPos+32 downto tempPos)) >   signed( max32)) then
+						if(signed(testRes1(32 downto 0)) >   signed( max32)) then		   
+						
+						
+					--	if testRes1(32) = '1' then
 						o(tempPos+31 downto tempPos)<= "01111111111111111111111111111111";		 
 						
-					elsif(signed(testRes(tempPos+32 downto tempPos)) <  signed( min32)) then
-						o(tempPos+31 downto tempPos)<= "10000000000000000000000000000000";			
+					elsif(signed(testRes1(32 downto 0)) <  signed( min32)) then
+						o(tempPos+31 downto tempPos)<= "10000000000000000000000000000000";		
 							   
 					else											 
 						
-						o(tempPos+31 downto tempPos)<= testRes(tempPos+31 downto tempPos);
+						o(tempPos+31 downto tempPos)<= testRes1(31 downto 0);
 						
 						
-					--	testMult(tempPos+31 downto tempPos) := std_logic_vector(resize(signed(r2(tempPos+31 downto tempPos+15))* signed(r3(tempPos+31 downto tempPos+15)), 32));
---					
---						o(tempPos+31 downto tempPos)<= std_logic_vector(resize(signed(testMult(tempPos+31 downto tempPos))+ signed(r1(tempPos+31 downto tempPos)), 32)); 
+				
 						end if;
 					
 					
 				end loop;	
+				
+				
+				
 				
 				elsif (instrc(22 downto 20) = "010")	then 
 						
@@ -201,7 +215,7 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 						tempPos := 32 * i;	 					
 						
 						
-					testMult(tempPos+32 downto tempPos) := std_logic_vector(resize(signed(r3(tempPos+31 downto tempPos+15))* signed(r2(tempPos+31 downto tempPos+15)), 33));
+					testMult(tempPos+32 downto tempPos) := std_logic_vector(resize(signed(r3(tempPos+31 downto tempPos+16))* signed(r2(tempPos+31 downto tempPos+16)), 33));
 					testRes(tempPos+32 downto tempPos) := std_logic_vector(resize(signed(r1(tempPos+31 downto tempPos))- signed(testMult(tempPos+32 downto tempPos)), 33)); 
 					
 					
@@ -256,12 +270,7 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 					
 					end if;
 					
-					
-	              --
---					tempPos := 64 * i;
---					testMult(tempPos+63 downto tempPos) := std_logic_vector(resize(signed(r3(tempPos+31 downto tempPos))* signed(r2(tempPos+31 downto tempPos)), 64));
---					
---					o(tempPos+63 downto tempPos)<= std_logic_vector(resize(signed(testMult(tempPos+63 downto tempPos))+ signed(r1(tempPos+63 downto tempPos)), 64)); 
+
 								
 				end loop;	 
 					   
@@ -272,7 +281,7 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 						tempPos := 64 * i;	 						
 					
 					
-					testMult(tempPos+64 downto tempPos) := std_logic_vector(resize(signed(r3(tempPos+63 downto tempPos+31))* signed(r2(tempPos+63 downto tempPos+31)), 65));
+					testMult(tempPos+64 downto tempPos) := std_logic_vector(resize(signed(r3(tempPos+63 downto tempPos+32))* signed(r2(tempPos+63 downto tempPos+32)), 65));
 					testRes(tempPos+64 downto tempPos) := std_logic_vector(resize(signed(testMult(tempPos+64 downto tempPos))+ signed(r1(tempPos+63 downto tempPos)), 65)); 
 					
 					
@@ -290,16 +299,7 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 					end if;
 					
 					
-					
-					
-					--
---						for i in 0 to 1 loop
---					tempPos := 64 * i;		 
---					
---				
---					testMult(tempPos+63 downto tempPos) := std_logic_vector(resize(signed(r3(tempPos+63 downto tempPos+31))* signed(r2(tempPos+63 downto tempPos+31)), 64));
---					
---					o(tempPos+63 downto tempPos)<= std_logic_vector(resize(signed(testMult(tempPos+63 downto tempPos))+ signed(r1(tempPos+63 downto tempPos)), 64)); 
+		
 		
 				end loop;	
 					   
@@ -348,7 +348,7 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 						tempPos := 64 * i;	 						
 					
 					
-					testMult(tempPos+64 downto tempPos) := std_logic_vector(resize(signed(r3(tempPos+63 downto tempPos+31))* signed(r2(tempPos+63 downto tempPos+31)), 65));
+					testMult(tempPos+64 downto tempPos) := std_logic_vector(resize(signed(r3(tempPos+63 downto tempPos+32))* signed(r2(tempPos+63 downto tempPos+32)), 65));
 					testRes(tempPos+64 downto tempPos) := std_logic_vector(resize(signed(r1(tempPos+63 downto tempPos))- signed(testMult(tempPos+64 downto tempPos)), 65)); 
 					
 					
@@ -373,21 +373,7 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 --					o(tempPos+63 downto tempPos)<= std_logic_vector(resize(signed(testMult(tempPos+63 downto tempPos))+ signed(r1(tempPos+63 downto tempPos)), 64)); 
 								
 				end loop;
-					
-					
-					--
---						for i in 0 to 1 loop
---					tempPos := 64 * i;
---					
---					testMult(tempPos+63 downto tempPos) := std_logic_vector(resize(signed(r3(tempPos+63 downto tempPos+31))* signed(r2(tempPos+63 downto tempPos+31)), 64));
---					
---					o(tempPos+63 downto tempPos)<= std_logic_vector(resize(signed(r1(tempPos+63 downto tempPos))- signed(testMult(tempPos+63 downto tempPos)), 64)); 
---					
---				end loop;	
-				   	
-					
-				   	
-		
+			
 			
 ----------------------------------------------------------------------------------------
 ---------------------r3 instructions----------------------------------------------------------------				
