@@ -5,36 +5,4 @@ MESSAGE "Compile Architecture "ALU_Behavior" of Entity "ALU""
 MESSAGE "File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 
 MESSAGE "Compile Entity "alu_tb"" 
 MESSAGE "Compile Architecture "tb" of Entity "alu_tb"" 
-ERROR COMP96_0110: "Signal cannot be the target of a variable assignment." "B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 47 1
-ERROR COMP96_0367: "Improper array length (8). Expected length is 16." "B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 47 23
-ERROR COMP96_0305: "Cannot find function "to_stdlogicvector" for these actuals." "B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 48 22
-ERROR COMP96_0077: "Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'." "B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 48 22
-ERROR COMP96_0305: "Cannot find function "to_stdlogicvector" for these actuals." "B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 49 21
-ERROR COMP96_0077: "Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'." "B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 49 21
-ERROR COMP96_0305: "Cannot find function "to_stdlogicvector" for these actuals." "B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 50 21
-ERROR COMP96_0077: "Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'." "B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 50 21
-ERROR COMP96_0305: "Cannot find function "to_stdlogicvector" for these actuals." "B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 51 21
-ERROR COMP96_0077: "Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'." "B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 51 21
-ERROR COMP96_0305: "Cannot find function "to_stdlogicvector" for these actuals." "B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 52 21
-ERROR COMP96_0077: "Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'." "B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 52 21
-ERROR COMP96_0305: "Cannot find function "to_stdlogicvector" for these actuals." "B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 53 21
-ERROR COMP96_0077: "Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'." "B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 53 21
-ERROR COMP96_0305: "Cannot find function "to_stdlogicvector" for these actuals." "B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 54 20
-ERROR COMP96_0077: "Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'." "B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 54 20
-ERROR COMP96_0305: "Cannot find function "to_stdlogicvector" for these actuals." "B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 57 23
-ERROR COMP96_0077: "Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'." "B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 57 23
-ERROR COMP96_0305: "Cannot find function "to_stdlogicvector" for these actuals." "B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 58 22
-ERROR COMP96_0077: "Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'." "B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 58 22
-ERROR COMP96_0305: "Cannot find function "to_stdlogicvector" for these actuals." "B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 59 21
-ERROR COMP96_0077: "Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'." "B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 59 21
-ERROR COMP96_0305: "Cannot find function "to_stdlogicvector" for these actuals." "B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 60 21
-ERROR COMP96_0077: "Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'." "B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 60 21
-ERROR COMP96_0305: "Cannot find function "to_stdlogicvector" for these actuals." "B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 61 21
-ERROR COMP96_0077: "Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'." "B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 61 21
-ERROR COMP96_0305: "Cannot find function "to_stdlogicvector" for these actuals." "B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 62 21
-ERROR COMP96_0077: "Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'." "B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 62 21
-ERROR COMP96_0305: "Cannot find function "to_stdlogicvector" for these actuals." "B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 63 21
-ERROR COMP96_0077: "Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'." "B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 63 21
-ERROR COMP96_0305: "Cannot find function "to_stdlogicvector" for these actuals." "B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 64 20
-ERROR COMP96_0077: "Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'." "B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd" 64 20
-FAILURE "Compile failure 32 Errors 0 Warnings  Analysis time :  31.0 [ms]" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]" 

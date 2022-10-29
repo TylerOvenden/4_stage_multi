@@ -90,7 +90,7 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 			
 					
 					
-					--Signed Integer Multiply-Add Low with Saturation
+				--Signed Integer Multiply-Add Low with Saturation
 				--y low 16-bit-fields for rs3, rs2
 				if (instrc(22 downto 20) = "000")	then 
 					--using this to check overflow
@@ -393,7 +393,7 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 		
 			
 ----------------------------------------------------------------------------------------
----------------------r3 instrcs----------------------------------------------------------------				
+---------------------r3 instructions----------------------------------------------------------------				
 						
 						elsif 	(instrc(24 downto 23) = "11") then 	
 						 	if instrc(18 downto 15) = "0000" then  --nop
