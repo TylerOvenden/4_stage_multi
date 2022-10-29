@@ -1,2 +1,2 @@
-.\src\alu.vhd
 .\src\alu_tb.vhd
+.\src\ALU.vhd

@@ -64,8 +64,8 @@ constant min64: std_logic_vector(63 downto 0) := X"8000000000000000";
 
 
 variable counter: integer:=0; 		--counter for counting ones
-variable tempPos : integer;  	
-variable temp : integer; -- general temp variable, currently using in ROTW	
+variable tempPos : integer:=0;  	
+variable temp : std_logic_vector(31 downto 0); -- general temp variable, currently using in ROTW	
 	
 	
 	begin  		
@@ -369,15 +369,15 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 								
 							end loop;
 							
-							--elsif (instrc (18 downto 15) = "1101") then  --ROTW rotate bits in word 
---							--	tempPos := 	to_integer(instrc(14 downto 10));
-----								temp_int1 := to_integer(signed(r1(tempPos+31 downto tempPos)));  --r1
-----								tempPos := 	to_integer(instrc (9 downto 5));					 
-----								temp_int2 := to_integer(signed(r2(tempPos+32 downto tempPos)));	 --r2
-----								temp := to_integer(temp_int2 (5 downto 0));	  --- number to rotate 
-----								o <=  temp ror temp;
+							elsif (instrc (18 downto 15) = "1101") then  --ROTW rotate bits in word 
+								for i in 0 to 3 loop
+									tempPos := 32 * i;
+									temp := r1(temppos + 31 downto temppos);
+									temp_int1 := to_integer(unsigned(r2(temppos + 5 downto temppos)));
+									o(temppos+31 downto temppos)<= std_logic_vector(unsigned(temp) ror temp_int1);
 								
-								elsif (instrc(18 downto 15) = "1110") then		--sub word
+								end loop;
+							elsif (instrc(18 downto 15) = "1110") then		--sub word
 									for i in 0 to 3 loop
 										tempPos := 32 * i;
 										o(tempPos+31 downto tempPos)<=  std_logic_vector(unsigned(r1(tempPos+31 downto tempPos)) - unsigned(r2(tempPos+31 downto tempPos))); 

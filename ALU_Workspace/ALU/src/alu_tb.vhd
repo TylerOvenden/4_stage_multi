@@ -23,9 +23,6 @@ begin
 --r3 <= std_logic_vector(to_unsigned(40, 128));
 
 --load im 	
-wait for clk; 
-instrc <= "0000011101001001001000000"; -- imm	0111010010010010 = hex 7492, position 0		
-wait for clk;		 
 
 
 --r4 register set up
@@ -60,6 +57,10 @@ r3(31 downto 16) 	<= std_logic_vector(to_signed(20, 16));
 r3(15 downto 0) 	<= std_logic_vector(to_signed(20, 16));
 
 
+wait for clk;
+
+instrc <= "0000011101001001001000000"; -- imm	0111010010010010 = hex 7492, position 0
+wait for clk;
 --R4 Instructions
 --expected result
 --last 127 to  bit field has overflow
