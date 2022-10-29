@@ -707,3 +707,213 @@ run
 # VSIM: Simulation has finished. There are no more test vectors to simulate.
 endsim
 # VSIM: Simulation has finished.
+asim -O5 +access +r +m+alu_tb alu_tb tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+asim -O5 +access +r +m+alu_tb alu_tb tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work ALU -2002  $dsn/src/alu.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_Behavior" of Entity "ALU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5606 kB (elbread=427 elab2=5039 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location B:\Stony Brook\ESE345\4_stage_multi\ALU_Workspace\ALU\src\wave.asdb
+#  1:01 AM, Saturday, October 29, 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/wave.asdb'.
+run
+# RUNTIME: Info: RUNTIME_0142 alu_tb.vhd (120): finish called.
+# KERNEL: Time: 30 us,  Iteration: 0,  Instance: /alu_tb,  Process: line__18.
+# KERNEL: stopped at time: 30 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+# Design: Design alu already active.
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd
+# Compile Entity "alu_tb"
+# Compile Architecture "tb" of Entity "alu_tb"
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_Behavior" of Entity "ALU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+# Design: Design alu already active.
+acom -O3 -e 100 -work ALU -2002  $dsn/src/ALU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_Behavior" of Entity "ALU"
+# Error: COMP96_0617: ALU.vhd : (539, 18): Assignment target incompatible with right side. Cannot convert 'STD_LOGIC_VECTOR' to 'INTEGER'.
+# Error: COMP96_0149: ALU.vhd : (541, 67): Explicit type conversions are allowed between closely related types only.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
+asim -O5 +access +r +m+alu_tb alu_tb tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work ALU -2002  $dsn/src/alu.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_Behavior" of Entity "ALU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5617 kB (elbread=427 elab2=5050 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location B:\Stony Brook\ESE345\4_stage_multi\ALU_Workspace\ALU\src\wave.asdb
+#  1:04 AM, Saturday, October 29, 2022
+#  Simulation has been initialized
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+alu_tb alu_tb tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5617 kB (elbread=427 elab2=5050 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location B:\Stony Brook\ESE345\4_stage_multi\ALU_Workspace\ALU\src\wave.asdb
+#  1:04 AM, Saturday, October 29, 2022
+#  Simulation has been initialized
+# VSIM: 5 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/wave.asdb'.
+run
+# RUNTIME: Info: RUNTIME_0142 alu_tb.vhd (120): finish called.
+# KERNEL: Time: 30 us,  Iteration: 0,  Instance: /alu_tb,  Process: line__18.
+# KERNEL: stopped at time: 30 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+alu_tb alu_tb tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work ALU -2002  $dsn/src/alu.vhd $dsn/src/alu_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_Behavior" of Entity "ALU"
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd
+# Compile Entity "alu_tb"
+# Compile Architecture "tb" of Entity "alu_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5616 kB (elbread=427 elab2=5049 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location B:\Stony Brook\ESE345\4_stage_multi\ALU_Workspace\ALU\src\wave.asdb
+#  1:25 AM, Saturday, October 29, 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/wave.asdb'.
+run
+# RUNTIME: Info: RUNTIME_0142 alu_tb.vhd (120): finish called.
+# KERNEL: Time: 15 us,  Iteration: 0,  Instance: /alu_tb,  Process: line__18.
+# KERNEL: stopped at time: 15 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+alu_tb alu_tb tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work ALU -2002  $dsn/src/alu_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/alu_tb.vhd
+# Compile Entity "alu_tb"
+# Compile Architecture "tb" of Entity "alu_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5617 kB (elbread=427 elab2=5050 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location B:\Stony Brook\ESE345\4_stage_multi\ALU_Workspace\ALU\src\wave.asdb
+#  1:26 AM, Saturday, October 29, 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'B:/Stony Brook/ESE345/4_stage_multi/ALU_Workspace/ALU/src/wave.asdb'.
+run
+# RUNTIME: Info: RUNTIME_0142 alu_tb.vhd (120): finish called.
+# KERNEL: Time: 30 us,  Iteration: 0,  Instance: /alu_tb,  Process: line__18.
+# KERNEL: stopped at time: 30 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.

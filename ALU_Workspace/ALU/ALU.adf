@@ -16,7 +16,7 @@ LANGUAGE=VHDL
 REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=
-fileopenfolder=B:\Stony Brook\ESE345\4_stage_multi\ALU_Workspace\ALU\src
+fileopenfolder=B:\Stony Brook\ESE345\4_stage_multi
 [Files]
 /alu_tb.vhd=-1
 /ALU.vhd=-1
@@ -24,6 +24,6 @@ fileopenfolder=B:\Stony Brook\ESE345\4_stage_multi\ALU_Workspace\ALU\src
 .\src\alu_tb.vhd=VHDL Source Code
 .\src\ALU.vhd=VHDL Source Code
 [HierarchyViewer]
-HierarchyInformation=alu_tb|tb|0
+HierarchyInformation=alu|ALU_Behavior|0 alu_tb|tb|0
 ShowHide=ShowTopLevel
 Selected=

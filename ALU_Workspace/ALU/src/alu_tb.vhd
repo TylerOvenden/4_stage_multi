@@ -59,7 +59,7 @@ r3(15 downto 0) 	<= std_logic_vector(to_signed(20, 16));
 
 wait for clk;
 
-instrc <= "0000011101001001001000000"; -- imm	0111010010010010 = hex 7492, position 0
+--instrc <= "0000011101001001001000000"; -- imm	0111010010010010 = hex 7492, position 0
 wait for clk;
 --R4 Instructions
 --expected result
