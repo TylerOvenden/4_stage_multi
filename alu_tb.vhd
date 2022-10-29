@@ -1,3 +1,4 @@
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -18,74 +19,134 @@ begin
 		process begin	
 --generated random 128 numbers		 
 
-r1 <= std_logic_vector(to_unsigned(20, 128));	 
-r2 <= std_logic_vector(to_unsigned(30, 128));
-r3 <= std_logic_vector(to_unsigned(40, 128));
---r1 <= "01011111100001111101100100000011110110000111101101100111001011001111000100100001100001010000110011111111111111111111111111111111";
---r2 <= "11011101100001000100110010111100010111110011101100001111010100111000000011110001110001000111100010111101110010000010100001010111";
---r3 <= "10110111001101010111111101101110010000000101001110001001101000110101001001011101101011100011011000110101101110100110101001101010";
---
+--r1 <= std_logic_vector(to_unsigned(20, 128));	 
+--r2 <= std_logic_vector(to_unsigned(30, 128));
+--r3 <= std_logic_vector(to_unsigned(40, 128));
+
 --load im 	
 
+
+--r4 register set up
+--r1
+--r1(127 downto 112)	<= std_logic_vector(to_signed(10, 16));  
+--r1(111 downto 96) 	<= std_logic_vector(to_signed(10, 16));	
+--r1(95 downto 80) 	<= std_logic_vector(to_signed(10, 16));		  
+r1(127 downto 96) 	<= std_logic_vector(to_signed(-2147483648, 32));		 
+
+r1(95 downto 64) 	<= std_logic_vector(to_signed(2147483647, 32));	
+--r1(79 downto 64) 	<= std_logic_vector(to_signed(10, 16));	
+r1(63 downto 48) 	<= std_logic_vector(to_signed(10, 16));
+r1(47 downto 32) 	<= std_logic_vector(to_signed(10, 16));
+r1(31 downto 16) 	<= std_logic_vector(to_signed(10, 16));
+r1(15 downto 0) 	<= std_logic_vector(to_signed(10, 16));
+
+--r2
+r2(127 downto 112)	<= std_logic_vector(to_signed(32767, 16));	--for underflow
+r2(111 downto 96) 	<= std_logic_vector(to_signed(32767, 16));	--for underflow
+r2(95 downto 80) 	<= std_logic_vector(to_signed(32767, 16));	--for overflow
+r2(79 downto 64) 	<= std_logic_vector(to_signed(32767, 16));	--for overflow
+r2(63 downto 48) 	<= std_logic_vector(to_signed(-2, 16));
+r2(47 downto 32) 	<= std_logic_vector(to_signed(-2, 16));
+r2(31 downto 16) 	<= std_logic_vector(to_signed(2, 16));
+r2(15 downto 0) 	<= std_logic_vector(to_signed(2, 16)); 
+
+--r2
+r3(127 downto 112)	<= std_logic_vector(to_signed(-32768, 16));--for underflow
+r3(111 downto 96) 	<= std_logic_vector(to_signed(-32768, 16));--for underflow
+r3(95 downto 80) 	<= std_logic_vector(to_signed(32767, 16)); --for overflow
+r3(79 downto 64) 	<= std_logic_vector(to_signed(32767, 16)); --for overflow
+r3(63 downto 48) 	<= std_logic_vector(to_signed(20, 16));
+r3(47 downto 32) 	<= std_logic_vector(to_signed(20, 16));
+r3(31 downto 16) 	<= std_logic_vector(to_signed(20, 16));
+r3(15 downto 0) 	<= std_logic_vector(to_signed(20, 16));
+
+
+wait for clk; 
 instrc <= "0000011101001001001000000"; -- imm	0111010010010010 = hex 7492, position 0		
 wait for clk;		 
 
- --testing for overflow
---r1 <= std_logic_vector(to_unsigned(4294967295, 128));	 
-r1 <= "01011111100001111101100100000011110110000111101101100111001011001111000100100001100001010000110011111111111111111111111111111111";
-r2 <= "01011111100001111101100100000011110110000111101101100111001011001111000100100001100001010000110011111111111111111111111111111111";
-r3 <= "01011111100001111101100100000011110110000111101101100111001011001111000100100001100001010000110011111111111111111111111111111111";		  
 
---r4 00
-
-
---r1 <= "01011111100001111101100100000011110110000111101101100111001011001111000100100001100001010000110011111111111111111111111111111111";
---r2 <= "11011101100001000100110010111100010111110011101100001111010100111000000011110001110001000111100010111101110010000010100001010111";
---r3 <= "10110111001101010111111101101110010000000101001110001001101000110101001001011101101011100011011000110101101110100110101001101010";
-
-	 
+--R4 Instructions
+--expected result
+--last 127 to  bit field has overflow
+--next 32 bit field has underflow
+--next 32 bit field has regular negative
+--next regular multiply add
 
 
-instrc <= "1000000000000000000000000"; -- 32 bit Signed Integer Multiply-Add Low with Saturation
-wait for clk;		
+-- 32 bit Signed Integer Multiply-Add low with Saturation
 
-
-
-
---r4 00
-instrc <= "1000100000000000000000000"; -- 32 bit Signed Integer Multiply-Add high with Saturation
+instrc <= "1000100000000000000000000"; 
 wait for clk;																			 
 
---r4 00
-instrc <= "1001000000000000000000000"; -- Signed Integer Multiply-Subtract Low with Saturation
-wait for clk;		 
 
 
+-- 32 bit Signed Integer Multiply-Add Low with Saturation 
+instrc <= "1000000000000000000000000"; 
+wait for clk;							
 
-instrc <= "1001100000000000000000000"; -- Signed Integer Multiply-Subtract High with Saturation:
+
+-- 32 bit Signed Integer Multiply-Add high with Saturation
+instrc <= "1001000000000000000000000"; 
+wait for clk;	
+
+-- 32 bit Signed Integer Multiply-Add high with Saturation
+instrc <= "1001100000000000000000000"; 
 wait for clk;	
 
 
-instrc <= "1010000000000000000000000"; -- Signed Long Integer Multiply-Add Low with Saturation
+
+--r1(127 downto 96) 	<= std_logic_vector(to_signed(-2147483648, 32));	
+r1(127 downto 96) 	<= std_logic_vector(to_signed(2147483647, 32));																  
+r1(95 downto 64) 	<= std_logic_vector(to_signed(2147483647, 32));	   
+r1(95) <= '1';
+
+r2(111 downto 96) 	<= std_logic_vector(to_signed(65535, 16));	--for underflow	  
+r3(111 downto 96) 	<= std_logic_vector(to_signed(65535, 16));	--for underflow	  	
+r3(111 downto 96) 	<= std_logic_vector(to_signed(0, 16));	--for underflow
+-- 64 bit signed   Integer Multiply-Add low with Saturation
+instrc <= "1010000000000000000000000"; 
 wait for clk;	
 
-instrc <= "1010100000000000000000000"; -- Signed Long Integer Multiply-Add Low with Saturation
-wait for clk;
 
 
-instrc <= "1011000000000000000000000"; -- Signed Long Integer Multiply-Subtract Low with Saturation:
-wait for clk;		 
+--r3(instr) register set up
+--r1
+r1(127 downto 112)	<= std_logic_vector(to_signed(0, 16)); --for counting zeros  
+r1(111 downto 96) 	<= std_logic_vector(to_signed(0, 16));	
+r1(95 downto 80) 	<= std_logic_vector(to_signed(-32768, 16));	
+r1(79 downto 64) 	<= std_logic_vector(to_signed(10, 16));	
+r1(63 downto 48) 	<= std_logic_vector(to_signed(10, 16));
+r1(47 downto 32) 	<= std_logic_vector(to_signed(10, 16));
+r1(31 downto 16) 	<= std_logic_vector(to_signed(10, 16));
+r1(15 downto 0) 	<= std_logic_vector(to_signed(10, 16));
 
+--r2
+r2(127 downto 112)	<= std_logic_vector(to_signed(0, 16));
+r2(111 downto 96) 	<= std_logic_vector(to_signed(10, 16));	
+r2(95 downto 80) 	<= std_logic_vector(to_signed(32767, 16));	
+r2(79 downto 64) 	<= std_logic_vector(to_signed(32767, 16));	
+r2(63 downto 48) 	<= std_logic_vector(to_signed(-2, 16));
+r2(47 downto 32) 	<= std_logic_vector(to_signed(-2, 16));
+r2(31 downto 16) 	<= std_logic_vector(to_signed(2, 16));
+r2(15 downto 0) 	<= std_logic_vector(to_signed(2, 16)); 
 
-instrc <= "1011100000000000000000000"; -- Signed Long Integer Multiply-Subtract High with Saturation
-wait for clk;		 
-
-
+--r3
+r3(127 downto 112)	<= std_logic_vector(to_signed(-32768, 16));
+r3(111 downto 96) 	<= std_logic_vector(to_signed(-32768, 16));
+r3(95 downto 80) 	<= std_logic_vector(to_signed(32767, 16)); 
+r3(79 downto 64) 	<= std_logic_vector(to_signed(32767, 16));
+r3(63 downto 48) 	<= std_logic_vector(to_signed(20, 16));
+r3(47 downto 32) 	<= std_logic_vector(to_signed(20, 16));
+r3(31 downto 16) 	<= std_logic_vector(to_signed(20, 16));
+r3(15 downto 0) 	<= std_logic_vector(to_signed(20, 16));
 
 	std.env.finish;
 		
 	end process;	  
 	
 end tb;
+			 	
+		
 			 	
 		
