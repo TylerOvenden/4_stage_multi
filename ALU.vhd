@@ -71,7 +71,7 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 	begin  		
 		
 		
-		--load immeditate
+				--load immeditate
 		if instrc(24) = '0' then
 			
 			
@@ -90,7 +90,7 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 			
 					
 					
-				--Signed Integer Multiply-Add Low with Saturation
+					--Signed Integer Multiply-Add Low with Saturation
 				--y low 16-bit-fields for rs3, rs2
 				if (instrc(22 downto 20) = "000")	then 
 					--using this to check overflow
@@ -108,10 +108,10 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 					testRes(tempPos+32 downto tempPos) := std_logic_vector(resize(signed(testMult(tempPos+31 downto tempPos))+ signed(r1(tempPos+31 downto tempPos)), 33)); 
 					
 					
-					if(testRes(tempPos+32 downto tempPos) >   max32) then
+					if(signed(testRes(tempPos+32 downto tempPos)) >   signed( max32)) then
 						o(tempPos+31 downto tempPos)<= "01111111111111111111111111111111";		 
 						
-					elsif(testRes(tempPos+32 downto tempPos) <   min32) then
+					elsif(signed(testRes(tempPos+32 downto tempPos)) <  signed( min32)) then
 						o(tempPos+31 downto tempPos)<= "10000000000000000000000000000000";		
 							   
 					else											 
@@ -133,11 +133,11 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 					testRes(tempPos+32 downto tempPos) := std_logic_vector(resize(signed(testMult(tempPos+31 downto tempPos))+ signed(r1(tempPos+31 downto tempPos)), 33)); 
 					
 					
-					if(testRes(tempPos+32 downto tempPos) >   max32) then
+						if(signed(testRes(tempPos+32 downto tempPos)) >   signed( max32)) then
 						o(tempPos+31 downto tempPos)<= "01111111111111111111111111111111";		 
 						
-					elsif(testRes(tempPos+32 downto tempPos) <   min32) then
-						o(tempPos+31 downto tempPos)<= "10000000000000000000000000000000";		
+					elsif(signed(testRes(tempPos+32 downto tempPos)) <  signed( min32)) then
+						o(tempPos+31 downto tempPos)<= "10000000000000000000000000000000";			
 							   
 					else											 
 						
@@ -169,10 +169,10 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 					testRes(tempPos+32 downto tempPos) := std_logic_vector(resize(signed(r1(tempPos+31 downto tempPos))- signed(testMult(tempPos+31 downto tempPos)), 33)); 
 					
 					
-					if(testRes(tempPos+32 downto tempPos) >   max32) then
+						if(signed(testRes(tempPos+32 downto tempPos)) >   signed( max32)) then
 						o(tempPos+31 downto tempPos)<= "01111111111111111111111111111111";		 
 						
-					elsif(testRes(tempPos+32 downto tempPos) <   min32) then
+					elsif(signed(testRes(tempPos+32 downto tempPos)) <  signed( min32)) then
 						o(tempPos+31 downto tempPos)<= "10000000000000000000000000000000";		
 							   
 					else											 
@@ -205,11 +205,11 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 					testRes(tempPos+32 downto tempPos) := std_logic_vector(resize(signed(r1(tempPos+31 downto tempPos))- signed(testMult(tempPos+31 downto tempPos)), 33)); 
 					
 					
-					if(testRes(tempPos+32 downto tempPos) >   max32) then
+						if(signed(testRes(tempPos+32 downto tempPos)) >   signed( max32)) then
 						o(tempPos+31 downto tempPos)<= "01111111111111111111111111111111";		 
 						
-					elsif(testRes(tempPos+32 downto tempPos) <   min32) then
-						o(tempPos+31 downto tempPos)<= "10000000000000000000000000000000";		
+					elsif(signed(testRes(tempPos+32 downto tempPos)) <  signed( min32)) then
+						o(tempPos+31 downto tempPos)<= "10000000000000000000000000000000";			
 							   
 					else											 
 						
@@ -243,13 +243,13 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 					testMult(tempPos+64 downto tempPos) := std_logic_vector(resize(signed(r3(tempPos+31 downto tempPos))* signed(r2(tempPos+31 downto tempPos)), 65));
 					testRes(tempPos+64 downto tempPos) := std_logic_vector(resize(signed(testMult(tempPos+63 downto tempPos))+ signed(r1(tempPos+63 downto tempPos)), 65)); 
 					
-					
-					if(testRes(tempPos+64 downto tempPos) >   max64) then
-						o(tempPos+63  downto tempPos)<= "0111111111111111111111111111111111111111111111111111111111111111";		 
+						if(signed(testRes(tempPos+64 downto tempPos)) >   signed( max64)) then
+						o(tempPos+63 downto tempPos)<= "0111111111111111111111111111111111111111111111111111111111111111";			 
 						
-					elsif(testRes(tempPos+64 downto tempPos) <   min64) then
+					elsif(signed(testRes(tempPos+64 downto tempPos)) <  signed( min64)) then
 						o(tempPos+63 downto tempPos)<= "1000000000000000000000000000000000000000000000000000000000000000";		
-							   
+					
+						   
 					else											 
 						
 						o(tempPos+63 downto tempPos)<= testRes(tempPos+63 downto tempPos);
@@ -276,11 +276,12 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 					testRes(tempPos+64 downto tempPos) := std_logic_vector(resize(signed(testMult(tempPos+63 downto tempPos))+ signed(r1(tempPos+63 downto tempPos)), 65)); 
 					
 					
-					if(testRes(tempPos+64 downto tempPos) >   max64) then
-						o(tempPos+63  downto tempPos)<= "0111111111111111111111111111111111111111111111111111111111111111";		 
+					if(signed(testRes(tempPos+64 downto tempPos)) >   signed( max64)) then
+						o(tempPos+63 downto tempPos)<= "0111111111111111111111111111111111111111111111111111111111111111";			 
 						
-					elsif(testRes(tempPos+64 downto tempPos) <   min64) then
+					elsif(signed(testRes(tempPos+64 downto tempPos)) <  signed( min64)) then
 						o(tempPos+63 downto tempPos)<= "1000000000000000000000000000000000000000000000000000000000000000";		
+				
 							   
 					else											 
 						
@@ -313,11 +314,12 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 					testRes(tempPos+64 downto tempPos) := std_logic_vector(resize(signed(r1(tempPos+63 downto tempPos))- signed(testMult(tempPos+63 downto tempPos)), 65)); 
 					
 					
-					if(testRes(tempPos+64 downto tempPos) >   max64) then
-						o(tempPos+63  downto tempPos)<= "0111111111111111111111111111111111111111111111111111111111111111";		 
+					if(signed(testRes(tempPos+64 downto tempPos)) >   signed( max64)) then
+						o(tempPos+63 downto tempPos)<= "0111111111111111111111111111111111111111111111111111111111111111";			 
 						
-					elsif(testRes(tempPos+64 downto tempPos) <   min64) then
+					elsif(signed(testRes(tempPos+64 downto tempPos)) <  signed( min64)) then
 						o(tempPos+63 downto tempPos)<= "1000000000000000000000000000000000000000000000000000000000000000";		
+					
 							   
 					else											 
 						
@@ -335,15 +337,7 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 				end loop;
 					
 					
-			--		
---						for i in 0 to 1 loop
---					tempPos := 64 * i;	  
---					testMult(tempPos+63 downto tempPos) := std_logic_vector(resize(signed(r3(tempPos+31 downto tempPos))* signed(r2(tempPos+31 downto tempPos)), 64));
---					
---					o(tempPos+63 downto tempPos)<= std_logic_vector(resize(signed(r1(tempPos+63 downto tempPos))- signed(testMult(tempPos+63 downto tempPos)), 64)); 
---						
---			
---				end loop;	
+			
 
 
 
@@ -358,11 +352,12 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 					testRes(tempPos+64 downto tempPos) := std_logic_vector(resize(signed(r1(tempPos+63 downto tempPos))- signed(testMult(tempPos+63 downto tempPos)), 65)); 
 					
 					
-					if(testRes(tempPos+64 downto tempPos) >   max64) then
-						o(tempPos+63  downto tempPos)<= "0111111111111111111111111111111111111111111111111111111111111111";		 
+					if(signed(testRes(tempPos+64 downto tempPos)) >   signed( max64)) then
+						o(tempPos+63 downto tempPos)<= "0111111111111111111111111111111111111111111111111111111111111111";			 
 						
-					elsif(testRes(tempPos+64 downto tempPos) <   min64) then
+					elsif(signed(testRes(tempPos+64 downto tempPos)) <  signed( min64)) then
 						o(tempPos+63 downto tempPos)<= "1000000000000000000000000000000000000000000000000000000000000000";		
+				
 							   
 					else											 
 						
@@ -371,24 +366,10 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 					end if;
 					
 					
-	              --
---					tempPos := 64 * i;
---					testMult(tempPos+63 downto tempPos) := std_logic_vector(resize(signed(r3(tempPos+31 downto tempPos))* signed(r2(tempPos+31 downto tempPos)), 64));
---					
---					o(tempPos+63 downto tempPos)<= std_logic_vector(resize(signed(testMult(tempPos+63 downto tempPos))+ signed(r1(tempPos+63 downto tempPos)), 64)); 
+	         
 								
 				end loop;
 					
-					
-					--
---						for i in 0 to 1 loop
---					tempPos := 64 * i;
---					
---					testMult(tempPos+63 downto tempPos) := std_logic_vector(resize(signed(r3(tempPos+63 downto tempPos+31))* signed(r2(tempPos+63 downto tempPos+31)), 64));
---					
---					o(tempPos+63 downto tempPos)<= std_logic_vector(resize(signed(r1(tempPos+63 downto tempPos))- signed(testMult(tempPos+63 downto tempPos)), 64)); 
---					
---				end loop;	
 				   	
 		
 			
