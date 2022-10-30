@@ -39,7 +39,8 @@ end ALU;
 
 --}} End of automatically maintained section
 
-architecture ALU_Behavior of ALU is	
+architecture ALU_Behavior of ALU is		
+
 begin
 process(r1, r2, r3, instrc)
 
@@ -48,11 +49,22 @@ process(r1, r2, r3, instrc)
 
 variable index : integer;	--temp variable used for storing load index
 variable tempRes: signed (63 downto 0);	   --need to be 64 for possible overflow   
-variable temp_int1:integer:=0;
+variable temp_int0:integer:=0;
+variable temp_int1:integer:=0;	
 variable temp_int2:integer:=0;	
-variable tempRes128: signed (127 downto 0);	
-variable testMult: std_logic_vector(130 downto 0);			
+variable temp_int3:integer:=0;	 
+
+
+variable tempRes128: signed (127 downto 0);		 
+
+
+
+variable testMult: std_logic_vector(130 downto 0);	
 variable testRes: std_logic_vector(130 downto 0);
+variable testRes1: std_logic_vector(32 downto 0);		 	
+variable testRes2: std_logic_vector(64 downto 0);	
+variable testMult1: std_logic_vector(32 downto 0);	
+variable testMult2: std_logic_vector(64 downto 0);	
 variable rd: std_logic_vector(127 downto 0);
 
 constant max16 : std_logic_vector(15 downto 0) := "0111111111111111";
@@ -60,19 +72,27 @@ constant min16 : std_logic_vector(15 downto 0) := "1000000000000000";
 constant max32: std_logic_vector(31 downto 0):= "01111111111111111111111111111111"; 	 
 constant min32: std_logic_vector(31 downto 0) := X"80000000";
 constant max64: std_logic_vector(63 downto 0):= X"7FFFFFFFFFFFFFFF"; 
-constant min64: std_logic_vector(63 downto 0) := X"8000000000000000";
+constant min64: std_logic_vector(63 downto 0) := X"8000000000000000";	 
+
+
+constant max16_int: integer:= 65535;
+constant min16_int: integer:= -65536;
+constant max32_int : integer := 2147483647; 
+constant min32_int : integer :=  -2147483648; 
+
+
 
 
 variable counter: integer:=0; 		--counter for counting ones
 variable tempPos : integer;  	
-variable temp : integer; -- general temp variable, currently using in ROTW	
+variable temp : std_logic_vector(31 downto 0); -- general temp variable, currently using in ROTW	
 	
 	
 	begin  		
 		
 		
-				--load immeditate
-			if instrc(24) = '0' then
+		--load immeditate
+		if instrc(24) = '0' then
 			
 			
 			o <= r1;
@@ -85,7 +105,6 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 			
 			
 			
-						
 			--r4	
 				elsif 	(instrc(24 downto 23) = "10") then 	
 			
@@ -135,9 +154,7 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 						tempPos := 32 * i;	 					
 						
 						
-						
-		--			testMult1(32 downto 0) := std_logic_vector(resize(signed(r3(tempPos+31 downto tempPos+15))* signed(r2(tempPos+31 downto tempPos+15)), 33));
-		--	testRes1(32 downto 0) := std_logic_vector(resize(signed(testMult1(32 downto 0))+ signed(r1(tempPos+31 downto tempPos)), 33)); 	
+		
 						
 					testMult1(32 downto 0) := std_logic_vector(resize(signed(r3(tempPos+31 downto tempPos+16))* signed(r2(tempPos+31 downto tempPos+16)), 33));
 					testRes1(32 downto 0) := std_logic_vector(resize(signed(testMult1(32 downto 0))+ signed(r1(tempPos+31 downto tempPos)), 33)); 
@@ -373,12 +390,16 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 --					o(tempPos+63 downto tempPos)<= std_logic_vector(resize(signed(testMult(tempPos+63 downto tempPos))+ signed(r1(tempPos+63 downto tempPos)), 64)); 
 								
 				end loop;
-			
+					
+			end if;		
+		
+				   	
+		
 			
 ----------------------------------------------------------------------------------------
----------------------r3 instructions----------------------------------------------------------------				
+---------------------r3 instrcs----------------------------------------------------------------				
 						
-						elsif 	(instrc(24 downto 23) = "11") then 	
+					elsif 	(instrc(24 downto 23) = "11") then 	
 						 	if instrc(18 downto 15) = "0000" then  --nop
 								 
 								 
@@ -519,13 +540,14 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 								
 							end loop;
 							
-							--elsif (instrc (18 downto 15) = "1101") then  --ROTW rotate bits in word 
---							--	tempPos := 	to_integer(instrc(14 downto 10));
-----								temp_int1 := to_integer(signed(r1(tempPos+31 downto tempPos)));  --r1
-----								tempPos := 	to_integer(instrc (9 downto 5));					 
-----								temp_int2 := to_integer(signed(r2(tempPos+32 downto tempPos)));	 --r2
-----								temp := to_integer(temp_int2 (5 downto 0));	  --- number to rotate 
-----								o <=  temp ror temp;
+							elsif (instrc (18 downto 15) = "1101") then  --ROTW rotate bits in word 
+								for i in 0 to 3 loop
+									tempPos := 32 * i;
+									temp := r1(temppos + 31 downto temppos);
+									temp_int1 := to_integer(unsigned(r2(temppos + 5 downto temppos)));
+									o(temppos+31 downto temppos)<= std_logic_vector(unsigned(temp) ror temp_int1);
+								
+								end loop;
 								
 							elsif (instrc(18 downto 15) = "1110") then		--sub word 
 							
@@ -566,7 +588,7 @@ variable temp : integer; -- general temp variable, currently using in ROTW
 							 
 				 end if;
 			end if;	 
-		end if;
+		
 	
 					
 	end process;
