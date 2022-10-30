@@ -405,22 +405,22 @@ variable temp : std_logic_vector(31 downto 0); -- general temp variable, current
 						 	if instrc(18 downto 15) = "0000" then  --nop
 								 
 								 
-								 Null; --? what should nop do		
+								 Null; 	
 								 
 							elsif (instrc(18 downto 15) = "0001") then --leading zeros		
 							
 								for i in 0 to 3 loop
-									tempPos := 32 * i;
+									tempPos := (32 * i)+31;
 									counter := 0;	 	 								   
-									
+									--tempPos := tempPos+31;
 									for j in 0 to 31 loop
-										if r1(j + tempPos) = '0' then 
+										if r1(tempPos - j) = '0' then 
 											counter := counter + 1;
 										else
 											exit;
 										end if;
 									end loop;
-								o((31 + tempPos) downto (tempPos)) <=  std_logic_vector(to_unsigned(counter,32));
+								o((tempPos) downto (tempPos-31)) <=  std_logic_vector(to_unsigned(counter,32));
 								
 							end loop;	
 								 	 
