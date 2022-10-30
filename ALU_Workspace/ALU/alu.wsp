@@ -2,13 +2,13 @@
 Built-in symbols=0
 ALU=0
 [COMPILESTATUS|.\src\alu.vhd]
-FileTimeLow=4032919650
-FileTimeHigh=30993235
+FileTimeLow=2291846015
+FileTimeHigh=30993577
 Status=Compiled
 [COMPILESTATUS|.\src\alu_tb.vhd]
-FileTimeLow=277085664
-FileTimeHigh=30993239
-Status=Compiled
+FileTimeLow=1069405241
+FileTimeHigh=30993584
+Status=Modified
 [General]
 CurrentVersion=103
 [CACHEDOC|Aldec.Project.Generic.7|.\ALU\ALU.adf|]
