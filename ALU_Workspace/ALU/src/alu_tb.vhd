@@ -40,7 +40,7 @@ r2(95 downto 80) 	<= std_logic_vector(to_signed(32767, 16));	--for overflow
 r2(79 downto 64) 	<= std_logic_vector(to_signed(32767, 16));	--for overflow
 r2(63 downto 48) 	<= std_logic_vector(to_signed(-2, 16));
 r2(47 downto 32) 	<= std_logic_vector(to_signed(-2, 16));
-r2(31 downto 16) 	<= std_logic_vector(to_signed(2, 16));
+r2(31 downto 16) 	<= std_logic_vector(to_signed(-5, 16));
 r2(15 downto 0) 	<= std_logic_vector(to_signed(2, 16)); 
 
 --r2
@@ -50,7 +50,7 @@ r3(95 downto 80) 	<= std_logic_vector(to_signed(32767, 16)); --for overflow
 r3(79 downto 64) 	<= std_logic_vector(to_signed(32767, 16)); --for overflow
 r3(63 downto 48) 	<= std_logic_vector(to_signed(20, 16));
 r3(47 downto 32) 	<= std_logic_vector(to_signed(20, 16));
-r3(31 downto 16) 	<= std_logic_vector(to_signed(20, 16));
+r3(31 downto 16) 	<= std_logic_vector(to_signed(10, 16));
 r3(15 downto 0) 	<= std_logic_vector(to_signed(20, 16));
 
 
@@ -67,6 +67,12 @@ wait for clk;
 --next regular multiply add
 
 
+
+-- 32 bit Signed Integer Multiply-Add Low with Saturation 
+instrc <= "1000000000000000000000000"; 
+wait for clk;							
+
+
 -- 32 bit Signed Integer Multiply-Add low with Saturation
 
 instrc <= "1000100000000000000000000"; 
@@ -74,9 +80,6 @@ wait for clk;
 
 
 
--- 32 bit Signed Integer Multiply-Add Low with Saturation 
-instrc <= "1000000000000000000000000"; 
-wait for clk;							
 
 	 
 --
@@ -183,6 +186,5 @@ r3(15 downto 0) 	<= std_logic_vector(to_signed(20, 16));
 	
 end tb;
 			 	
-		
 		
 		
