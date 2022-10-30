@@ -55,7 +55,7 @@ r3(15 downto 0) 	<= std_logic_vector(to_signed(20, 16));
 
 
 wait for clk; 
-instrc <= "0000011101001001001000000"; -- imm	0111010010010010 = hex 7492, position 0		
+instrc <= "0000011101001001001000000"; -- imm expected to load	0111010010010010 = hex 7492, position from pos 16-0		
 wait for clk;		 
 
 
@@ -107,30 +107,30 @@ wait for clk;
 
 
 --or
-instrc <= "1100001011000000000000000"; 
+instrc <= "1100001011000000000000000"; 	  --1858000
 wait for clk;
 
 --and
-instrc <= "1100000101000000000000000"; 
+instrc <= "1100000101000000000000000"; 	-- 1828000
 wait for clk;	
 
 
 --broadcast word
-instrc <= "1100000110000000000000000"; 
+instrc <= "1100000110000000000000000"; -- 1830000
 wait for clk;
 
 
 
 ----max signed word
-instrc <= "1100000111000000000000000"; 
+instrc <= "1100000111000000000000000"; --1838000
 wait for clk;		
 
 ----min signed word
-instrc <= "1100001000000000000000000"; 
+instrc <= "1100001000000000000000000"; 	--1840000
 wait for clk;	  
 
 --leading zeroes
-instrc <= "1100000000000000000000000"; 
+instrc <= "1100000000000000000000000"; 	 ---1800000
 wait for clk;
 
 
