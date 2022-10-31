@@ -1,4 +1,4 @@
-57
+59
 ~E 1 "../src/alu.vhd" 29 ALU
 ~A 1 "../src/alu.vhd" 44 ALU_Behavior
 ~E 1 "../src/alu_tb.vhd" 6 alu_tb

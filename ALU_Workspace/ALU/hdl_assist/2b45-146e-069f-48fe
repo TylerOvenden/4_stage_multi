@@ -179,6 +179,30 @@ instrc <= "1100000001000000000000000"; 	 ---1800000
 wait for clk;
 
 
+--count 1s
+instrc <= "1100001100000000000000000"; 	 ---1860000
+wait for clk;		
+
+--add word
+instrc <= "1100000010000000000000000"; 	 ---1810000
+wait for clk;		 
+
+--add half word
+instrc <= "1100000011000000000000000"; 	 ---1818000
+wait for clk;			
+
+--add half word	saturated
+instrc <= "1100000100000000000000000"; 	 ---1820000
+wait for clk;	
+
+--sub half word 
+instrc <= "1100001110000000000000000"; 	 ---1870000
+wait for clk;
+
+--sub half word saturated 
+instrc <= "1100001111000000000000000"; 	 ---1878000
+wait for clk;
+
 --r1 values	
 r1(127 downto 96) 	<= std_logic_vector(to_signed(2147483647, 32));																  
 r1(95 downto 64) 	<= std_logic_vector(to_signed(2147483647, 32));	   

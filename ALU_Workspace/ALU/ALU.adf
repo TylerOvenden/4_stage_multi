@@ -18,10 +18,10 @@ FLOWTOOLS=NONE
 FAMILY=
 fileopenfolder=B:\Stony Brook\ESE345\4_stage_multi\ALU_Workspace\ALU\src
 [Files.Data]
+.\src\alu.vhd=VHDL Source Code
 .\src\alu_tb.vhd=VHDL Source Code
-.\src\ALU.vhd=VHDL Source Code
 [HierarchyViewer]
-HierarchyInformation=alu|ALU_Behavior|0 alu_tb|tb|0
+HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
 [Files]
