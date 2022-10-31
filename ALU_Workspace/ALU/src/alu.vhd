@@ -64,7 +64,12 @@ variable tempRes128: signed (127 downto 0);
 variable testMult: std_logic_vector(130 downto 0);	
 variable testRes: std_logic_vector(130 downto 0);
 variable testRes1: std_logic_vector(32 downto 0);		 	
-variable testRes2: std_logic_vector(64 downto 0);	
+variable testRes2: std_logic_vector(64 downto 0);	 
+variable testRes3: std_logic_vector(17 downto 0);	  
+
+variable testR1: std_logic_vector (17 downto 0);	
+variable testR2: signed (16 downto 0);
+
 variable testMult1: std_logic_vector(32 downto 0);	
 variable testMult2: std_logic_vector(64 downto 0);	
 variable rd: std_logic_vector(127 downto 0);
@@ -77,8 +82,8 @@ constant max64: std_logic_vector(63 downto 0):= X"7FFFFFFFFFFFFFFF";
 constant min64: std_logic_vector(63 downto 0) := X"8000000000000000";	 
 
 
-constant max16_int: integer:= 65535;
-constant min16_int: integer:= -65536;
+constant max16_int: integer:= 32767;
+constant min16_int: integer:= -32768;
 constant max32_int : integer := 2147483647; 
 constant min32_int : integer :=  -2147483648; 
 
@@ -215,15 +220,7 @@ variable temp : std_logic_vector(31 downto 0); -- general temp variable, current
 					 end if;
 				end loop;		
 					
-					
-				--	for i in 0 to 3 loop
---						tempPos := 32 * i;	 
---					testMult(tempPos+31 downto tempPos) := std_logic_vector(resize(signed(r3(tempPos+15 downto tempPos))* signed(r2(tempPos+15 downto tempPos)), 32));
---					
---					o(tempPos+31 downto tempPos)<= std_logic_vector(resize(signed(r1(tempPos+31 downto tempPos))- signed(testMult(tempPos+31 downto tempPos)), 32)); 
---					
---				
---				end loop;	
+				
 					   
 			elsif (instrc(22 downto 20) = "011")	then 	
 									
@@ -405,7 +402,7 @@ variable temp : std_logic_vector(31 downto 0); -- general temp variable, current
 						 	if instrc(18 downto 15) = "0000" then  --nop
 								 
 								 
-								 Null; 	
+								 Null; --? what should nop do		
 								 
 							elsif (instrc(18 downto 15) = "0001") then --leading zeros		
 							
@@ -440,29 +437,24 @@ variable temp : std_logic_vector(31 downto 0); -- general temp variable, current
 									o(tempPos+15 downto tempPos)<=  std_logic_vector(unsigned(r1(tempPos+15 downto tempPos)) + unsigned(r2(tempPos+15 downto tempPos))); 
 								end loop;
 							
-								
-								
+										
 							
-							elsif(instrc(18 downto 15) = "0100") then 	 --add half word saturated
+								elsif(instrc(18 downto 15) = "0100") then 	 --add half word saturated
 								
 											for i in 0 to 7 loop
 					
 						tempPos := 16 * i;	 						
 					
-			
-						testRes(tempPos+16 downto tempPos) := std_logic_vector(resize(signed(r2(tempPos+15 downto tempPos))+ signed(r1(tempPos+15 downto tempPos)), 17)); 
-					
-					
-						if(signed(testRes(tempPos+16 downto tempPos)) >   signed(max16)) then
-							o(tempPos+15 downto tempPos)<= "0111111111111111";		 
+						temp_int0 := to_integer(signed(r1(tempPos+15 downto tempPos)))+to_integer(signed(r2(tempPos+15 downto tempPos))); 
+						
+						if temp_int0>max16_int then
+							o(tempPos+15 downto tempPos)<= "0111111111111111";
+						elsif	temp_int0<min16_int then 
+							o(tempPos+15 downto tempPos)<= "1000000000000000";	
+						else 
+							o(tempPos+15 downto tempPos)<= std_logic_vector(to_signed(temp_int0,16));
 							
-						elsif(signed(testRes(tempPos+16 downto tempPos))<   signed(min16)) then
-							o(tempPos+15 downto tempPos)<= "10000000000000000";		
-							   
-						else											 
-							
-							o(tempPos+15 downto tempPos)<= testRes(tempPos+15 downto tempPos);
-					
+				
 							 end if;
 						end loop;
 								
@@ -559,24 +551,25 @@ variable temp : std_logic_vector(31 downto 0); -- general temp variable, current
 									
 							elsif(instrc(18 downto 15) = "1111") then 		--sub saturated
 								
+															
+					
+							
 											for i in 0 to 7 loop
 					
+						tempPos := 16 * i;	 						
 					
-					tempPos := 16 * i;	 						
+						temp_int0 := to_integer(signed(r1(tempPos+15 downto tempPos)))-to_integer(signed(r2(tempPos+15 downto tempPos))); 
+						
+						if temp_int0>max16_int then
+							o(tempPos+15 downto tempPos)<= "0111111111111111";
+						elsif	temp_int0<min16_int then 
+							o(tempPos+15 downto tempPos)<= "1000000000000000";	
+						else 
+							o(tempPos+15 downto tempPos)<= std_logic_vector(to_signed(temp_int0,16));
+							
+							
 					
 				
-					testRes(tempPos+16 downto tempPos) := std_logic_vector(resize(signed(r2(tempPos+15 downto tempPos))- signed(r1(tempPos+15 downto tempPos)), 17)); 
-					
-					
-						if(signed(testRes(tempPos+16 downto tempPos)) >   signed(max16)) then
-							o(tempPos+15 downto tempPos)<= "0111111111111111";		 
-							
-						elsif(signed(testRes(tempPos+16 downto tempPos))<   signed(min16)) then
-							o(tempPos+15 downto tempPos)<= "10000000000000000";		
-							   
-					else											 
-						
-						o(tempPos+15 downto tempPos)<= testRes(tempPos+15 downto tempPos);
 					
 					 end if;
 				end loop;
