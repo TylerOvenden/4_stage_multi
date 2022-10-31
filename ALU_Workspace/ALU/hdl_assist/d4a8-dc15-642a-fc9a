@@ -21,7 +21,6 @@
 --{{ Section below this comment is automatically maintained
 --   and may be overwritten
 --{entity {ALU} architecture {ALU_Behavior}}
---newest 
 
 
 library ieee;
@@ -120,25 +119,19 @@ variable temp : std_logic_vector(31 downto 0); -- general temp variable, current
 					--Signed Integer Multiply-Add Low with Saturation
 				--y low 16-bit-fields for rs3, rs2
 				if (instrc(22 downto 20) = "000")	then 
-					--using this to check overflow
-					--		o(31 downto 0)<= std_logic_vector(resize(signed(r3(31 downto 0))+ signed(r1(31 downto 0)), 32));
 				
 					
 					for i in 0 to 3 loop
 					
-						--example
-					-- std_logic_vector(resize(signed(r1(31 downto 0))+ signed(r2(31 downto 0)), 32)); 
 					tempPos := 32 * i;	 						
 					
 					
 					testMult1(32 downto 0) := std_logic_vector(resize(signed(r3(tempPos+15 downto tempPos))* signed(r2(tempPos+15 downto tempPos)), 33));
-			testRes1(32 downto 0) := std_logic_vector(resize(signed(testMult1(32 downto 0))+ signed(r1(tempPos+31 downto tempPos)), 33)); 
-				--	testRes1(32 downto 0) := std_logic_vector(resize(signed(r1(tempPos+31 downto tempPos))+  (signed(r3(tempPos+15 downto tempPos))* signed(r2(tempPos+15 downto tempPos))), 33)); 
+					testRes1(32 downto 0) := std_logic_vector(resize(signed(testMult1(32 downto 0))+ signed(r1(tempPos+31 downto tempPos)), 33)); 
+			
 					
 					if(signed(testRes1(32 downto 0)) >   signed( max32)) then		   
 						
-						
-					--	if testRes1(32) = '1' then
 						o(tempPos+31 downto tempPos)<= "01111111111111111111111111111111";		 
 						
 					elsif(signed(testRes1(32 downto 0)) <  signed( min32)) then
@@ -150,10 +143,7 @@ variable temp : std_logic_vector(31 downto 0); -- general temp variable, current
 					
 					 end if;
 				end loop;						 
-			--		o(31 downto 0) <= std_logic_vector(resize(signed(r3(15 downto 0))+ signed(r1(31 downto 0)), 32)); 
-					
-					 
-   		  
+
 				
 				
 				elsif (instrc(22 downto 20) = "001")	then 		  
@@ -191,15 +181,11 @@ variable temp : std_logic_vector(31 downto 0); -- general temp variable, current
 				
 				
 				elsif (instrc(22 downto 20) = "010")	then 
-						
-					--using this to check overflow
-					--		o(31 downto 0)<= std_logic_vector(resize(signed(r3(31 downto 0))+ signed(r1(31 downto 0)), 32));
+				
 				
 					
 					for i in 0 to 3 loop
 					
-						--example
-					-- std_logic_vector(resize(signed(r1(31 downto 0))+ signed(r2(31 downto 0)), 32)); 
 					tempPos := 32 * i;	 						
 					
 					
@@ -244,11 +230,7 @@ variable temp : std_logic_vector(31 downto 0); -- general temp variable, current
 					else											 
 						
 						o(tempPos+31 downto tempPos)<= testRes(tempPos+31 downto tempPos);
-						
-						
-					--	testMult(tempPos+31 downto tempPos) := std_logic_vector(resize(signed(r2(tempPos+31 downto tempPos+15))* signed(r3(tempPos+31 downto tempPos+15)), 32));
---					
---						o(tempPos+31 downto tempPos)<= std_logic_vector(resize(signed(testMult(tempPos+31 downto tempPos))+ signed(r1(tempPos+31 downto tempPos)), 32)); 
+			
 					end if;
 					
 					
@@ -343,12 +325,7 @@ variable temp : std_logic_vector(31 downto 0); -- general temp variable, current
 					
 					end if;
 					
-					
-	              --
---					tempPos := 64 * i;
---					testMult(tempPos+63 downto tempPos) := std_logic_vector(resize(signed(r3(tempPos+31 downto tempPos))* signed(r2(tempPos+31 downto tempPos)), 64));
---					
---					o(tempPos+63 downto tempPos)<= std_logic_vector(resize(signed(testMult(tempPos+63 downto tempPos))+ signed(r1(tempPos+63 downto tempPos)), 64)); 
+				
 								
 				end loop;
 					
@@ -381,12 +358,7 @@ variable temp : std_logic_vector(31 downto 0); -- general temp variable, current
 					
 					end if;
 					
-					
-	              --
---					tempPos := 64 * i;
---					testMult(tempPos+63 downto tempPos) := std_logic_vector(resize(signed(r3(tempPos+31 downto tempPos))* signed(r2(tempPos+31 downto tempPos)), 64));
---					
---					o(tempPos+63 downto tempPos)<= std_logic_vector(resize(signed(testMult(tempPos+63 downto tempPos))+ signed(r1(tempPos+63 downto tempPos)), 64)); 
+				
 								
 				end loop;
 					
@@ -402,14 +374,14 @@ variable temp : std_logic_vector(31 downto 0); -- general temp variable, current
 						 	if instrc(18 downto 15) = "0000" then  --nop
 								 
 								 
-								 Null; --? what should nop do		
+								 Null;
 								 
 							elsif (instrc(18 downto 15) = "0001") then --leading zeros		
 							
 								for i in 0 to 3 loop
 									tempPos := (32 * i)+31;
 									counter := 0;	 	 								   
-									--tempPos := tempPos+31;
+								
 									for j in 0 to 31 loop
 										if r1(tempPos - j) = '0' then 
 											counter := counter + 1;
@@ -467,7 +439,7 @@ variable temp : std_logic_vector(31 downto 0); -- general temp variable, current
 									for i in 0 to 3 loop
 									tempPos := 32 * i;
 									o((31 + tempPos) downto (tempPos)) <=  r1(31 downto 0);
-								--	o(31 downto 0) := r1(31 downto 0);
+							
 									end loop;
 							
 								
@@ -567,13 +539,9 @@ variable temp : std_logic_vector(31 downto 0); -- general temp variable, current
 						else 
 							o(tempPos+15 downto tempPos)<= std_logic_vector(to_signed(temp_int0,16));
 							
-							
-					
-				
-					
-					 end if;
-				end loop;
 						
+							end if;
+						end loop;
 							 
 				 end if;
 			end if;	 

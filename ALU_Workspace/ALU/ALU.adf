@@ -20,6 +20,8 @@ fileopenfolder=B:\Stony Brook\ESE345\4_stage_multi\ALU_Workspace\ALU\src
 [Files.Data]
 .\src\alu.vhd=VHDL Source Code
 .\src\alu_tb.vhd=VHDL Source Code
+.\..\..\..\..\..\StonyBrook\ESE345\4_stage_multi\Results.asdb=Accelerated Waveform File
+.\..\..\..\..\..\StonyBrook\ESE345\4_stage_multi\Results.awc=Accelerated Waveform Configuration
 [HierarchyViewer]
 HierarchyInformation=
 ShowHide=ShowTopLevel
@@ -27,3 +29,5 @@ Selected=
 [Files]
 /alu.vhd=-1
 /alu_tb.vhd=-1
+/..\..\..\..\..\..\StonyBrook\ESE345\4_stage_multi\Results.asdb=-1
+/..\..\..\..\..\..\StonyBrook\ESE345\4_stage_multi\Results.awc=-1
