@@ -18,9 +18,8 @@
 -------------------------------------------------------------------------------			   
 
 
-
-
-	
+--Using this to build array of instr
+--https://stackoverflow.com/questions/30651269/synthesizable-multidimensional-arrays-in-vhdl
 library ieee;
 use ieee.std_logic_1164.all;  
 use ieee.numeric_std.all;
@@ -31,22 +30,42 @@ entity instruction_buffer is
 generic (			 
 n : integer := 6; -- 2^6 = 64 values for pc
 buffer_size : integer := 64;	 
-width : integer := 25
+width : integer := 2
+subtype instr is std_logic_vector(24 downto 0);
+type instr_buffer is array (0 to 63 ) of instr; 
+
+
 );
-port (clk : in std_logic; -- system clock
+port (
+clk : in std_logic; -- system clock
 clr_bar : in std_logic; -- synchrounous counter clear
 rst_bar: in std_logic; -- synchronous reset		 
 pc : in std_logic_vector(n-1 downto 0);
-instru_in : in std_logic_vector(width-1 downto 0);
-instru_out : out std_logic_vector(width-1 downto 0)
+instr_in : in std_logic_vector(width-1 downto 0);
+instr_out : out std_logic_vector(width-1 downto 0)
+
 );
 
 end instruction_buffer;
 
 			 
 architecture behaviorhal of instruction_buffer is
+signal counter : instr_buffer;
+variable temp : integer;
 begin
-	
-	
+	process (clk)
+	begin
+	if rising_edge(clk) then   -- every cycle output pc+1 instr
+		if(to_integer(unsigned(pc))<63) then
+		pc <= pc + 1;  
+		temp := to_integer(unsigned(pc));
+		instr_out <= counter(temp);
+		elsif then
+		pc <= 0;  
+		temp := to_integer(unsigned(pc));
+		instr_out <= counter(temp)
+		end if;
+		end if;
+	end process;
 end behaviorhal;	
 	
