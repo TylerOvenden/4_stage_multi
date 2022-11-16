@@ -36,28 +36,112 @@ use ieee.std_logic_unsigned.all;
 entity register_file is
 generic (n : integer := 128; --constant for bits
 registers : integer := 32;	 
-length_instr : integer := 25
+length_instr : integer := 25	
+
+
 );
-port (clk : in std_logic; -- system clock
+port (clk : in std_logic; -- system clock	
+write : in std_logic; --write signal
 clr_bar : in std_logic; -- synchrounous counter clear
-rst_bar: in std_logic; -- synchronous reset		   
-enable : in std_logic; --regiser write
-in_reg : in std_logic_vector(n-1 downto 0);
+rst_bar: in std_logic; -- synchronous reset		  
+
+
+read : in std_logic; --regiser read
+
+
+instrc : in std_logic_vector(length_instr-1 downto 0);	   
+
+
+rs1_address : out std_logic_vector(4 downto 0); 
+rs2_address: out std_logic_vector(4 downto 0);
+rs3_address: out std_logic_vector(4 downto 0);
+rd_address: out std_logic_vector(4 downto 0);
+
+rs1_data : out std_logic_vector(n-1 downto 0);	  
+rs2_data : out std_logic_vector(n-1 downto 0);	
+rs3_data : out std_logic_vector(n-1 downto 0);
+rd_data : out std_logic_vector(n-1 downto 0);		
+
+
+r4_instr  : out std_logic_vector(2 downto 0);	
+
+opcode : out std_logic_vector(4 downto 0);	 
+--for load immadiate 
+immediate : out std_logic_vector(15 downto 0);	 
+index : out std_logic_vector(2 downto 0);
+
+
 out_reg : in std_logic_vector(n-1 downto 0)
 
 
-);
+);				 
+
+
 end register_file;
 
 			 
-architecture behaviorhal of register_file is
-begin
+architecture behaviorhal of register_file is 
+
+	type regFile is array (0 to length_instr-1) of std_logic_vector(n-1 downto 0);
+	signal instr  : regFile;
+
+begin  
+	process(clk) 
+	begin	  
+		--rd is supposed to be set to all 0s on first cycle		
+		
+		--idea have an input signal set by the testbench on first cycle to signify this
+		   rd_data <= (others => '0'); 
+		
+		
+		if rising_edge(clk) then
+			if instrc(24) = '0' then	
+				
+				
+				
+			--r4 instructions	
+			elsif 	(instrc(24 downto 23) = "10") then 
+				
+				
+				if (instrc(22 downto 20) = "000")	then 
+					
+					
+					
+				elsif (instrc(22 downto 20) = "001")	then 	
+					
+					
+					
+					
+				elsif (instrc(22 downto 20) = "010")	then 
+					
+					
+					
+					
+					
+				elsif (instrc(22 downto 20) = "011")	then 	
+					
+					
+				elsif (instrc(22 downto 20) = "100")	then
+					
+					
+				elsif (instrc(22 downto 20) = "101")	then
+		
+				elsif (instrc(22 downto 20) = "110")	then  
+					
+					
+				elsif (instrc(22 downto 20) = "111")	then  
+					end if;
+				
+			
+		
+			end if;
+	
+	   end if;
+	end process;
 	
 	
 end behaviorhal;	
 	
 
-
-	
 
 	
