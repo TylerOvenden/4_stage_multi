@@ -30,16 +30,18 @@ entity instruction_buffer is
 generic (			 
 n : integer := 6; -- 2^6 = 64 values for pc
 buffer_size : integer := 64;	 
-width : integer := 2
-subtype instr is std_logic_vector(24 downto 0);
-type instr_buffer is array (0 to 63 ) of instr; 
+width : integer := 2;	
+inst_size : integer := 25
+--subtype instr is std_logic_vector(24 downto 0);
+--type instr_buffer is array (0 to 63 ) of instr; 
 
 
 );
 port (
 clk : in std_logic; -- system clock
 clr_bar : in std_logic; -- synchrounous counter clear
-rst_bar: in std_logic; -- synchronous reset		 
+rst_bar: in std_logic; -- synchronous reset		  
+write: in std_logic;	--write signal
 pc : in std_logic_vector(n-1 downto 0);
 instr_in : in std_logic_vector(width-1 downto 0);
 instr_out : out std_logic_vector(width-1 downto 0)
@@ -49,23 +51,34 @@ instr_out : out std_logic_vector(width-1 downto 0)
 end instruction_buffer;
 
 			 
-architecture behaviorhal of instruction_buffer is
-signal counter : instr_buffer;
-variable temp : integer;
+architecture behaviorhal of instruction_buffer is	
+
+type InstBuff is array (0 to buffer_size-1) of std_logic_vector(24 downto 0);
+
+signal ins : InstBuff;
+--variable temp : integer;
 begin
 	process (clk)
 	begin
-	if rising_edge(clk) then   -- every cycle output pc+1 instr
-		if(to_integer(unsigned(pc))<63) then
-		pc <= pc + 1;  
-		temp := to_integer(unsigned(pc));
-		instr_out <= counter(temp);
-		elsif then
-		pc <= 0;  
-		temp := to_integer(unsigned(pc));
-		instr_out <= counter(temp)
+--	if rising_edge(clk) then   -- every cycle output pc+1 instr
+--		if(to_integer(unsigned(pc))<63) then
+--		pc <= pc + 1;  
+--		temp := to_integer(unsigned(pc));
+--		instr_out <= counter(temp);
+--		elsif then
+--		pc <= 0;  
+--		temp := to_integer(unsigned(pc));
+--		instr_out <= counter(temp)
+--		end if;
+--		end if;
+--	end process;	
+if rising_edge(clk)		 then 		 
+	if write = '1' then						
+			ins(to_integer(unsigned(pc))) <= instr_in;	
 		end if;
-		end if;
-	end process;
+		instr_out <= ins(to_integer(unsigned(pc)));
+	end if;
+
+end process;
 end behaviorhal;	
 	
