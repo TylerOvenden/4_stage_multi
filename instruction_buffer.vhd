@@ -41,11 +41,12 @@ port (
 clk : in std_logic; -- system clock
 clr_bar : in std_logic; -- synchrounous counter clear
 rst_bar: in std_logic; -- synchronous reset		  
-write: in std_logic;	--write signal
-pc : in std_logic_vector(n-1 downto 0);
+write: in std_logic;	--write signal	   
+rst : in std_logic;
+--pc : in std_logic_vector(n-1 downto 0);
 instr_in : in std_logic_vector(width-1 downto 0);
 instr_out : out std_logic_vector(width-1 downto 0)
-
+--pc : out std_logic_vector(n-1 downto 0)
 );
 
 end instruction_buffer;
@@ -56,29 +57,27 @@ architecture behaviorhal of instruction_buffer is
 type InstBuff is array (0 to buffer_size-1) of std_logic_vector(24 downto 0);
 
 signal ins : InstBuff;
+
 --variable temp : integer;
 begin
 	process (clk)
-	begin
---	if rising_edge(clk) then   -- every cycle output pc+1 instr
---		if(to_integer(unsigned(pc))<63) then
---		pc <= pc + 1;  
---		temp := to_integer(unsigned(pc));
---		instr_out <= counter(temp);
---		elsif then
---		pc <= 0;  
---		temp := to_integer(unsigned(pc));
---		instr_out <= counter(temp)
---		end if;
---		end if;
---	end process;	
+		variable pc : integer range 0 to 63 := 0;
+	begin	
+		
+		
+		
+		
 if rising_edge(clk)		 then 		 
-	if write = '1' then						
-			ins(to_integer(unsigned(pc))) <= instr_in;	
-		end if;
-		instr_out <= ins(to_integer(unsigned(pc)));
-	end if;
+						  
+	
+	
+	instr_out <= ins(pc);	  
+	--
+	pc := pc + 1;
+	
+end if;
+ --pc := std_logic_vector(to_unsigned(count));
+end process;						   
 
-end process;
 end behaviorhal;	
 	
