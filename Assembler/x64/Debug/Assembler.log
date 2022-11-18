@@ -1,0 +1,38 @@
+﻿  Assembler.cpp
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(27,28): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(30,28): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(36,13): error C3861: 'hashit': identifier not found
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(37,5): error C2050: switch expression not integral
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(39,10): error C2065: 'M_ADDL': undeclared identifier
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(39,10): error C2131: expression did not evaluate to a constant
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(39,10): message : a non-constant (sub-)expression was encountered
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(42,10): error C2065: 'M_ADDH': undeclared identifier
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(42,10): error C2131: expression did not evaluate to a constant
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(42,10): message : a non-constant (sub-)expression was encountered
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(44,10): error C2065: 'M_SUBL': undeclared identifier
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(44,10): error C2131: expression did not evaluate to a constant
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(44,10): message : a non-constant (sub-)expression was encountered
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(46,10): error C2065: 'M_SUBH': undeclared identifier
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(46,10): error C2131: expression did not evaluate to a constant
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(46,10): message : a non-constant (sub-)expression was encountered
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(48,10): error C2065: 'LONG_MADDL': undeclared identifier
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(48,10): error C2131: expression did not evaluate to a constant
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(48,10): message : a non-constant (sub-)expression was encountered
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(50,10): error C2065: 'LONG_MADDH': undeclared identifier
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(50,10): error C2131: expression did not evaluate to a constant
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(50,10): message : a non-constant (sub-)expression was encountered
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(52,10): error C2065: 'LONG_MSUBL': undeclared identifier
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(52,10): error C2131: expression did not evaluate to a constant
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(52,10): message : a non-constant (sub-)expression was encountered
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(54,10): error C2065: 'LONG_MSUBH': undeclared identifier
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(54,10): error C2131: expression did not evaluate to a constant
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(54,10): message : a non-constant (sub-)expression was encountered
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(39,1): error C2051: case expression not constant
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(42,1): error C2051: case expression not constant
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(44,1): error C2051: case expression not constant
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(46,1): error C2051: case expression not constant
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(48,1): error C2051: case expression not constant
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(50,1): error C2051: case expression not constant
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(52,1): error C2051: case expression not constant
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(54,1): error C2051: case expression not constant
+B:\Stony Brook\ESE345\4_stage_multi\Assembler\Assembler.cpp(58,5): warning C4065: switch statement contains 'default' but no 'case' labels
