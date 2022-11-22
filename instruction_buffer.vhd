@@ -39,13 +39,12 @@ inst_size : integer := 25
 );
 port (
 clk : in std_logic; -- system clock
-clr_bar : in std_logic; -- synchrounous counter clear
-rst_bar: in std_logic; -- synchronous reset		  
+clr : in std_logic; -- synchrounous counter clear		  
 write: in std_logic;	--write signal	   
-rst : in std_logic;
+
 --pc : in std_logic_vector(n-1 downto 0);
-instr_in : in std_logic_vector(width-1 downto 0);
-instr_out : out std_logic_vector(width-1 downto 0)
+instr_in : in std_logic_vector(inst_size-1 downto 0);
+instr_out : out std_logic_vector(inst_size-1 downto 0)
 --pc : out std_logic_vector(n-1 downto 0)
 );
 
@@ -80,4 +79,27 @@ end if;
 end process;						   
 
 end behaviorhal;	
-	
+
+
+
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity IF_ID is
+	port(
+	clk : in std_logic;
+	instr_in : in std_logic_vector(24 downto 0);
+	instr_out : out std_logic_vector(24 downto 0)
+	);
+end IF_ID;
+
+architecture behavioral of IF_ID is
+begin
+	process (clk)
+	begin
+		if rising_edge(clk) then
+				instr_out <= instr_in;
+		end if;
+	end process;
+end behavioral;
