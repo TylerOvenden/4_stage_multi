@@ -1,0 +1,14 @@
+[COMPILESTATUS|.\src\register_file.vhd]
+FileTimeLow=0
+FileTimeHigh=0
+Status=Modified
+[COMPILESTATUS|.\src\instruction_buffer.vhd]
+FileTimeLow=0
+FileTimeHigh=0
+Status=Modified
+[General]
+CurrentVersion=103
+[CACHEDOC|Aldec.Project.Generic.7|.\register_file.adf|]
+Path=
+[Gui config]
+RunFor=100 ns
