@@ -16,13 +16,20 @@ LANGUAGE=VHDL
 REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=
+fileopenfolder=C:\My_Designs\345\register_file\src
 [Files]
 /register_file.vhd=-1
 /instruction_buffer.vhd=-1
-/instruction_buffer.vhd=-1
-/register_file.vhd=-1
+/ALU.vhd=-1
+/alu_tb.vhd=-1
+/binary.txt=-1
+/instruction_buffer_tb.vhd=-1
+/4_multi_media_alu_tb.vhd=-1
 [Files.Data]
 .\src\register_file.vhd=VHDL Source Code
 .\src\instruction_buffer.vhd=VHDL Source Code
-.\src\instruction_buffer.vhd=VHDL Source Code
-.\src\register_file.vhd=VHDL Source Code
+.\src\ALU.vhd=VHDL Source Code
+.\src\alu_tb.vhd=VHDL Source Code
+.\src\binary.txt=Text File
+.\src\instruction_buffer_tb.vhd=VHDL Source Code
+.\src\4_multi_media_alu_tb.vhd=VHDL Source Code
