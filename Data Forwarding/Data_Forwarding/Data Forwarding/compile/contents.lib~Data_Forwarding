@@ -1,0 +1,5 @@
+1
+~E 1 "../src/Forwarding Muxes.vhd" 26 \Forwarding Muxes\
+~A 1 "../src/Forwarding Muxes.vhd" 49 \Forwarding Muxes\
+~E 1 "../src/Data_Forwading_Unit.vhd" 28 Data_Forwading_Unit
+~A 1 "../src/Data_Forwading_Unit.vhd" 44 behavior

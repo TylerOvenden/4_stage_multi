@@ -1,0 +1,18 @@
+# Design: Design Data Forwarding already active.
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: Flow Manager: Not Defined
+acom -reorder -O3 -e 100 -work Data_Forwarding -2002  $dsn/src/Data_Forwading_Unit.vhd "$dsn/src/Forwarding Muxes.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Data Forwarding/Data_Forwarding/Data Forwarding/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Data Forwarding/Data_Forwarding/Data Forwarding/src/Forwarding Muxes.vhd
+# Compile Entity "\Forwarding Muxes\"
+# Compile Architecture "\Forwarding Muxes\" of Entity "\Forwarding Muxes\"
+# Top-level unit(s) detected:
+# Entity => Data_Forwading_Unit
+# Entity => \Forwarding Muxes\
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].

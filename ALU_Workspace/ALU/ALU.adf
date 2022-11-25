@@ -23,7 +23,7 @@ fileopenfolder=B:\Stony Brook\ESE345\4_stage_multi\ALU_Workspace\ALU\src
 .\..\..\..\..\..\StonyBrook\ESE345\4_stage_multi\Results.asdb=Accelerated Waveform File
 .\..\..\..\..\..\StonyBrook\ESE345\4_stage_multi\Results.awc=Accelerated Waveform Configuration
 [HierarchyViewer]
-HierarchyInformation=alu_tb|tb|0
+HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
 [Files]
