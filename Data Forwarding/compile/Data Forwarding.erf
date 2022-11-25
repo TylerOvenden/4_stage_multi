@@ -1,0 +1,5 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: D:/4_stage_multi-main/ALU_Workspace/Data Forwarding/src/Data_Forwading_Unit.vhd" 
+MESSAGE "Compile Entity "Data_Forwading_Unit"" 
+MESSAGE "Compile Architecture "behavior" of Entity "Data_Forwading_Unit"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 

@@ -1,0 +1,411 @@
+acom -reorder -O3 -e 100 -work Data_Forwarding -2002  $dsn/src/Data_Forwading_Unit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/4_stage_multi-main/ALU_Workspace/Data Forwarding/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# Error: COMP96_0020: Data_Forwading_Unit.vhd : (53, 1): Variable can be declared only in a process or subprogram.
+# Error: COMP96_0019: Data_Forwading_Unit.vhd : (60, 2): Keyword 'begin' expected.
+# Error: COMP96_0329: Data_Forwading_Unit.vhd : (61, 2): Generate statement must have a label.
+# Error: COMP96_0019: Data_Forwading_Unit.vhd : (61, 48): Keyword 'generate' expected.
+# Error: COMP96_0019: Data_Forwading_Unit.vhd : (65, 2): Keyword 'end' expected.
+# Error: COMP96_0016: Data_Forwading_Unit.vhd : (65, 8): Design unit declaration expected.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work Data_Forwarding -2002  $dsn/src/Data_Forwading_Unit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/4_stage_multi-main/ALU_Workspace/Data Forwarding/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# Error: COMP96_0019: Data_Forwading_Unit.vhd : (47, 1): Keyword 'end' expected.
+# Error: COMP96_0016: Data_Forwading_Unit.vhd : (47, 10): Design unit declaration expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -e 100 -work Data_Forwarding -2002  $dsn/src/Data_Forwading_Unit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/4_stage_multi-main/ALU_Workspace/Data Forwarding/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# Error: COMP96_0019: Data_Forwading_Unit.vhd : (47, 1): Keyword 'end' expected.
+# Error: COMP96_0016: Data_Forwading_Unit.vhd : (47, 10): Design unit declaration expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  79.0 [ms]
+acom -O3 -e 100 -work Data_Forwarding -2002  $dsn/src/Data_Forwading_Unit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/4_stage_multi-main/ALU_Workspace/Data Forwarding/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# Error: COMP96_0015: Data_Forwading_Unit.vhd : (60, 39): ')' expected.
+# Error: COMP96_0019: Data_Forwading_Unit.vhd : (61, 3): Keyword 'then' expected.
+# Error: COMP96_0019: Data_Forwading_Unit.vhd : (66, 2): Keyword 'end' expected.
+# Error: COMP96_0329: Data_Forwading_Unit.vhd : (70, 3): Generate statement must have a label.
+# Error: COMP96_0019: Data_Forwading_Unit.vhd : (70, 41): Keyword 'generate' expected.
+# Error: COMP96_0019: Data_Forwading_Unit.vhd : (72, 3): Keyword 'end' expected.
+# Error: COMP96_0016: Data_Forwading_Unit.vhd : (73, 4): Design unit declaration expected.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  62.0 [ms]
+acom -O3 -e 100 -work Data_Forwarding -2002  $dsn/src/Data_Forwading_Unit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/4_stage_multi-main/ALU_Workspace/Data Forwarding/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# Error: COMP96_0078: Data_Forwading_Unit.vhd : (48, 10): Unknown identifier "clk".
+# Error: COMP96_0348: Data_Forwading_Unit.vhd : (48, 10): Name on sensitivity list must denote a signal.
+# Error: COMP96_0078: Data_Forwading_Unit.vhd : (55, 13): Unknown identifier "instr".
+# Error: COMP96_0133: Data_Forwading_Unit.vhd : (55, 13): Cannot find object declaration.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (55, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0078: Data_Forwading_Unit.vhd : (56, 26): Unknown identifier "next_instrc".
+# Error: COMP96_0133: Data_Forwading_Unit.vhd : (56, 26): Cannot find object declaration.
+# Error: COMP96_0289: Data_Forwading_Unit.vhd : (56, 26): Prefix of index must be an array.
+# Error: COMP96_0071: Data_Forwading_Unit.vhd : (56, 18): Operator "=" is not defined for such operands.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (56, 5): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (57, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (58, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (59, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (62, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (63, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (64, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (69, 12): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (71, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (73, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (76, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (78, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (85, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (87, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (90, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (92, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (95, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (97, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 27 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -e 100 -work Data_Forwarding -2002  $dsn/src/Data_Forwading_Unit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/4_stage_multi-main/ALU_Workspace/Data Forwarding/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# Error: COMP96_0078: Data_Forwading_Unit.vhd : (55, 13): Unknown identifier "instr".
+# Error: COMP96_0133: Data_Forwading_Unit.vhd : (55, 13): Cannot find object declaration.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (55, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0078: Data_Forwading_Unit.vhd : (56, 26): Unknown identifier "next_instrc".
+# Error: COMP96_0133: Data_Forwading_Unit.vhd : (56, 26): Cannot find object declaration.
+# Error: COMP96_0289: Data_Forwading_Unit.vhd : (56, 26): Prefix of index must be an array.
+# Error: COMP96_0071: Data_Forwading_Unit.vhd : (56, 18): Operator "=" is not defined for such operands.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (56, 5): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (57, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (58, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (59, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (62, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (63, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (64, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (69, 12): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (71, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (73, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (76, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (78, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (85, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (87, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (90, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (92, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (95, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (97, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 25 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -e 100 -work Data_Forwarding -2002  $dsn/src/Data_Forwading_Unit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/4_stage_multi-main/ALU_Workspace/Data Forwarding/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# Error: COMP96_0078: Data_Forwading_Unit.vhd : (56, 5): Unknown identifier "instrc".
+# Error: COMP96_0078: Data_Forwading_Unit.vhd : (56, 26): Unknown identifier "next_instrc".
+# Error: COMP96_0133: Data_Forwading_Unit.vhd : (56, 26): Cannot find object declaration.
+# Error: COMP96_0289: Data_Forwading_Unit.vhd : (56, 26): Prefix of index must be an array.
+# Error: COMP96_0133: Data_Forwading_Unit.vhd : (56, 5): Cannot find object declaration.
+# Error: COMP96_0289: Data_Forwading_Unit.vhd : (56, 5): Prefix of index must be an array.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (56, 5): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (57, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (58, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (59, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0078: Data_Forwading_Unit.vhd : (60, 9): Unknown identifier "instrc".
+# Error: COMP96_0133: Data_Forwading_Unit.vhd : (60, 9): Cannot find object declaration.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (60, 8): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: Data_Forwading_Unit.vhd : (61, 6): Unknown identifier "instrc".
+# Error: COMP96_0133: Data_Forwading_Unit.vhd : (61, 6): Cannot find object declaration.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (61, 6): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (62, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (63, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (64, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (69, 12): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (71, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (73, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (76, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (78, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (85, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (87, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (90, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (92, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (95, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (97, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 30 Errors 0 Warnings  Analysis time :  94.0 [ms]
+acom -O3 -e 100 -work Data_Forwarding -2002  $dsn/src/Data_Forwading_Unit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/4_stage_multi-main/ALU_Workspace/Data Forwarding/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# Error: COMP96_0078: Data_Forwading_Unit.vhd : (56, 25): Unknown identifier "next_instrc".
+# Error: COMP96_0133: Data_Forwading_Unit.vhd : (56, 25): Cannot find object declaration.
+# Error: COMP96_0289: Data_Forwading_Unit.vhd : (56, 25): Prefix of index must be an array.
+# Error: COMP96_0071: Data_Forwading_Unit.vhd : (56, 17): Operator "=" is not defined for such operands.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (56, 5): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (57, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (58, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (59, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0078: Data_Forwading_Unit.vhd : (61, 6): Unknown identifier "instrc".
+# Error: COMP96_0133: Data_Forwading_Unit.vhd : (61, 6): Cannot find object declaration.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (61, 6): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (62, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (63, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (64, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (69, 12): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (71, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (73, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (76, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (78, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (85, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (87, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (90, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (92, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (95, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (97, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 25 Errors 0 Warnings  Analysis time :  62.0 [ms]
+acom -O3 -e 100 -work Data_Forwarding -2002  $dsn/src/Data_Forwading_Unit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/4_stage_multi-main/ALU_Workspace/Data Forwarding/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# Error: COMP96_0078: Data_Forwading_Unit.vhd : (56, 25): Unknown identifier "next_instrc".
+# Error: COMP96_0133: Data_Forwading_Unit.vhd : (56, 25): Cannot find object declaration.
+# Error: COMP96_0289: Data_Forwading_Unit.vhd : (56, 25): Prefix of index must be an array.
+# Error: COMP96_0071: Data_Forwading_Unit.vhd : (56, 17): Operator "=" is not defined for such operands.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (56, 5): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (57, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (58, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (59, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0078: Data_Forwading_Unit.vhd : (61, 6): Unknown identifier "instrc".
+# Error: COMP96_0133: Data_Forwading_Unit.vhd : (61, 6): Cannot find object declaration.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (61, 6): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (62, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (63, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (64, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (69, 12): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (71, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (73, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (76, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (78, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (85, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (87, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (90, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (92, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (95, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (97, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 25 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -e 100 -work Data_Forwarding -2002  $dsn/src/Data_Forwading_Unit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/4_stage_multi-main/ALU_Workspace/Data Forwarding/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# Error: COMP96_0078: Data_Forwading_Unit.vhd : (56, 25): Unknown identifier "next_instrc".
+# Error: COMP96_0133: Data_Forwading_Unit.vhd : (56, 25): Cannot find object declaration.
+# Error: COMP96_0289: Data_Forwading_Unit.vhd : (56, 25): Prefix of index must be an array.
+# Error: COMP96_0071: Data_Forwading_Unit.vhd : (56, 17): Operator "=" is not defined for such operands.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (56, 5): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (57, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (58, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (59, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0078: Data_Forwading_Unit.vhd : (61, 6): Unknown identifier "instrc".
+# Error: COMP96_0133: Data_Forwading_Unit.vhd : (61, 6): Cannot find object declaration.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (61, 6): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (62, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (63, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (64, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (69, 12): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (71, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (73, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (76, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (78, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (85, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (87, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (90, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (92, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (95, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (97, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 25 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -e 100 -work Data_Forwarding -2002  $dsn/src/Data_Forwading_Unit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/4_stage_multi-main/ALU_Workspace/Data Forwarding/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# Error: COMP96_0071: Data_Forwading_Unit.vhd : (56, 17): Operator "=" is not defined for such operands.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (56, 5): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (57, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (58, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (59, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0078: Data_Forwading_Unit.vhd : (61, 6): Unknown identifier "instrc".
+# Error: COMP96_0133: Data_Forwading_Unit.vhd : (61, 6): Cannot find object declaration.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (61, 6): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (62, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (63, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (64, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (69, 12): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (71, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (73, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (76, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (78, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (85, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (87, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (90, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (92, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (95, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (97, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 22 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -e 100 -work Data_Forwarding -2002  $dsn/src/Data_Forwading_Unit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/4_stage_multi-main/ALU_Workspace/Data Forwarding/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (57, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (58, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (59, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0078: Data_Forwading_Unit.vhd : (61, 6): Unknown identifier "instrc".
+# Error: COMP96_0133: Data_Forwading_Unit.vhd : (61, 6): Cannot find object declaration.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (61, 6): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (62, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (63, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (64, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (69, 12): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (71, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (73, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (76, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (78, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (85, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (87, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (90, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (92, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (95, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (97, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 20 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -e 100 -work Data_Forwarding -2002  $dsn/src/Data_Forwading_Unit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/4_stage_multi-main/ALU_Workspace/Data Forwarding/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (57, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (58, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (59, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0078: Data_Forwading_Unit.vhd : (61, 6): Unknown identifier "instrc".
+# Error: COMP96_0133: Data_Forwading_Unit.vhd : (61, 6): Cannot find object declaration.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (61, 6): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (62, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (63, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (64, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (69, 12): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (71, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (73, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (76, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (78, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (85, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (87, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (90, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (92, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (95, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (97, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 20 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -e 100 -work Data_Forwarding -2002  $dsn/src/Data_Forwading_Unit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/4_stage_multi-main/ALU_Workspace/Data Forwarding/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# Error: COMP96_0049: Data_Forwading_Unit.vhd : (61, 29): Syntax error in expression.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  5.0 [s]
+acom -O3 -e 100 -work Data_Forwarding -2002  $dsn/src/Data_Forwading_Unit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/4_stage_multi-main/ALU_Workspace/Data Forwarding/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# Error: COMP96_0049: Data_Forwading_Unit.vhd : (61, 29): Syntax error in expression.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -e 100 -work Data_Forwarding -2002  $dsn/src/Data_Forwading_Unit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/4_stage_multi-main/ALU_Workspace/Data Forwarding/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (57, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (58, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (59, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0078: Data_Forwading_Unit.vhd : (61, 6): Unknown identifier "instrc".
+# Error: COMP96_0133: Data_Forwading_Unit.vhd : (61, 6): Cannot find object declaration.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (61, 6): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (62, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (63, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (64, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (69, 12): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (71, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (73, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (76, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (78, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (85, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (87, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (90, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (92, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (95, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (97, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 20 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -e 100 -work Data_Forwarding -2002  $dsn/src/Data_Forwading_Unit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/4_stage_multi-main/ALU_Workspace/Data Forwarding/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (58, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (59, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0078: Data_Forwading_Unit.vhd : (61, 6): Unknown identifier "instrc".
+# Error: COMP96_0133: Data_Forwading_Unit.vhd : (61, 6): Cannot find object declaration.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (61, 6): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (63, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (64, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (69, 12): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (71, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (73, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (85, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (87, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (90, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (92, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 14 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -e 100 -work Data_Forwarding -2002  $dsn/src/Data_Forwading_Unit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/4_stage_multi-main/ALU_Workspace/Data Forwarding/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# Error: COMP96_0078: Data_Forwading_Unit.vhd : (61, 6): Unknown identifier "instrc".
+# Error: COMP96_0133: Data_Forwading_Unit.vhd : (61, 6): Cannot find object declaration.
+# Error: COMP96_0077: Data_Forwading_Unit.vhd : (61, 6): Undefined type of expression. Expected type 'BOOLEAN'.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -e 100 -work Data_Forwarding -2002  $dsn/src/Data_Forwading_Unit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/4_stage_multi-main/ALU_Workspace/Data Forwarding/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# Warning: DAGGEN_0001: Data_Forwading_Unit.vhd : (48, 0): Process without explicit or implicit wait statement - possible infinite loop.
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
+# Design: 8:48 PM, Tuesday, November 22, 2022
+# Design: Opening design "D:\4_stage_multi-main\register_file.adf"
+# Design: 8:57 PM, Tuesday, November 22, 2022
+# Design: Opening design "D:\4_stage_multi-main (1)\4_stage_multi-main\register_file.adf"
+acom -O3 -e 100 -work Data_Forwarding -2002  $dsn/src/Data_Forwading_Unit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/4_stage_multi-main/ALU_Workspace/Data Forwarding/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# Error: COMP96_0078: Data_Forwading_Unit.vhd : (48, 10): Unknown identifier "clk".
+# Error: COMP96_0348: Data_Forwading_Unit.vhd : (48, 10): Name on sensitivity list must denote a signal.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  79.0 [ms]
+acom -O3 -e 100 -work Data_Forwarding -2002  $dsn/src/Data_Forwading_Unit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/4_stage_multi-main/ALU_Workspace/Data Forwarding/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# Design: 9:06 PM, Tuesday, November 22, 2022
+# Design: Opening design "D:\4_stage_multi-main\ALU_Workspace\reg_file\reg_file.adf"
+# Design: Design "reg_file" has been set as active.
