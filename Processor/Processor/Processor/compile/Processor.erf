@@ -1,0 +1,34 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd" 
+MESSAGE "Compile Entity "four_multi_media_alu_tb"" 
+MESSAGE "Compile Architecture "tb" of Entity "four_multi_media_alu_tb"" 
+ERROR COMP96_0078: "Unknown identifier "reset"." "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd" 72 49
+ERROR COMP96_0133: "Cannot find object declaration." "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd" 72 49
+ERROR COMP96_0112: ""reset" does not match the formal name." "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd" 72 49
+ERROR COMP96_0207: "No actual specified for local port "clr"." "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd" 61 2
+ERROR COMP96_0207: "No actual specified for local port "write"." "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd" 61 2
+ERROR COMP96_0207: "No actual specified for local port "instr_in"." "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd" 61 2
+ERROR COMP96_0207: "No actual specified for local port "clr_bar"." "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd" 93 2
+ERROR COMP96_0207: "No actual specified for local port "rst_bar"." "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd" 93 2
+ERROR COMP96_0207: "No actual specified for local port "read"." "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd" 93 2
+ERROR COMP96_0207: "No actual specified for local port "rd_address"." "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd" 93 2
+ERROR COMP96_0207: "No actual specified for local port "out_reg"." "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd" 93 2
+MESSAGE "File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/alu.vhd" 
+MESSAGE "Compile Entity "ALU"" 
+MESSAGE "Compile Architecture "ALU_Behavior" of Entity "ALU"" 
+MESSAGE "File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Data_Forwading_Unit.vhd" 
+MESSAGE "Compile Entity "Data_Forwading_Unit"" 
+MESSAGE "Compile Architecture "behavior" of Entity "Data_Forwading_Unit"" 
+MESSAGE "File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Forwarding Muxes.vhd" 
+MESSAGE "Compile Entity "\Forwarding Muxes\"" 
+MESSAGE "Compile Architecture "\Forwarding Muxes\" of Entity "\Forwarding Muxes\"" 
+MESSAGE "File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/instruction_buffer.vhd" 
+MESSAGE "Compile Package "instr_pack"" 
+MESSAGE "Compile Entity "instruction_buffer"" 
+MESSAGE "Compile Architecture "behaviorhal" of Entity "instruction_buffer"" 
+MESSAGE "Compile Entity "IF_ID"" 
+MESSAGE "Compile Architecture "behavioral" of Entity "IF_ID"" 
+MESSAGE "File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/register_file.vhd" 
+MESSAGE "Compile Entity "register_file"" 
+MESSAGE "Compile Architecture "behaviorhal" of Entity "register_file"" 
+FAILURE "Compile failure 11 Errors 0 Warnings  Analysis time :  0.1 [s]" 

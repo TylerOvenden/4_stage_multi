@@ -1,3 +1,4 @@
+i<>.\src\4_multi_media_alu_tb.vhd
 i<>.\src\alu.vhd
 i<>.\src\Data_Forwading_Unit.vhd
 i<>.\src\Forwarding Muxes.vhd

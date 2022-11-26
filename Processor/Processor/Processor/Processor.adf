@@ -16,16 +16,22 @@ LANGUAGE=VHDL
 REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=
-fileopenfolder=B:\Stony Brook\ESE345\4_stage_multi
+fileopenfolder=B:\Stony Brook\ESE345\4_stage_multi\Processor\Processor\Processor\src
 [Files]
+/4_multi_media_alu_tb.vhd=-1
 /alu.vhd=-1
 /Data_Forwading_Unit.vhd=-1
 /Forwarding Muxes.vhd=-1
 /instruction_buffer.vhd=-1
 /register_file.vhd=-1
 [Files.Data]
+.\src\4_multi_media_alu_tb.vhd=VHDL Source Code
 .\src\alu.vhd=VHDL Source Code
 .\src\Data_Forwading_Unit.vhd=VHDL Source Code
 .\src\Forwarding Muxes.vhd=VHDL Source Code
 .\src\instruction_buffer.vhd=VHDL Source Code
 .\src\register_file.vhd=VHDL Source Code
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=

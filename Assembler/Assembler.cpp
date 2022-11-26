@@ -37,6 +37,7 @@ enum class string_code {
     ROTW,
     SFWU,
     SFHS,
+    LDI,
     ERROR
 };
 string_code hashit(std::string const& inString);
@@ -150,6 +151,7 @@ string_code hashit(std::string const& inString) {
     if (inString == "BCW") return string_code::AU;
     if (inString == "MAXWS") return string_code::AHU;
     if (inString == "MINWS") return string_code::AHS;
+    if (inString == "LDI") return string_code::LDI;
 
 
     else return string_code::ERROR;

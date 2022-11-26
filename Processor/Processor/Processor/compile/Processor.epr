@@ -1,0 +1,7 @@
+"B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd" VHDL Processor 0 0 0 -02
+"B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/alu.vhd" VHDL Processor 1 0 0 -02
+"B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Data_Forwading_Unit.vhd" VHDL Processor 1 0 0 -02
+"B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Forwarding Muxes.vhd" VHDL Processor 1 0 0 -02
+"B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/instruction_buffer.vhd" VHDL Processor 1 0 0 -02
+"B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/register_file.vhd" VHDL Processor 1 0 0 -02
+. . 0 0 0
