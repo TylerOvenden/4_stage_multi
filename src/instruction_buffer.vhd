@@ -89,6 +89,7 @@ if rising_edge(clk)		 then
 	
 	
 	instr_out <= in_buffer(pc);	  
+	--in_buffer(pc) <=  std_logic_vector(to_unsigned(0, 25));
 	--			
 	if(pc = 63) then  
 		pc := 0;
@@ -123,7 +124,8 @@ begin
 	process (clk)
 	begin
 		if rising_edge(clk) then
-				instr_out <= instr_in;
+	
+			instr_out <= instr_in;
 		end if;
 	end process;
 end behavioral;
