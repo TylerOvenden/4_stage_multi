@@ -12,7 +12,7 @@ Group 2: Robert Bacigalupo and Tyler Ovenden
 #include <bitset>
 #include <vector>
 using namespace std;
-enum string_code {
+enum class string_code {
     M_ADDL,
     M_ADDH,
     M_SUBL,
@@ -21,6 +21,22 @@ enum string_code {
     LONG_MADDH,
     LONG_MSUBL,
     LONG_MSUBH,
+    NOP,
+    CLZW,
+    AU,
+    AHU,
+    AHS,
+    AND,
+    BCW,
+    MAXWS,
+    MINWS,
+    MLHU,
+    MLHCU,
+    OR,
+    PCNTW,
+    ROTW,
+    SFWU,
+    SFHS,
     ERROR
 };
 string_code hashit(std::string const& inString);
@@ -41,33 +57,38 @@ int main()
     temp1 = instr.find('(');
     temp2 = instr.find(')');
    // cout << instr.substr(temp1+1,(temp2-temp1-1));
-   
-    cout << instr.substr(0, temp1);
+    //cout << instr.substr(0, temp1);
     switch (hashit(instr.substr(0,temp1)))
     {
     // R4 instructions
-    case M_ADDL:
-        //bin = "10010" + convertR4(instr.substr(temp1, (temp2 - temp1 - 1)));
-        bin = convertR4("1,2,3");
+    case string_code::M_ADDL:
+        bin = "10000" + convertR4(instr.substr(temp1 + 1, (temp2 - temp1 - 1)));
         break;
-    case M_SUBL:
+    case string_code::M_ADDH:
+        bin = "10001" + convertR4(instr.substr(temp1 + 1, (temp2 - temp1 - 1)));
         break;
-    case M_SUBH:
+    case string_code::M_SUBL:
+        bin = "10010" + convertR4(instr.substr(temp1 + 1, (temp2 - temp1 - 1)));
         break;
-    case LONG_MADDL:
+    case string_code::M_SUBH:
+        bin = "10011" + convertR4(instr.substr(temp1 + 1, (temp2 - temp1 - 1)));
         break;
-    case LONG_MADDH:
+    case string_code::LONG_MADDL:
+        bin = "10100" + convertR4(instr.substr(temp1 + 1, (temp2 - temp1 - 1)));
         break;
-    case LONG_MSUBL:
+    case string_code::LONG_MADDH:
+        bin = "10101" + convertR4(instr.substr(temp1 + 1, (temp2 - temp1 - 1)));
         break;
-    case LONG_MSUBH:
-
+    case string_code::LONG_MSUBL:
+        bin = "10110" + convertR4(instr.substr(temp1 + 1, (temp2 - temp1 - 1)));
+        break;
+    case string_code::LONG_MSUBH:
+        bin = "10111" + convertR4(instr.substr(temp1 + 1, (temp2 - temp1 - 1)));
+        break;
     default:
         break;
-    } 
-    cout << bin;
+    }    
 }
-// NEED TO FIX THESE FUNCTIONS
 
 string convertR3(string instr) {
     stringstream test(instr);
@@ -92,22 +113,44 @@ string convertR4(string instr) {
     {
         seglist.push_back(segment);
     }
-    cout << "R4 conversion\n" << seglist[0] << "\n" << seglist[1] << "\n" << seglist[2] << "\n" << seglist[3] << "\n";
-    /*rd = bitset<5>(stoi(seglist[0])).to_string();
+    rd = bitset<5>(stoi(seglist[0])).to_string();
     rs1 = bitset<5>(stoi(seglist[1])).to_string();
     rs2 = bitset<5>(stoi(seglist[2])).to_string();
-    rs3 = bitset<5>(stoi(seglist[3])).to_string();*/
+    rs3 = bitset<5>(stoi(seglist[3])).to_string();
     return rs2 + rs1 + rd;
 }
 string_code hashit(std::string const& inString) {
-    if (inString == "M_ADDL") return M_ADDL;
-    if (inString == "M_ADDH") return M_ADDH;
-    if (inString == "M_SUBL") return M_SUBL;
-    if (inString == "M_SUBH") return M_SUBH;
-    //long functions
-    if (inString == "LONG_MADDL") return LONG_MADDL;
-    if (inString == "LONG_MADDH") return LONG_MADDH;
-    if (inString == "LONG_MSUBL") return LONG_MSUBL;
-    if (inString == "LONG_MSUBH") return LONG_MSUBH;
-    else return ERROR;
+    //R4 functions
+    if (inString == "M_ADDL") return string_code::M_ADDL;
+    if (inString == "M_ADDH") return string_code::M_ADDH;
+    if (inString == "M_SUBL") return string_code::M_SUBL;
+    if (inString == "M_SUBH") return string_code::M_SUBH;
+    //long  R4 functions
+    if (inString == "LONG_MADDL") return string_code::LONG_MADDL;
+    if (inString == "LONG_MADDH") return string_code::LONG_MADDH;
+    if (inString == "LONG_MSUBL") return string_code::LONG_MSUBL;
+    if (inString == "LONG_MSUBH") return string_code::LONG_MSUBH;
+
+    if (inString == "NOP") return string_code::NOP;
+    if (inString == "AU") return string_code::AU;
+    if (inString == "AHU") return string_code::AHU;
+    if (inString == "AHS") return string_code::AHS;
+
+    if (inString == "AND") return string_code::NOP;
+    if (inString == "BCW") return string_code::AU;
+    if (inString == "MAXWS") return string_code::AHU;
+    if (inString == "MINWS") return string_code::AHS;
+
+    if (inString == "NOP") return string_code::NOP;
+    if (inString == "AU") return string_code::AU;
+    if (inString == "AHU") return string_code::AHU;
+    if (inString == "AHS") return string_code::AHS;
+
+    if (inString == "AND") return string_code::NOP;
+    if (inString == "BCW") return string_code::AU;
+    if (inString == "MAXWS") return string_code::AHU;
+    if (inString == "MINWS") return string_code::AHS;
+
+
+    else return string_code::ERROR;
 }
