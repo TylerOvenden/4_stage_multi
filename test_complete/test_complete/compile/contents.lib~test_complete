@@ -1,0 +1,19 @@
+6
+~E 1 "../src/Forwarding Muxes.vhd" 26 \Forwarding Muxes\
+~A 1 "../src/Forwarding Muxes.vhd" 49 \Forwarding Muxes\
+~E 1 "../src/complete.vhd" 333 ALU
+~A 1 "../src/ALU.vhd" 19 ALU_Behavior
+~E 1 "../src/complete.vhd" 911 alu_model
+~A 1 "../src/complete.vhd" 57 behavior
+~E 1 "../src/Data_Forwading_Unit.vhd" 28 Data_Forwading_Unit
+~A 1 "../src/Data_Forwading_Unit.vhd" 44 behavior
+~E 1 "../src/4_multi_media_alu_tb.vhd" 18 four_multi_media_alu_tb
+~A 1 "../src/4_multi_media_alu_tb.vhd" 28 tb
+~E 1 "../src/complete.vhd" 282 IF_EX
+~A 1 "../src/complete.vhd" 308 behavioral
+~E 1 "../src/complete.vhd" 109 IF_ID
+~A 1 "../src/instruction_buffer.vhd" 122 behavioral
+~E 1 "../src/complete.vhd" 40 instruction_buffer
+~A 1 "../src/instruction_buffer.vhd" 72 behaviorhal
+~E 1 "../src/complete.vhd" 139 register_file
+~A 1 "../src/register_file.vhd" 67 behaviorhal

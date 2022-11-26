@@ -1,0 +1,35 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=test_complete
+[Library]
+test_complete=.\test_complete\test_complete.lib
+[$LibMap$]
+test_complete=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+fileopenfolder=C:\Users\vleen\Documents\GitHub\4_stage_multi\Data Forwarding\Data_Forwarding\Data Forwarding\src
+[Files]
+/complete.vhd=-1
+/4_multi_media_alu_tb.vhd=-1
+/ALU.vhd=-1
+/instruction_buffer.vhd=-1
+/register_file.vhd=-1
+/Data_Forwading_Unit.vhd=-1
+/Forwarding Muxes.vhd=-1
+[Files.Data]
+.\src\complete.vhd=VHDL Source Code
+.\src\4_multi_media_alu_tb.vhd=VHDL Source Code
+.\src\ALU.vhd=VHDL Source Code
+.\src\instruction_buffer.vhd=VHDL Source Code
+.\src\register_file.vhd=VHDL Source Code
+.\src\Data_Forwading_Unit.vhd=VHDL Source Code
+.\src\Forwarding Muxes.vhd=VHDL Source Code
