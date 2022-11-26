@@ -146,9 +146,7 @@ begin
 	--	std.env.finish;
 		wait; 
 		end process;
-		
-		
-		
+
 
 		
 		

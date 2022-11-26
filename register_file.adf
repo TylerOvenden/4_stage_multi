@@ -16,20 +16,26 @@ LANGUAGE=VHDL
 REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=
-fileopenfolder=C:\My_Designs\345\register_file\src
+fileopenfolder=C:\Users\vleen\Documents\GitHub\4_stage_multi\src
 [Files]
 /register_file.vhd=-1
-/instruction_buffer.vhd=-1
 /ALU.vhd=-1
+/complete.vhd=-1
 /alu_tb.vhd=-1
-/binary.txt=-1
 /instruction_buffer_tb.vhd=-1
+/binary.txt=-1
 /4_multi_media_alu_tb.vhd=-1
+/values.txt=-1
 [Files.Data]
 .\src\register_file.vhd=VHDL Source Code
-.\src\instruction_buffer.vhd=VHDL Source Code
 .\src\ALU.vhd=VHDL Source Code
+.\src\complete.vhd=VHDL Source Code
 .\src\alu_tb.vhd=VHDL Source Code
-.\src\binary.txt=Text File
 .\src\instruction_buffer_tb.vhd=VHDL Source Code
+.\src\binary.txt=Text File
 .\src\4_multi_media_alu_tb.vhd=VHDL Source Code
+.\src\values.txt=Text File
+[HierarchyViewer]
+HierarchyInformation=instruction_buffer_tb|tb|0
+ShowHide=ShowTopLevel
+Selected=

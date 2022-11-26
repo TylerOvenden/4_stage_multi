@@ -1,6 +1,6 @@
 .\src\register_file.vhd
-.\src\instruction_buffer.vhd
 .\src\ALU.vhd
+.\src\complete.vhd
 .\src\alu_tb.vhd
 .\src\instruction_buffer_tb.vhd
 .\src\4_multi_media_alu_tb.vhd

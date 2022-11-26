@@ -35,7 +35,7 @@ architecture tb of instruction_buffer_tb is
 
 
 	signal in_buffer: InstBuff;
-	signal clk, reset std_logic;
+	signal clk, reset: std_logic; 
 
 	--signal cmptr : std_logic;									 
 	signal instr_out, instr_in : std_logic_vector(24 downto 0);

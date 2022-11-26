@@ -1,17 +1,19 @@
-6
+84
 ~E 1 "../src/ALU.vhd" 29 ALU
-~A 1 "../src/ALU.vhd" 42 ALU_Behavior
+~A 1 "../src/complete.vhd" 346 ALU_Behavior
+~E 1 "../src/complete.vhd" 911 alu_model
+~A 1 "../src/complete.vhd" 951 behavior
 ~E 1 "../src/alu_tb.vhd" 7 alu_tb
 ~A 1 "../src/alu_tb.vhd" 11 tb
-~E 1 "../src/4_multi_media_alu_tb.vhd" 17 four_multi_media_alu_tb
-~A 1 "../src/4_multi_media_alu_tb.vhd" 27 tb
-~E 1 "../src/register_file.vhd" 172 IF_EX
-~A 1 "../src/register_file.vhd" 198 behavioral
-~E 1 "../src/instruction_buffer.vhd" 110 IF_ID
-~A 1 "../src/instruction_buffer.vhd" 121 behavioral
-~E 1 "../src/instruction_buffer.vhd" 45 instruction_buffer
-~A 1 "../src/instruction_buffer.vhd" 72 behaviorhal
+~E 1 "../src/4_multi_media_alu_tb.vhd" 18 four_multi_media_alu_tb
+~A 1 "../src/4_multi_media_alu_tb.vhd" 28 tb
+~E 1 "../src/complete.vhd" 282 IF_EX
+~A 1 "../src/complete.vhd" 308 behavioral
+~E 1 "../src/complete.vhd" 109 IF_ID
+~A 1 "../src/complete.vhd" 117 behavioral
+~E 1 "../src/complete.vhd" 40 instruction_buffer
+~A 1 "../src/complete.vhd" 67 behaviorhal
 ~E 1 "../src/instruction_buffer_tb.vhd" 17 instruction_buffer_tb
 ~A 1 "../src/instruction_buffer_tb.vhd" 30 tb
-~E 1 "../src/register_file.vhd" 49 register_file
-~A 1 "../src/register_file.vhd" 103 behaviorhal
+~E 1 "../src/register_file.vhd" 35 register_file
+~A 1 "../src/complete.vhd" 171 behaviorhal

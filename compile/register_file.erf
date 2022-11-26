@@ -2,4 +2,4 @@ WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line break
 MESSAGE "File: C:/Users/vleen/Documents/GitHub/4_stage_multi/src/4_multi_media_alu_tb.vhd" 
 MESSAGE "Compile Entity "four_multi_media_alu_tb"" 
 MESSAGE "Compile Architecture "tb" of Entity "four_multi_media_alu_tb"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]" 
