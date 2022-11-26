@@ -1,0 +1,1 @@
+ -w -cvi  -2002  -s "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/hdl_assist/library.cfg"  -work Processor  -e 100  "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/hdl_assist/5866-90c0-94a4-bdb7"

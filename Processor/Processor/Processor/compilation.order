@@ -1,0 +1,5 @@
+.\src\alu.vhd
+.\src\Data_Forwading_Unit.vhd
+.\src\Forwarding Muxes.vhd
+.\src\instruction_buffer.vhd
+.\src\register_file.vhd
