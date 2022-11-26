@@ -56,8 +56,8 @@ entity instruction_buffer is
 --);
 port (
 clk : in std_logic; -- system clock
-clr : in std_logic; -- synchrounous counter clear		  
-write: in std_logic;	--write signal	   
+reset : in std_logic; -- synchrounous counter clear		  
+--write: in std_logic;	--write signal	   
  in_buffer: in InstBuff;
 --pc : in std_logic_vector(n-1 downto 0);
 instr_in : in std_logic_vector(24 downto 0);	

@@ -11,8 +11,9 @@ use std.textio.all;
 
 library work;
 use work.all;
-use work.instr_pack.all;
-
+use work.instr_pack.all; 
+use work.regfile_pack.all;
+								 
 
 entity four_multi_media_alu_tb is
 generic(   
@@ -31,14 +32,15 @@ architecture tb of four_multi_media_alu_tb is
 	file txt_file : text;
 
 
-	signal in_buffer: InstBuff;
+	signal in_buffer: InstBuff;	
+
 --	signal clk, clr, write: std_logic;
 		 
-	signal clk, clr,write, reset: std_logic; 
+	signal clk,write, reset: std_logic; 
 	--signal cmptr : std_logic;									 				
 	
 	
-	signal rd_address	  : std_logic_vector(4 downto 0);
+	--signal rd_address	  : std_logic_vector(4 downto 0);
 	signal instrc : std_logic_vector(length_instr-1 downto 0);
 	--signal cmptr : std_logic;									 
 	signal rs1_data, rs2_data, rs3_data, rd_data : std_logic_vector(n-1 downto 0);
@@ -67,7 +69,7 @@ begin
 --		buffer_size => buffer_size
 --		)
 		
-		port map (in_buffer => in_buffer, clk => clk, clr=> clr, write => write, instr_out => instr_out, instr_in => instr_in);	
+		port map (in_buffer => in_buffer, clk => clk, reset=> reset,  instr_out => instr_out, instr_in => instr_in);	
 		
 		
 		
@@ -97,8 +99,8 @@ begin
 		registers => registers
 		)
 		
-		port map ( clk => clk,reset=> reset, instrc=> instrc, write=> write, clr=> clr,   rs1_data => rs1_data,  rs2_data => rs2_data,  
-		rs3_data => rs3_data,  rd_data => rd_data , rd_address => rd_address);		
+		port map ( clk => clk,reset=> reset, instrc=> instrc, write=> write,  rs1_data => rs1_data,  rs2_data => rs2_data,  
+		rs3_data => rs3_data, rd_data => rd_data);		
 		
 		
 		
@@ -111,7 +113,8 @@ begin
 		
 		variable lin     : line;
 		--variable v_OLINE     : line;
-		variable temp_inst : std_logic_vector(24 downto 0);
+		variable temp_inst : std_logic_vector(24 downto 0);	  
+		variable temp_reg : std_logic_vector(127 downto 0);
 		
 		variable counter : integer := 0;
 		variable ran : boolean := false;  
@@ -138,14 +141,18 @@ begin
 			end loop; 		  
 			counter	:= 0;
 			ran := true;
-    	file_close(txt_file);	
+    		
 		  end if;
 	--	std.env.finish;
 		wait; 
 		end process;
 		
 		
-		 clock: process
+		
+
+		
+		
+		clock: process
   begin 
 	  clk <='0';
 	  wait for period;

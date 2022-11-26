@@ -35,7 +35,7 @@ architecture tb of instruction_buffer_tb is
 
 
 	signal in_buffer: InstBuff;
-	signal clk, clr, write: std_logic;
+	signal clk, reset std_logic;
 
 	--signal cmptr : std_logic;									 
 	signal instr_out, instr_in : std_logic_vector(24 downto 0);
@@ -55,7 +55,7 @@ begin
 --		buffer_size => buffer_size
 --		)
 		
-		port map (in_buffer => in_buffer, clk => clk, clr=> clr, write => write, instr_out => instr_out, instr_in => instr_in);	
+		port map (in_buffer => in_buffer, reset=> reset, clk => clk,  instr_out => instr_out, instr_in => instr_in);	
   
 		process 	 
 		
