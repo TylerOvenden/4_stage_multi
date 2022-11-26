@@ -1,7 +1,7 @@
 [Version]
 Version=13.0
 [Designs]
-4_stage_complete=.\4_stage_complete\4_stage_complete.adf
+test_complete=.\test_complete\test_complete.adf
 [Browser]
 sort=order
 mode=none
@@ -9,4 +9,4 @@ mode=none
 order=1
 macro=
 [Expand]
-4_stage_complete=1
+test_complete=1

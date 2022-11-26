@@ -1,8 +1,0 @@
-acom -reorder -O3 -e 100 -work 4_stage_complete -2002  $dsn/src/4_multi_media_alu_tb.vhd $dsn/src/complete.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# Error: VLM_0040: VHDL unit cannot be compiled as the target library name is not a legal VHDL identifier.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -reorder -O3 -e 100 -work 4_stage_complete -2002  $dsn/src/complete.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# Error: VLM_0040: VHDL unit cannot be compiled as the target library name is not a legal VHDL identifier.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]

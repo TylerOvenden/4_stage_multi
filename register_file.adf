@@ -36,6 +36,6 @@ fileopenfolder=C:\Users\vleen\Documents\GitHub\4_stage_multi\src
 .\src\4_multi_media_alu_tb.vhd=VHDL Source Code
 .\src\values.txt=Text File
 [HierarchyViewer]
-HierarchyInformation=instruction_buffer_tb|tb|0
+HierarchyInformation=four_multi_media_alu_tb|tb|0
 ShowHide=ShowTopLevel
 Selected=

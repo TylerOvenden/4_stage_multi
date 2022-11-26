@@ -1,5 +1,6 @@
 [OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\instruction_buffer_tb.vhd|]
 TemplateId=0
+ActiveDocument=1
 tab=lu
 [OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\4_multi_media_alu_tb.vhd|]
 TemplateId=0
@@ -16,12 +17,18 @@ tab=lu
 [OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\complete.vhd|]
 TemplateId=0
 tab=lu
-[OPENDOC|Aldec.Hde.HdePlugIn.7|.\..\..\..\..\..\My_Designs\lab12\freq_div\src\tc514model.vhd|]
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\..\..\..\..\..\My_Designs\lab12/freq_div/src/tc514model.vhd|]
 TemplateId=0
 tab=lu
 [OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\ALU.vhd|]
 TemplateId=0
 tab=lu
-[OPENDOC|Aldec.Hde.HdePlugIn.7|.\..\..\..\..\..\My_Designs\lab11\freq_divider\src\frequency_divider.vhd|]
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\..\..\..\..\..\My_Designs\lab11/freq_divider/src/frequency_divider.vhd|]
+TemplateId=0
+tab=lu
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\Data Forwarding\Data_Forwarding/Data Forwarding/src/Data_Forwading_Unit.vhd|]
+TemplateId=0
+tab=lu
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\Data Forwarding\Data_Forwarding/Data Forwarding/src/Forwarding Muxes.vhd|]
 TemplateId=0
 tab=lu
