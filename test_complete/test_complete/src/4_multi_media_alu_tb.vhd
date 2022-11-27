@@ -16,12 +16,7 @@ use work.regfile_pack.all;
 								 
 
 entity four_multi_media_alu_tb is
-generic(   
-n : integer := 128; --constant for bits
-registers : integer := 32;	 
-length_instr : integer := 25	
-);	
-	
+
 end four_multi_media_alu_tb; 
 	
 
@@ -41,9 +36,9 @@ architecture tb of four_multi_media_alu_tb is
 	
 	
 	--signal rd_address	  : std_logic_vector(4 downto 0);
-	signal instrc : std_logic_vector(length_instr-1 downto 0);
+	signal instrc : std_logic_vector(24 downto 0);
 	--signal cmptr : std_logic;									 
-	signal rs1_data, rs2_data, rs3_data, rd_data, outp : std_logic_vector(n-1 downto 0);
+	signal rs1_data, rs2_data, rs3_data, rd_data, outp : std_logic_vector(127 downto 0);
 	
 	
 	
@@ -93,13 +88,8 @@ begin
 	ID : entity register_file	
 		
 	--	
-		 	generic map (
-		n => n,
-		length_instr  =>	  length_instr,
-		registers => registers
-		)
-		
-		port map ( clk => clk,reset=> reset, instrc=> instrc, write=> write,  rs1_data => rs1_data,  rs2_data => rs2_data,  
+		 
+		port map ( clk => clk,reset=> reset, instrc=> instr_out, write=> write,  rs1_data => rs1_data,  rs2_data => rs2_data,  
 		rs3_data => rs3_data, rd_data => rd_data);		
 		
 	

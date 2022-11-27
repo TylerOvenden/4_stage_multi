@@ -1,4 +1,4 @@
-27
+39
 ~E 1 "../src/Forwarding Muxes.vhd" 26 \Forwarding Muxes\
 ~A 1 "../src/Forwarding Muxes.vhd" 49 \Forwarding Muxes\
 ~E 1 "../src/ALU.vhd" 6 ALU
@@ -8,7 +8,7 @@
 ~E 1 "../src/Data_Forwading_Unit.vhd" 28 Data_Forwading_Unit
 ~A 1 "../src/Data_Forwading_Unit.vhd" 44 behavior
 ~E 1 "../src/4_multi_media_alu_tb.vhd" 18 four_multi_media_alu_tb
-~A 1 "../src/4_multi_media_alu_tb.vhd" 28 tb
+~A 1 "../src/4_multi_media_alu_tb.vhd" 23 tb
 ~E 1 "../src/complete.vhd" 282 IF_EX
 ~A 1 "../src/complete.vhd" 308 behavioral
 ~E 1 "../src/instruction_buffer.vhd" 114 IF_ID

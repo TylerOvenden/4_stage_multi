@@ -158,7 +158,7 @@ begin
 		
 	
 		--load immidate 
-	    elsif (instrc(24 downto 23) = "1") then 
+	    elsif (instrc(24 downto 23) = "0") then 
 			regs(to_integer(unsigned(instrc(4 downto 0)))) <= rd_data;	
 			
  

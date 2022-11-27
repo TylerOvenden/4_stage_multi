@@ -1,0 +1,2063 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -dbg -e 100 -work test_complete -2008  $dsn/src/instruction_buffer_tb.vhd
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer_tb.vhd
+# Compile Entity "instruction_buffer_tb"
+# Compile Architecture "tb" of Entity "instruction_buffer_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work test_complete -2008  $dsn/src/complete.vhd $dsn/src/4_multi_media_alu_tb.vhd $dsn/src/ALU.vhd $dsn/src/instruction_buffer.vhd $dsn/src/register_file.vhd $dsn/src/Data_Forwading_Unit.vhd "$dsn/src/Forwarding Muxes.vhd" $dsn/src/instruction_buffer_tb.vhd
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/complete.vhd
+# Compile Entity "alu_model"
+# Compile Architecture "behavior" of Entity "alu_model"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/4_multi_media_alu_tb.vhd
+# Compile Entity "four_multi_media_alu_tb"
+# Compile Architecture "tb" of Entity "four_multi_media_alu_tb"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_Behavior" of Entity "ALU"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer.vhd
+# Compile Package "instr_pack"
+# Compile Entity "instruction_buffer"
+# Compile Architecture "behaviorhal" of Entity "instruction_buffer"
+# Compile Entity "IF_ID"
+# Compile Architecture "behavioral" of Entity "IF_ID"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behaviorhal" of Entity "register_file"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/Forwarding Muxes.vhd
+# Compile Entity "\Forwarding Muxes\"
+# Compile Architecture "\Forwarding Muxes\" of Entity "\Forwarding Muxes\"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer_tb.vhd
+# Compile Entity "instruction_buffer_tb"
+# Compile Architecture "tb" of Entity "instruction_buffer_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+asim -O5 +access +r +m+instruction_buffer_tb instruction_buffer_tb tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6673 kB (elbread=427 elab2=6098 kernel=147 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\vleen\Documents\GitHub\4_stage_multi\test_complete\test_complete\src\wave.asdb
+#  10:48 PM, Saturday, November 26, 2022
+#  Simulation has been initialized
+# VSIM: 12 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/wave.asdb'.
+run @30us
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: Stopped at time 5 us + 1.
+# Stopped in "C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/register_file.vhd" at line 79 in process of instance "/instruction_buffer_tb/ID/line__73".
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+instruction_buffer_tb instruction_buffer_tb tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6673 kB (elbread=427 elab2=6098 kernel=147 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\vleen\Documents\GitHub\4_stage_multi\test_complete\test_complete\src\wave.asdb
+#  10:48 PM, Saturday, November 26, 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/wave.asdb'.
+run @30us
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: stopped at time: 30 us
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+instruction_buffer_tb instruction_buffer_tb tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -dbg -e 100 -work test_complete -2008  $dsn/src/instruction_buffer.vhd
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer.vhd
+# Compile Package "instr_pack"
+# Compile Entity "instruction_buffer"
+# Compile Architecture "behaviorhal" of Entity "instruction_buffer"
+# Compile Entity "IF_ID"
+# Compile Architecture "behavioral" of Entity "IF_ID"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6673 kB (elbread=427 elab2=6098 kernel=147 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\vleen\Documents\GitHub\4_stage_multi\test_complete\test_complete\src\wave.asdb
+#  10:50 PM, Saturday, November 26, 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/wave.asdb'.
+run
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: Stopped at time 15 us + 1.
+# Stopped in "C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer.vhd" at line 102 in process of instance "/instruction_buffer_tb/UUT/line__81".
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+endsim
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work test_complete -2008  $dsn/src/complete.vhd $dsn/src/4_multi_media_alu_tb.vhd $dsn/src/ALU.vhd $dsn/src/instruction_buffer.vhd $dsn/src/register_file.vhd $dsn/src/Data_Forwading_Unit.vhd "$dsn/src/Forwarding Muxes.vhd" $dsn/src/instruction_buffer_tb.vhd
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/complete.vhd
+# Compile Entity "alu_model"
+# Compile Architecture "behavior" of Entity "alu_model"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/4_multi_media_alu_tb.vhd
+# Compile Entity "four_multi_media_alu_tb"
+# Compile Architecture "tb" of Entity "four_multi_media_alu_tb"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_Behavior" of Entity "ALU"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer.vhd
+# Compile Package "instr_pack"
+# Compile Entity "instruction_buffer"
+# Compile Architecture "behaviorhal" of Entity "instruction_buffer"
+# Compile Entity "IF_ID"
+# Compile Architecture "behavioral" of Entity "IF_ID"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behaviorhal" of Entity "register_file"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/Forwarding Muxes.vhd
+# Compile Entity "\Forwarding Muxes\"
+# Compile Architecture "\Forwarding Muxes\" of Entity "\Forwarding Muxes\"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer_tb.vhd
+# Compile Entity "instruction_buffer_tb"
+# Compile Architecture "tb" of Entity "instruction_buffer_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+asim -O5 +access +r +m+instruction_buffer_tb instruction_buffer_tb tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6673 kB (elbread=427 elab2=6098 kernel=147 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\vleen\Documents\GitHub\4_stage_multi\test_complete\test_complete\src\wave.asdb
+#  10:53 PM, Saturday, November 26, 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/wave.asdb'.
+run
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: Stopped at time 15 us + 1.
+# Stopped in "C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer.vhd" at line 102 in process of instance "/instruction_buffer_tb/UUT/line__81".
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+endsim
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work test_complete -2008  $dsn/src/complete.vhd $dsn/src/4_multi_media_alu_tb.vhd $dsn/src/ALU.vhd $dsn/src/instruction_buffer.vhd $dsn/src/register_file.vhd $dsn/src/Data_Forwading_Unit.vhd "$dsn/src/Forwarding Muxes.vhd" $dsn/src/instruction_buffer_tb.vhd
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/complete.vhd
+# Compile Entity "alu_model"
+# Compile Architecture "behavior" of Entity "alu_model"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/4_multi_media_alu_tb.vhd
+# Compile Entity "four_multi_media_alu_tb"
+# Compile Architecture "tb" of Entity "four_multi_media_alu_tb"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_Behavior" of Entity "ALU"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer.vhd
+# Compile Package "instr_pack"
+# Compile Entity "instruction_buffer"
+# Compile Architecture "behaviorhal" of Entity "instruction_buffer"
+# Compile Entity "IF_ID"
+# Compile Architecture "behavioral" of Entity "IF_ID"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behaviorhal" of Entity "register_file"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/Forwarding Muxes.vhd
+# Compile Entity "\Forwarding Muxes\"
+# Compile Architecture "\Forwarding Muxes\" of Entity "\Forwarding Muxes\"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer_tb.vhd
+# Compile Entity "instruction_buffer_tb"
+# Compile Architecture "tb" of Entity "instruction_buffer_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+asim -O5 +access +r +m+instruction_buffer_tb instruction_buffer_tb tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6673 kB (elbread=427 elab2=6099 kernel=147 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\vleen\Documents\GitHub\4_stage_multi\test_complete\test_complete\src\wave.asdb
+#  10:59 PM, Saturday, November 26, 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/wave.asdb'.
+run
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: Stopped at time 15 us + 1.
+# Stopped in "C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer.vhd" at line 102 in process of instance "/instruction_buffer_tb/UUT/line__81".
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+# Stopped in "C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer.vhd" at line 102 in process of instance "/instruction_buffer_tb/UUT/line__81".
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+instruction_buffer_tb instruction_buffer_tb tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6673 kB (elbread=427 elab2=6099 kernel=147 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\vleen\Documents\GitHub\4_stage_multi\test_complete\test_complete\src\wave.asdb
+#  11:02 PM, Saturday, November 26, 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/wave.asdb'.
+# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/in_buffer" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/clk" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/reset" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/write" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/instr_out" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/instr_in" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/rs1_data" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/rs2_data" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/rs3_data" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/rd_data" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/outp" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/instrc" has already been traced.
+# VSIM: 0 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/wave.asdb'.
+run
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 380 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 380 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 380 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 390 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 390 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 390 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 400 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 400 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 400 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 410 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 410 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 410 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 420 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 420 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 420 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 430 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 430 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 430 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 440 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 440 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 440 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 450 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 450 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 450 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 460 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 460 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 460 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 470 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 470 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 470 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 480 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 480 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 480 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 490 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 490 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 490 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 500 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 500 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 500 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 510 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 510 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 510 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 520 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 520 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 520 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 530 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 530 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 530 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 540 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 540 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 540 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 550 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 550 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 550 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 560 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 560 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 560 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 570 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 570 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 570 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 580 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 580 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 580 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 590 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 590 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 590 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 600 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 600 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 600 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 610 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 610 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 610 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 620 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 620 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 620 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 630 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 630 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 630 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 640 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 640 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 640 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 650 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 650 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 650 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1020 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1020 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1020 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1030 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1030 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1030 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1040 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1040 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1040 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1050 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1050 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1050 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1060 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1060 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1060 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1070 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1070 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1070 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1080 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1080 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1080 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1090 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1090 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1090 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1100 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1100 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1100 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1110 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1110 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1110 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1120 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1120 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1120 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1130 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1130 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1130 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1140 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1140 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1140 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1150 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1150 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1150 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1160 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1160 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1160 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1170 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1170 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1170 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1180 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1180 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1180 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1190 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1190 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1190 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1200 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1200 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1200 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1210 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1210 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1210 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1220 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1220 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1220 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1230 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1230 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1230 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1240 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1240 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1240 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1250 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1250 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1250 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1260 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1260 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1260 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1270 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1270 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1270 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1280 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1280 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1280 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1290 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1290 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1290 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1660 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1660 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1660 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1670 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1670 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1670 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1680 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1680 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1680 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1690 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1690 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1690 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1700 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1700 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1700 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1710 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1710 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1710 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1720 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1720 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1720 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1730 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1730 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1730 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1740 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1740 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1740 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1750 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1750 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1750 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1760 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1760 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1760 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1770 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1770 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1770 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1780 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1780 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1780 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1790 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1790 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1790 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1800 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1800 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1800 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1810 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1810 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1810 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1820 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1820 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1820 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1830 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1830 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1830 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1840 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1840 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1840 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1850 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1850 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1850 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1860 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1860 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1860 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1870 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1870 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1870 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1880 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1880 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1880 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1890 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1890 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1890 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1900 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1900 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1900 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1910 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1910 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1910 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1920 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1920 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1920 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1930 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1930 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1930 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2300 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2300 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2300 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2310 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2310 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2310 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2320 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2320 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2320 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2330 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2330 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2330 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2340 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2340 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2340 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2350 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2350 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2350 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2360 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2360 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2360 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2370 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2370 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2370 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2380 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2380 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2380 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2390 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2390 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2390 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2400 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2400 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2400 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2410 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2410 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2410 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2420 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2420 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2420 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2430 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2430 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2430 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2440 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2440 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2440 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2450 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2450 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2450 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2460 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2460 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2460 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2470 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2470 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2470 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2480 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2480 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2480 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2490 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2490 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2490 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2500 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2500 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2500 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2510 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2510 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2510 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2520 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2520 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2520 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2530 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2530 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2530 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2540 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2540 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2540 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2550 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2550 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2550 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2560 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2560 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2560 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2570 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2570 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2570 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2940 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2940 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2940 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2950 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2950 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2950 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2960 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2960 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2960 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2970 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2970 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2970 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2980 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2980 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2980 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2990 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2990 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 2990 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ms,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ms,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ms,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3010 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3010 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3010 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3020 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3020 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3020 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3030 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3030 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3030 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3040 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3040 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3040 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3050 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3050 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3050 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3060 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3060 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3060 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3070 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3070 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3070 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3080 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3080 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3080 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3090 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3090 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3090 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3100 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3100 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3100 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3110 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3110 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3110 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3120 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3120 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3120 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3130 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3130 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3130 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3140 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3140 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3140 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3150 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3150 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3150 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3160 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3160 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3160 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3170 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3170 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3170 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3180 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3180 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3180 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3190 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3190 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3190 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3200 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3200 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3200 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3210 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3210 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3210 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3580 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3580 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3580 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3590 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3590 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3590 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3600 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3600 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3600 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3610 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3610 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3610 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3620 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3620 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3620 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3630 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3630 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3630 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3640 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3640 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3640 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3650 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3650 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3650 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3660 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3660 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3660 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3670 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3670 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3670 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3680 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3680 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3680 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3690 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3690 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3690 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3700 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3700 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3700 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3710 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3710 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3710 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3720 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3720 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3720 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3730 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3730 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3730 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3740 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3740 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3740 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3750 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3750 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3750 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3760 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3760 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3760 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3770 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3770 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3770 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3780 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3780 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3780 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3790 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3790 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3790 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3800 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3800 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3800 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3810 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3810 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3810 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3820 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3820 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3820 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3830 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3830 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3830 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3840 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3840 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3840 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3850 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3850 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3850 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4220 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4220 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4220 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4230 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4230 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4230 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4240 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4240 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4240 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4250 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4250 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4250 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4260 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4260 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4260 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4270 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4270 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4270 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4280 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4280 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4280 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4290 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4290 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4290 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4300 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4300 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4300 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4310 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4310 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4310 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4320 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4320 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4320 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4330 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4330 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4330 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4340 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4340 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4340 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4350 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4350 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4350 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4360 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4360 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4360 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4370 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4370 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4370 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4380 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4380 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4380 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4390 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4390 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4390 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4400 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4400 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4400 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4410 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4410 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4410 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4420 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4420 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4420 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4430 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4430 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4430 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4440 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4440 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4440 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4450 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4450 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4450 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4460 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4460 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4460 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4470 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4470 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4470 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4480 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4480 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4480 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4490 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4490 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4490 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4860 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4860 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4860 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4870 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4870 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4870 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4880 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4880 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4880 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4890 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4890 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4890 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4900 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4900 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4900 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4910 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4910 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4910 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4920 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4920 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4920 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4930 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4930 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4930 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4940 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4940 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4940 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4950 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4950 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4950 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4960 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4960 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4960 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4970 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4970 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4970 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4980 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4980 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4980 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4990 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4990 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 4990 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5 ms,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5 ms,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5 ms,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5010 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5010 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5010 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5020 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5020 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5020 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5030 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5030 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5030 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5040 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5040 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5040 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5050 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5050 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5050 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5060 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5060 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5060 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5070 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5070 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5070 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5080 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5080 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5080 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5090 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5090 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5090 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5100 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5100 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5100 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5110 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5110 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5110 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5120 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5120 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5120 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5130 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5130 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5130 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5500 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5500 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5500 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5510 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5510 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5510 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5520 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5520 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5520 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5530 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5530 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5530 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5540 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5540 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5540 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5550 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5550 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5550 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5560 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5560 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5560 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5570 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5570 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5570 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5580 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5580 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5580 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5590 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5590 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5590 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5600 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5600 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5600 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5610 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5610 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5610 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5620 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5620 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5620 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5630 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5630 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5630 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5640 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5640 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5640 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5650 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5650 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5650 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5660 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5660 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5660 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5670 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5670 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5670 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5680 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5680 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5680 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5690 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5690 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5690 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5700 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5700 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5700 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5710 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5710 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5710 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5720 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5720 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5720 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5730 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5730 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5730 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5740 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5740 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5740 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5750 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5750 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5750 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5760 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5760 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5760 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5770 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5770 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 5770 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6140 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6140 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6140 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6150 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6150 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6150 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6160 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6160 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6160 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6170 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6170 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6170 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6180 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6180 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6180 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6190 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6190 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6190 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6200 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6200 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6200 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6210 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6210 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6210 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6220 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6220 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6220 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6230 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6230 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6230 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6240 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6240 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6240 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6250 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6250 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6250 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6260 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6260 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 6260 us,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+endsim
+# KERNEL: stopped at time: 6260 us
+# VSIM: Simulation has finished.
