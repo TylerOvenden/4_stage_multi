@@ -1,3 +1,1 @@
-four_multi_media_alu_tb ENTITY
-alu_model ENTITY
-IF_EX ENTITY
+instruction_buffer_tb ENTITY

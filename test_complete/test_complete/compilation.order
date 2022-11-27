@@ -1,8 +1,9 @@
-.\src\complete.vhd
-.\src\ALU.vhd
+.\src\Data_Forwading_Unit.vhd
 .\src\instruction_buffer.vhd
 .\src\register_file.vhd
-.\src\Data_Forwading_Unit.vhd
 .\src\Forwarding Muxes.vhd
-.\src\instruction_buffer_tb.vhd
 .\src\EX_WB.vhd
+.\src\ALU.vhd
+.\src\complete.vhd
+.\src\test.vhd
+.\src\instruction_buffer_tb.vhd

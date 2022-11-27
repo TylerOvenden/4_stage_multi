@@ -21,25 +21,27 @@ AddGeneratedFilesToDesignBrowser=0
 DesignStatusPath=$dsn\src\DESIGN_STATUS
 DesignActivationScript=$dsn\design.do
 [Files]
-/complete.vhd=-1
-/4_multi_media_alu_tb.vhd=-1
-/ALU.vhd=-1
+/Data_Forwading_Unit.vhd=-1
 /instruction_buffer.vhd=-1
 /register_file.vhd=-1
-/Data_Forwading_Unit.vhd=-1
 /Forwarding Muxes.vhd=-1
-/instruction_buffer_tb.vhd=-1
 /EX_WB.vhd=-1
+/ALU.vhd=-1
+/complete.vhd=-1
+/test.vhd=-1
+/4_multi_media_alu_tb.vhd=-1
+/instruction_buffer_tb.vhd=-1
 [Files.Data]
-.\src\complete.vhd=VHDL Source Code
-.\src\4_multi_media_alu_tb.vhd=VHDL Source Code
-.\src\ALU.vhd=VHDL Source Code
+.\src\Data_Forwading_Unit.vhd=VHDL Source Code
 .\src\instruction_buffer.vhd=VHDL Source Code
 .\src\register_file.vhd=VHDL Source Code
-.\src\Data_Forwading_Unit.vhd=VHDL Source Code
 .\src\Forwarding Muxes.vhd=VHDL Source Code
-.\src\instruction_buffer_tb.vhd=VHDL Source Code
 .\src\EX_WB.vhd=VHDL Source Code
+.\src\ALU.vhd=VHDL Source Code
+.\src\complete.vhd=VHDL Source Code
+.\src\test.vhd=VHDL Source Code
+.\src\4_multi_media_alu_tb.vhd=VHDL Source Code
+.\src\instruction_buffer_tb.vhd=VHDL Source Code
 [LocalVhdlSets]
 NetlistCompilation=1
 EnableVHDL93Key=0
