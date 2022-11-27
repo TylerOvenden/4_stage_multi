@@ -27,7 +27,7 @@ use IEEE.std_logic_1164.all;
 
 entity Data_Forwading_Unit is
 	port(
-	 	 clk : in STD_LOGIC;	
+	 	-- clk : in STD_LOGIC;	
 		 r1 : in STD_LOGIC_VECTOR(127 downto 0);
 		 r2 : in STD_LOGIC_VECTOR(127 downto 0);
 		 r3 : in STD_LOGIC_VECTOR(127 downto 0);
@@ -46,7 +46,7 @@ architecture behavior of Data_Forwading_Unit is
 
 begin 
 
-	process(clk)  
+	process(r1, r2, r3, instr, next_instr)  
 	variable curr_rd : std_logic_vector(4 downto 0);
 --variable next_rd : std_logic_vector(4 downto 0);
 --variable rs1 : std_logic_vector(4 downto 0);

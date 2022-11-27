@@ -29,7 +29,7 @@ fileopenfolder=C:\Users\vleen\Documents\GitHub\4_stage_multi\test_complete\test_
 .\src\Test_Bench.vhd=VHDL Source Code
 .\src\instruction_buffer_tb.vhd=VHDL Source Code
 [HierarchyViewer]
-HierarchyInformation=four_multi_media_alu_tb|tb|0 processor_tb|tb|0
+HierarchyInformation=instruction_buffer_tb|tb|0
 ShowHide=ShowTopLevel
 Selected=
 [Files]

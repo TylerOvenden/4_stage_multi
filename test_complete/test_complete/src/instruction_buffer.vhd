@@ -122,17 +122,20 @@ entity IF_ID is
 	port(
 	clk : in std_logic;
 	instr_in : in std_logic_vector(24 downto 0);
-	instr_out : out std_logic_vector(24 downto 0)
+	instr_out : out std_logic_vector(24 downto 0);
+	reset : in std_logic
 	);
 end IF_ID;
 
 architecture behavioral of IF_ID is
 begin
-	process (clk)
+	process(clk, reset)
 	begin
-		if rising_edge(clk) then
-	
+		if reset = '1' then
+			instr_out <= "0000011101001001001000000";
+		elsif rising_edge(clk)	then
 			instr_out <= instr_in;
+	
 		end if;
 	end process;
 end behavioral;

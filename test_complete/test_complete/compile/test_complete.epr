@@ -1,2 +1,8 @@
 "C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/complete.vhd" VHDL test_complete 1 0 0 -02 -08
+"C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/ALU.vhd" VHDL test_complete 1 0 0 -02 -08
+"C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer.vhd" VHDL test_complete 1 0 0 -02 -08
+"C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/register_file.vhd" VHDL test_complete 1 0 0 -02 -08
+"C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/Data_Forwading_Unit.vhd" VHDL test_complete 1 0 0 -02 -08
+"C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/Forwarding Muxes.vhd" VHDL test_complete 1 0 0 -02 -08
+"C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer_tb.vhd" VHDL test_complete 1 0 0 -02 -08
 . . 0 0 0

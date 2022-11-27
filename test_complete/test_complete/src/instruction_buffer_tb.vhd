@@ -15,15 +15,6 @@ use work.instr_pack.all;
 
 
 entity instruction_buffer_tb is
---generic(
---n : integer := 6 ;	
---width : integer := 2 ;	
---inst_size : integer := 25 ;	
---
----- width of ADC
---		-- integer analog value simulated, Vin = (analog_val * Vref)/2**n
---		buffer_size : integer := 64);		
---	
 	
 end instruction_buffer_tb;
 
@@ -36,7 +27,29 @@ architecture tb of instruction_buffer_tb is
 
 	signal in_buffer: InstBuff;
 	signal clk, reset, write: std_logic; 
+	
+	signal ins_IFID: std_logic_vector(24 downto 0);		   
 
+	-- ID/EX
+	signal ins_IDEX: std_logic_vector(24 downto 0);		   
+	signal rs1_save_IDEX: std_logic_vector(127 downto 0);
+	signal rs2_save_IDEX: std_logic_vector(127 downto 0);
+	signal rs3_save_IDEX: std_logic_vector(127 downto 0);
+	signal rsd_save_IDEX: std_logic_vector(127 downto 0);
+	--EX/WB
+	signal ins_EXWB: std_logic_vector(24 downto 0);		   
+	signal rs1_save_EXWB: std_logic_vector(127 downto 0);
+	signal rs2_save_EXWB: std_logic_vector(127 downto 0);
+	signal rs3_save_EXWB: std_logic_vector(127 downto 0);
+	signal rsd_save_EXWB: std_logic_vector(127 downto 0);
+	--Forwarding signals
+	 signal FWD_A : STD_LOGIC;
+	 signal FWD_B : STD_LOGIC;
+	 signal FWD_C : STD_LOGIC;
+	 
+	 
+	
+	
 	--signal cmptr : std_logic;									 
 	signal instr_out, instr_in : std_logic_vector(24 downto 0);		  
 	
@@ -50,19 +63,22 @@ architecture tb of instruction_buffer_tb is
 begin
 	UUT : entity instruction_buffer	
 		
-	--	
---		 	generic map (
---		n => n,
---		width  =>	 width,
---		inst_size  =>	  inst_size,
---		--InstBuff => InstBuff,
---		buffer_size => buffer_size
---		)
+
+
+
+	port map (in_buffer => in_buffer, reset=> reset, clk => clk,  instr_out => instr_out);	 
+	
+	
+	
+		E_IF_ID : entity IF_ID	
 		
+																				
 
 
-
-	port map (in_buffer => in_buffer, reset=> reset, clk => clk,  instr_out => instr_out);	
+	port map (reset=> reset, clk => clk,  instr_in => instr_out, instr_out => ins_IFID);	
+	
+	
+	
   	ID : entity register_file	
 		
 	--	
@@ -72,16 +88,42 @@ begin
 		rs3_data => rs3_data, rd_data => rd_data, instrc => instr_out);					   
 		
 	
-
+		
+	E_ID_EX: entity ID_EX port map ( clk => clk, 
+		reset=> reset, instr_out => ins_EXWB, instr_in => instr_out, rs1_data_in => rs1_data,
+		rs2_data_in => rs2_data,rs3_data_in => rs3_data, rd_data_in => rd_data, rs1_data_out => rs1_save_IDEX,
+		rs2_data_out => rs2_save_IDEX, rs3_data_out => rs3_save_IDEX, rd_data_out => rsd_save_IDEX );		
+		
+		
 		
 			ALU_EXE : entity ALU	
 		
 		port map (  r1 => rs1_data,  r2 => rs2_data,  
-		r3 => rs3_data, instrc => instr_out, o => output);	
-			
+		r3 => rs3_data, instrc => ins_EXWB, o => output);	
+		
+		--
+--			 clk : in STD_LOGIC;	
+--		 r1 : in STD_LOGIC_VECTOR(127 downto 0);
+--		 r2 : in STD_LOGIC_VECTOR(127 downto 0);
+--		 r3 : in STD_LOGIC_VECTOR(127 downto 0);
+--		 instr: in STD_LOGIC_VECTOR(24 downto 0);
+--		 next_instr: in STD_LOGIC_VECTOR(24 downto 0);
+--		 FWD_A : out STD_LOGIC;
+--		 FWD_B : out STD_LOGIC;
+--		 FWD_C : out STD_LOGIC
+			 	
+			forward_unit : entity Data_Forwading_Unit	
+		
+		port map (r1 => rs1_save_IDEX,  r2 => rs2_save_IDEX,
+		r3 => rs3_save_IDEX, instr => ins_EXWB, next_instr => ins_IDEX, FWD_A => FWD_A,FWD_B => FWD_B,FWD_C => FWD_C);
 		
 		
 		
+		
+		
+		mux_WB : entity \Forwarding Muxes\ port map (r1_ins => rs1_save_IDEX,  r2_ins => rs2_save_IDEX,
+		r3_ins => rs3_save_IDEX,alu_out => output,FWD_A => FWD_A,FWD_B => FWD_B,FWD_C => FWD_C);   
+	
 		
 	
 	

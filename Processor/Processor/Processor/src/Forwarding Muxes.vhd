@@ -41,9 +41,6 @@ entity \Forwarding Muxes\ is
 		 r3_out: out STD_LOGIC_VECTOR(127 downto 0)
 	     );
 end \Forwarding Muxes\;
-
-
-
 architecture \Forwarding Muxes\ of \Forwarding Muxes\ is
 begin
 process(clk)
@@ -66,6 +63,5 @@ begin
 	else
 		r3_out <= r3_ins;
 	end if;
-
 end process;
 end \Forwarding Muxes\;

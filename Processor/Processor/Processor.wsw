@@ -29,3 +29,6 @@ tab=lu
 [OPENDOC|Aldec.Hde.HdePlugIn.7|.\Processor\src/Data_Forwading_Unit.vhd|]
 TemplateId=0
 tab=lu
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\Processor\src/pipeline_reg.vhd|]
+TemplateId=0
+tab=lu

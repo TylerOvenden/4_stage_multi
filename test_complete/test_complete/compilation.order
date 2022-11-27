@@ -1,5 +1,4 @@
 .\src\complete.vhd
-.\src\4_multi_media_alu_tb.vhd
 .\src\ALU.vhd
 .\src\instruction_buffer.vhd
 .\src\register_file.vhd
