@@ -1,167 +1,10 @@
 # ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+instruction_buffer_tb instruction_buffer_tb tb
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6673 kB (elbread=427 elab2=6099 kernel=147 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\vleen\Documents\GitHub\4_stage_multi\test_complete\test_complete\src\wave.asdb
-#  11:24 PM, Saturday, November 26, 2022
-#  Simulation has been initialized
-# VSIM: 12 object(s) traced.
-# Waveform file 'untitled.awc' connected to 'C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/wave.asdb'.
-run
-# KERNEL: Stopped at time 0 ps + 0.
-# Stopped in "C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/register_file.vhd" at line 128 in process of instance "/instruction_buffer_tb/ID/line__73".
-step -over
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
-run
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
-# KERNEL: Stopped at time 0 ps + 1.
-# Stopped in "C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/register_file.vhd" at line 128 in process of instance "/instruction_buffer_tb/ID/line__73".
-run
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
-# KERNEL: Stopped at time 10 us + 1.
-# Stopped in "C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/register_file.vhd" at line 128 in process of instance "/instruction_buffer_tb/ID/line__73".
-run
-# KERNEL: Stopped at time 15 us + 1.
-# Stopped in "C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer.vhd" at line 102 in process of instance "/instruction_buffer_tb/UUT/line__81".
-run
-# KERNEL: Stopped at time 20 us + 1.
-# Stopped in "C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/register_file.vhd" at line 128 in process of instance "/instruction_buffer_tb/ID/line__73".
-run
-# KERNEL: Stopped at time 25 us + 1.
-# Stopped in "C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer.vhd" at line 102 in process of instance "/instruction_buffer_tb/UUT/line__81".
-run
-# KERNEL: Stopped at time 30 us + 1.
-# Stopped in "C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/register_file.vhd" at line 128 in process of instance "/instruction_buffer_tb/ID/line__73".
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-run
-# KERNEL: Stopped at time 35 us + 1.
-# Stopped in "C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer.vhd" at line 102 in process of instance "/instruction_buffer_tb/UUT/line__81".
-run
-# KERNEL: Stopped at time 40 us + 1.
-# Stopped in "C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/register_file.vhd" at line 128 in process of instance "/instruction_buffer_tb/ID/line__73".
-run
-# KERNEL: Stopped at time 45 us + 1.
-# Stopped in "C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer.vhd" at line 102 in process of instance "/instruction_buffer_tb/UUT/line__81".
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+instruction_buffer_tb instruction_buffer_tb tb
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6673 kB (elbread=427 elab2=6099 kernel=147 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\vleen\Documents\GitHub\4_stage_multi\test_complete\test_complete\src\wave.asdb
-#  11:26 PM, Saturday, November 26, 2022
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/wave.asdb'.
-# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/in_buffer" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/clk" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/reset" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/write" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/instr_out" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/instr_in" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/rs1_data" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/rs2_data" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/rs3_data" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/rd_data" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/outp" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/instrc" has already been traced.
-# VSIM: 0 object(s) traced.
-# Waveform file 'untitled.awc' connected to 'C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/wave.asdb'.
-run @35us
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
-# KERNEL: stopped at time: 35 us
-run @65us
-# KERNEL: stopped at time: 65 us
-acom -dbg -e 100 -work test_complete -2008  $dsn/src/register_file.vhd
-# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/register_file.vhd
-# Compile Entity "register_file"
-# Compile Architecture "behaviorhal" of Entity "register_file"
-# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+instruction_buffer_tb instruction_buffer_tb tb
-# ELBREAD: Elaboration process.
-# ELBREAD: Error: The contents of entity 'test_complete.register_file' instantiated in architecture 'tb:instruction_buffer_tb' differ from the contents available during the compilation of this architecture.
-# ELBREAD: Error: Elaboration process completed with errors.
-# Design: Error: Elaboration failed
-# Error: VSIM: cannot select specified top-level
-acom -dbg -e 100 -work test_complete -2008  $dsn/src/register_file.vhd
-# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/register_file.vhd
-# Compile Entity "register_file"
-# Compile Architecture "behaviorhal" of Entity "register_file"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Error: The contents of entity 'test_complete.register_file' instantiated in architecture 'tb:instruction_buffer_tb' differ from the contents available during the compilation of this architecture.
-# ELBREAD: Error: Elaboration process completed with errors.
-# Design: Error: Elaboration failed
-acom -dbg -e 100 -work test_complete -2008  $dsn/src/complete.vhd $dsn/src/4_multi_media_alu_tb.vhd $dsn/src/ALU.vhd $dsn/src/instruction_buffer.vhd $dsn/src/register_file.vhd $dsn/src/Data_Forwading_Unit.vhd "$dsn/src/Forwarding Muxes.vhd" $dsn/src/instruction_buffer_tb.vhd
+# ELBREAD: Elaboration time 1.4 [s].
+acom -dbg -e 100 -work test_complete -2008  $dsn/src/complete.vhd $dsn/src/ALU.vhd $dsn/src/instruction_buffer.vhd $dsn/src/register_file.vhd $dsn/src/Data_Forwading_Unit.vhd "$dsn/src/Forwarding Muxes.vhd" $dsn/src/instruction_buffer_tb.vhd $dsn/src/EX_WB.vhd
 # File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/complete.vhd
-# Compile Entity "alu_model"
-# Compile Architecture "behavior" of Entity "alu_model"
-# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/4_multi_media_alu_tb.vhd
-# Compile Entity "four_multi_media_alu_tb"
-# Compile Architecture "tb" of Entity "four_multi_media_alu_tb"
+# Compile Entity "processor_model"
+# Compile Architecture "behavior" of Entity "processor_model"
+# Error: COMP96_0122: complete.vhd : (142, 2): Symbol "u_ID_EX" has already been declared in this scope.
 # File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/ALU.vhd
 # Compile Entity "ALU"
 # Compile Architecture "ALU_Behavior" of Entity "ALU"
@@ -174,6 +17,8 @@ acom -dbg -e 100 -work test_complete -2008  $dsn/src/complete.vhd $dsn/src/4_mul
 # File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/register_file.vhd
 # Compile Entity "register_file"
 # Compile Architecture "behaviorhal" of Entity "register_file"
+# Compile Entity "ID_EX"
+# Compile Architecture "behavioral" of Entity "ID_EX"
 # File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/Data_Forwading_Unit.vhd
 # Compile Entity "Data_Forwading_Unit"
 # Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
@@ -183,9 +28,142 @@ acom -dbg -e 100 -work test_complete -2008  $dsn/src/complete.vhd $dsn/src/4_mul
 # File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer_tb.vhd
 # Compile Entity "instruction_buffer_tb"
 # Compile Architecture "tb" of Entity "instruction_buffer_tb"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/EX_WB.vhd
+# Compile Entity "EX_WB"
+# Error: COMP96_0078: EX_WB.vhd : (3, 11): Unknown identifier "std_logic".
+# Error: COMP96_0064: EX_WB.vhd : (3, 11): Unknown type.
+# Error: COMP96_0078: EX_WB.vhd : (4, 16): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: EX_WB.vhd : (4, 16): Unknown type.
+# Error: COMP96_0078: EX_WB.vhd : (5, 18): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: EX_WB.vhd : (5, 18): Unknown type.
+# Error: COMP96_0078: EX_WB.vhd : (6, 19): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: EX_WB.vhd : (6, 19): Unknown type.
+# Error: COMP96_0078: EX_WB.vhd : (7, 19): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: EX_WB.vhd : (7, 19): Unknown type.
+# Error: COMP96_0078: EX_WB.vhd : (8, 19): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: EX_WB.vhd : (8, 19): Unknown type.
+# Error: COMP96_0078: EX_WB.vhd : (9, 18): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: EX_WB.vhd : (9, 18): Unknown type.
+# Error: COMP96_0078: EX_WB.vhd : (11, 21): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: EX_WB.vhd : (11, 21): Unknown type.
+# Error: COMP96_0078: EX_WB.vhd : (12, 21): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: EX_WB.vhd : (12, 21): Unknown type.
+# Error: COMP96_0078: EX_WB.vhd : (13, 21): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: EX_WB.vhd : (13, 21): Unknown type.
+# Error: COMP96_0078: EX_WB.vhd : (14, 20): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: EX_WB.vhd : (14, 20): Unknown type.
+# Compile Architecture "behavioral" of Entity "EX_WB"
+# Error: COMP96_0056: EX_WB.vhd : (21, 1): Cannot find referenced entity declaration "EX_WB".
+# Compile failure 24 Errors 0 Warnings  Analysis time :  0.7 [s]
+acom -dbg -e 100 -work test_complete -2008  $dsn/src/complete.vhd $dsn/src/ALU.vhd $dsn/src/instruction_buffer.vhd $dsn/src/register_file.vhd $dsn/src/Data_Forwading_Unit.vhd "$dsn/src/Forwarding Muxes.vhd" $dsn/src/instruction_buffer_tb.vhd $dsn/src/EX_WB.vhd
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/complete.vhd
+# Compile Entity "processor_model"
+# Compile Architecture "behavior" of Entity "processor_model"
+# Error: COMP96_0078: complete.vhd : (142, 18): Unknown identifier "EX_WB".
+# Error: COMP96_0056: complete.vhd : (142, 18): Cannot find referenced entity declaration "EX_WB".
+# Error: COMP96_0055: complete.vhd : (142, 18): Cannot find context item "EX_WB".
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_Behavior" of Entity "ALU"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer.vhd
+# Compile Package "instr_pack"
+# Compile Entity "instruction_buffer"
+# Compile Architecture "behaviorhal" of Entity "instruction_buffer"
+# Compile Entity "IF_ID"
+# Compile Architecture "behavioral" of Entity "IF_ID"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behaviorhal" of Entity "register_file"
+# Compile Entity "ID_EX"
+# Compile Architecture "behavioral" of Entity "ID_EX"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/Forwarding Muxes.vhd
+# Compile Entity "\Forwarding Muxes\"
+# Compile Architecture "\Forwarding Muxes\" of Entity "\Forwarding Muxes\"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer_tb.vhd
+# Compile Entity "instruction_buffer_tb"
+# Compile Architecture "tb" of Entity "instruction_buffer_tb"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/EX_WB.vhd
+# Compile Entity "EX_WB"
+# Error: COMP96_0078: EX_WB.vhd : (3, 11): Unknown identifier "std_logic".
+# Error: COMP96_0064: EX_WB.vhd : (3, 11): Unknown type.
+# Error: COMP96_0078: EX_WB.vhd : (4, 16): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: EX_WB.vhd : (4, 16): Unknown type.
+# Error: COMP96_0078: EX_WB.vhd : (5, 18): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: EX_WB.vhd : (5, 18): Unknown type.
+# Error: COMP96_0078: EX_WB.vhd : (6, 19): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: EX_WB.vhd : (6, 19): Unknown type.
+# Error: COMP96_0078: EX_WB.vhd : (7, 19): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: EX_WB.vhd : (7, 19): Unknown type.
+# Error: COMP96_0078: EX_WB.vhd : (8, 19): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: EX_WB.vhd : (8, 19): Unknown type.
+# Error: COMP96_0078: EX_WB.vhd : (9, 18): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: EX_WB.vhd : (9, 18): Unknown type.
+# Error: COMP96_0078: EX_WB.vhd : (11, 21): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: EX_WB.vhd : (11, 21): Unknown type.
+# Error: COMP96_0078: EX_WB.vhd : (12, 21): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: EX_WB.vhd : (12, 21): Unknown type.
+# Error: COMP96_0078: EX_WB.vhd : (13, 21): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: EX_WB.vhd : (13, 21): Unknown type.
+# Error: COMP96_0078: EX_WB.vhd : (14, 20): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: EX_WB.vhd : (14, 20): Unknown type.
+# Compile Architecture "behavioral" of Entity "EX_WB"
+# Error: COMP96_0056: EX_WB.vhd : (21, 1): Cannot find referenced entity declaration "EX_WB".
+# Compile failure 26 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -dbg -e 100 -work test_complete -2008  $dsn/src/complete.vhd $dsn/src/ALU.vhd $dsn/src/instruction_buffer.vhd $dsn/src/register_file.vhd $dsn/src/Data_Forwading_Unit.vhd "$dsn/src/Forwarding Muxes.vhd" $dsn/src/instruction_buffer_tb.vhd $dsn/src/EX_WB.vhd
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/complete.vhd
+# Compile Entity "processor_model"
+# Compile Architecture "behavior" of Entity "processor_model"
+# Error: COMP96_0078: complete.vhd : (142, 18): Unknown identifier "EX_WB".
+# Error: COMP96_0056: complete.vhd : (142, 18): Cannot find referenced entity declaration "EX_WB".
+# Error: COMP96_0055: complete.vhd : (142, 18): Cannot find context item "EX_WB".
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_Behavior" of Entity "ALU"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer.vhd
+# Compile Package "instr_pack"
+# Compile Entity "instruction_buffer"
+# Compile Architecture "behaviorhal" of Entity "instruction_buffer"
+# Compile Entity "IF_ID"
+# Compile Architecture "behavioral" of Entity "IF_ID"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behaviorhal" of Entity "register_file"
+# Compile Entity "ID_EX"
+# Compile Architecture "behavioral" of Entity "ID_EX"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/Forwarding Muxes.vhd
+# Compile Entity "\Forwarding Muxes\"
+# Compile Architecture "\Forwarding Muxes\" of Entity "\Forwarding Muxes\"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer_tb.vhd
+# Compile Entity "instruction_buffer_tb"
+# Compile Architecture "tb" of Entity "instruction_buffer_tb"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/EX_WB.vhd
+# Compile Entity "EX_WB"
+# Compile Architecture "behavioral" of Entity "EX_WB"
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -dbg -e 100 -work test_complete -2008  $dsn/src/complete.vhd
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/complete.vhd
+# Compile Entity "processor_model"
+# Compile Architecture "behavior" of Entity "processor_model"
+# Error: COMP96_0078: complete.vhd : (143, 3): Unknown identifier "reset".
+# Error: COMP96_0133: complete.vhd : (143, 3): Cannot find object declaration.
+# Error: COMP96_0112: complete.vhd : (143, 3): "reset" does not match the formal name.
+# Error: COMP96_0207: complete.vhd : (142, 2): No actual specified for local port "instr_in".
+# Error: COMP96_0207: complete.vhd : (142, 2): No actual specified for local port "rs1_data_in".
+# Error: COMP96_0207: complete.vhd : (142, 2): No actual specified for local port "rs2_data_in".
+# Error: COMP96_0207: complete.vhd : (142, 2): No actual specified for local port "rs3_data_in".
+# Error: COMP96_0207: complete.vhd : (142, 2): No actual specified for local port "rd_data_in".
+# Compile failure 8 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -dbg -e 100 -work test_complete -2008  $dsn/src/complete.vhd
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/complete.vhd
+# Compile Entity "processor_model"
+# Compile Architecture "behavior" of Entity "processor_model"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
 asim -O5 +access +r +m+instruction_buffer_tb instruction_buffer_tb tb
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
@@ -202,29 +180,17 @@ asim -O5 +access +r +m+instruction_buffer_tb instruction_buffer_tb tb
 # SLP: Elaboration phase ...
 # SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
 # SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# ELAB2: Elaboration final pass complete - time: 0.5 [s].
 # KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6670 kB (elbread=427 elab2=6096 kernel=147 sdf=0)
+# Allocation: Simulator allocated 6781 kB (elbread=427 elab2=6189 kernel=165 sdf=0)
 # KERNEL: ASDB file was created in location C:\Users\vleen\Documents\GitHub\4_stage_multi\test_complete\test_complete\src\wave.asdb
-#  11:36 PM, Saturday, November 26, 2022
+#  11:44 AM, Sunday, November 27, 2022
 #  Simulation has been initialized
+# VSIM: 26 object(s) traced.
 # Waveform file 'untitled.awc' connected to 'C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/wave.asdb'.
-# Waveform file 'untitled.awc' connected to 'C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/wave.asdb'.
-# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/in_buffer" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/clk" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/reset" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/write" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/instr_out" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/instr_in" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/rs1_data" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/rs2_data" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/rs3_data" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/rd_data" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/outp" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/instruction_buffer_tb/instrc" has already been traced.
-run @50us
+run @60us
 # KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 # KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
 # KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -237,13 +203,268 @@ run @50us
 # KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
 # KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 # KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
-# KERNEL: stopped at time: 50 us
-run @70us
-# KERNEL: stopped at time: 70 us
+# KERNEL: stopped at time: 60 us
+acom -dbg -e 100 -work test_complete -2008  $dsn/src/instruction_buffer_tb.vhd
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer_tb.vhd
+# Compile Entity "instruction_buffer_tb"
+# Compile Architecture "tb" of Entity "instruction_buffer_tb"
+# Error: COMP96_0078: instruction_buffer_tb.vhd : (106, 83): Unknown identifier "ins".
+# Error: COMP96_0078: instruction_buffer_tb.vhd : (106, 103): Unknown identifier "rs1_save".
+# Error: COMP96_0078: instruction_buffer_tb.vhd : (107, 18): Unknown identifier "rs2_save".
+# Error: COMP96_0078: instruction_buffer_tb.vhd : (107, 42): Unknown identifier "rs3_save".
+# Compile failure 4 Errors 0 Warnings  Analysis time :  46.0 [ms]
+acom -dbg -e 100 -work test_complete -2008  $dsn/src/complete.vhd $dsn/src/ALU.vhd $dsn/src/instruction_buffer.vhd $dsn/src/register_file.vhd $dsn/src/Data_Forwading_Unit.vhd "$dsn/src/Forwarding Muxes.vhd" $dsn/src/instruction_buffer_tb.vhd $dsn/src/EX_WB.vhd
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/complete.vhd
+# Compile Entity "processor_model"
+# Compile Architecture "behavior" of Entity "processor_model"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_Behavior" of Entity "ALU"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer.vhd
+# Compile Package "instr_pack"
+# Compile Entity "instruction_buffer"
+# Compile Architecture "behaviorhal" of Entity "instruction_buffer"
+# Compile Entity "IF_ID"
+# Compile Architecture "behavioral" of Entity "IF_ID"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behaviorhal" of Entity "register_file"
+# Compile Entity "ID_EX"
+# Compile Architecture "behavioral" of Entity "ID_EX"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/Forwarding Muxes.vhd
+# Compile Entity "\Forwarding Muxes\"
+# Compile Architecture "\Forwarding Muxes\" of Entity "\Forwarding Muxes\"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer_tb.vhd
+# Compile Entity "instruction_buffer_tb"
+# Compile Architecture "tb" of Entity "instruction_buffer_tb"
+# Error: COMP96_0078: instruction_buffer_tb.vhd : (106, 83): Unknown identifier "ins".
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/EX_WB.vhd
+# Compile Entity "EX_WB"
+# Compile Architecture "behavioral" of Entity "EX_WB"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.2 [s]
 acom -dbg -e 100 -work test_complete -2008  $dsn/src/instruction_buffer_tb.vhd
 # File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer_tb.vhd
 # Compile Entity "instruction_buffer_tb"
 # Compile Architecture "tb" of Entity "instruction_buffer_tb"
 # Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6784 kB (elbread=427 elab2=6190 kernel=166 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\vleen\Documents\GitHub\4_stage_multi\test_complete\test_complete\src\wave.asdb
+#  11:48 AM, Sunday, November 27, 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/wave.asdb'.
+run @60us
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: stopped at time: 60 us
+acom -dbg -e 100 -work test_complete -2008  $dsn/src/complete.vhd $dsn/src/ALU.vhd $dsn/src/instruction_buffer.vhd $dsn/src/register_file.vhd $dsn/src/Data_Forwading_Unit.vhd "$dsn/src/Forwarding Muxes.vhd" $dsn/src/instruction_buffer_tb.vhd $dsn/src/EX_WB.vhd
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/complete.vhd
+# Compile Entity "processor_model"
+# Compile Architecture "behavior" of Entity "processor_model"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_Behavior" of Entity "ALU"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer.vhd
+# Compile Package "instr_pack"
+# Compile Entity "instruction_buffer"
+# Compile Architecture "behaviorhal" of Entity "instruction_buffer"
+# Compile Entity "IF_ID"
+# Compile Architecture "behavioral" of Entity "IF_ID"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behaviorhal" of Entity "register_file"
+# Compile Entity "ID_EX"
+# Compile Architecture "behavioral" of Entity "ID_EX"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/Forwarding Muxes.vhd
+# Compile Entity "\Forwarding Muxes\"
+# Compile Architecture "\Forwarding Muxes\" of Entity "\Forwarding Muxes\"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer_tb.vhd
+# Compile Entity "instruction_buffer_tb"
+# Compile Architecture "tb" of Entity "instruction_buffer_tb"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/EX_WB.vhd
+# Compile Entity "EX_WB"
+# Compile Architecture "behavioral" of Entity "EX_WB"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+instruction_buffer_tb instruction_buffer_tb tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6784 kB (elbread=427 elab2=6190 kernel=166 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\vleen\Documents\GitHub\4_stage_multi\test_complete\test_complete\src\wave.asdb
+#  11:49 AM, Sunday, November 27, 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/wave.asdb'.
+run @60us
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: stopped at time: 60 us
+run @120us
+# RUNTIME: Fatal Error: RUNTIME_0046 ALU.vhd (496): Incompatible ranges; left: (31 downto 0), right: (20 downto 0).
+# KERNEL: Time: 65 us,  Iteration: 2,  Instance: /instruction_buffer_tb/ALU_EXE,  Process: line__22.
+# KERNEL: Stopped at time 65 us + 2.
+# VSIM: Error: Fatal error occurred during simulation.
+acom -dbg -e 100 -work test_complete -2008  $dsn/src/complete.vhd $dsn/src/ALU.vhd $dsn/src/instruction_buffer.vhd $dsn/src/register_file.vhd $dsn/src/Data_Forwading_Unit.vhd "$dsn/src/Forwarding Muxes.vhd" $dsn/src/instruction_buffer_tb.vhd $dsn/src/EX_WB.vhd
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/complete.vhd
+# Compile Entity "processor_model"
+# Compile Architecture "behavior" of Entity "processor_model"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_Behavior" of Entity "ALU"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer.vhd
+# Compile Package "instr_pack"
+# Compile Entity "instruction_buffer"
+# Compile Architecture "behaviorhal" of Entity "instruction_buffer"
+# Compile Entity "IF_ID"
+# Compile Architecture "behavioral" of Entity "IF_ID"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behaviorhal" of Entity "register_file"
+# Compile Entity "ID_EX"
+# Compile Architecture "behavioral" of Entity "ID_EX"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/Forwarding Muxes.vhd
+# Compile Entity "\Forwarding Muxes\"
+# Compile Architecture "\Forwarding Muxes\" of Entity "\Forwarding Muxes\"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer_tb.vhd
+# Compile Entity "instruction_buffer_tb"
+# Compile Architecture "tb" of Entity "instruction_buffer_tb"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/EX_WB.vhd
+# Compile Entity "EX_WB"
+# Compile Architecture "behavioral" of Entity "EX_WB"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+instruction_buffer_tb instruction_buffer_tb tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6784 kB (elbread=427 elab2=6191 kernel=166 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\vleen\Documents\GitHub\4_stage_multi\test_complete\test_complete\src\wave.asdb
+#  11:50 AM, Sunday, November 27, 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/wave.asdb'.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /instruction_buffer_tb/ID,  Process: line__73.
+# KERNEL: stopped at time: 100 us
+acom -dbg -e 100 -work test_complete -2008  $dsn/src/complete.vhd $dsn/src/ALU.vhd $dsn/src/instruction_buffer.vhd $dsn/src/register_file.vhd $dsn/src/Data_Forwading_Unit.vhd "$dsn/src/Forwarding Muxes.vhd" $dsn/src/instruction_buffer_tb.vhd $dsn/src/EX_WB.vhd
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/complete.vhd
+# Compile Entity "processor_model"
+# Compile Architecture "behavior" of Entity "processor_model"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_Behavior" of Entity "ALU"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer.vhd
+# Compile Package "instr_pack"
+# Compile Entity "instruction_buffer"
+# Compile Architecture "behaviorhal" of Entity "instruction_buffer"
+# Compile Entity "IF_ID"
+# Compile Architecture "behavioral" of Entity "IF_ID"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behaviorhal" of Entity "register_file"
+# Compile Entity "ID_EX"
+# Compile Architecture "behavioral" of Entity "ID_EX"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/Forwarding Muxes.vhd
+# Compile Entity "\Forwarding Muxes\"
+# Compile Architecture "\Forwarding Muxes\" of Entity "\Forwarding Muxes\"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer_tb.vhd
+# Compile Entity "instruction_buffer_tb"
+# Compile Architecture "tb" of Entity "instruction_buffer_tb"
+# File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/EX_WB.vhd
+# Compile Entity "EX_WB"
+# Compile Architecture "behavioral" of Entity "EX_WB"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
 endsim
 # VSIM: Simulation has finished.

@@ -108,7 +108,7 @@ begin
 		
 		
 	u1: entity register_file port map (rs1_data => rs1_save,  rs2_data => rs2_save,
-		rs3_data => rs3_save, clk => clk, rd_data => rd_data,reset=> reset, instrc => ins, write => writ);		 
+		rs3_data => rs3_save, clk => clk, rd_data => rd_data,reset=> reset, instrc => ins_IFID, write => writ);		 
 	
 	--	
 --		instr_in : in std_logic_vector(24 downto 0);
@@ -125,7 +125,7 @@ begin
 --		
 	
 	u_ID_EX: entity ID_EX port map ( clk => clk, 
-		reset=> reset, instr_out => ins_EXWB, instr_in => ins, rs1_data_in => rs1_save,
+		reset=> reset, instr_out => ins_IDEX, instr_in => ins, rs1_data_in => rs1_save,
 		rs2_data_in => rs2_save,rs3_data_in => rs3_save, rd_data_in => rd_data, rs1_data_out => rs1_save_IDEX,
 		rs2_data_out => rs2_save_IDEX, rs3_data_out => rs3_save_IDEX, rd_data_out => rsd_save_IDEX );	
 		
@@ -135,9 +135,16 @@ begin
 --	
 			
 	
-	u2: entity alu port map (r1 => rs1_save,  r2 => rs2_save,
-		r3 => rs3_save, o =>  alu_output,
-		instrc => ins_EXWB );	
+	u2: entity alu port map (r1 => rs1_save_IDEX,  r2 => rs2_save_IDEX,
+		r3 => rs3_save_IDEX, o =>  alu_output,
+		instrc =>  ins_IDEX);			 
+		
+	u_EX_WB: entity EX_WB port map ( clk => clk, instr_out => ins_EXWB, instr_in => ins, rs1_data_in => rs1_save_IDEX,
+		rs2_data_in => rs2_save_IDEX,rs3_data_in => rs3_save_IDEX, rd_data_in => rs3_save_IDEX, rs1_data_out => rs1_save_EXWB,
+		rs2_data_out => rs2_save_EXWB, rs3_data_out => rs3_save_EXWB, rd_data_out => rsd_save_EXWB );	
+			
+		
+		
 	
 		
 	u3: entity Data_Forwading_Unit port map (r1 => rs1_save_IDEX,  r2 => rs2_save_IDEX,

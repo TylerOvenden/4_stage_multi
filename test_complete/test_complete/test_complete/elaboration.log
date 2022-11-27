@@ -1,4 +1,4 @@
-Active-HDL 13.0.376.8320 2022-11-27 02:52:14
+Active-HDL 13.0.376.8320 2022-11-27 12:01:16
 
 Elaboration top modules:
 Architecture                  tb(instruction_buffer_tb)
@@ -13,6 +13,7 @@ IF_ID                 | behavioral         | test_complete |      | 13.0.376.832
 register_file         | behaviorhal        | test_complete |      | 13.0.376.8320 (Windows64) | -dbg -2008
 ID_EX                 | behavioral         | test_complete |      | 13.0.376.8320 (Windows64) | -dbg -2008
 ALU                   | ALU_Behavior       | test_complete |      | 13.0.376.8320 (Windows64) | -dbg -2008
+EX_WB                 | behavioral         | test_complete |      | 13.0.376.8320 (Windows64) | -dbg -2008
 Data_Forwading_Unit   | behavior           | test_complete |      | 13.0.376.8320 (Windows64) | -dbg -2008
 \Forwarding Muxes\    | \Forwarding Muxes\ | test_complete |      |                           | 
 --------------------------------------------------------------------------------------------------------------------
@@ -37,3 +38,9 @@ ieee                                       | Standard IEEE packages library
 std                                        | Standard VHDL library
 test_complete                              | None
 --------------------------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+instruction_buffer_tb instruction_buffer_tb tb
+
+
+The performance of simulation is reduced. Version Student Edition

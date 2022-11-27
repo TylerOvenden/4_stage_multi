@@ -29,6 +29,7 @@ DesignActivationScript=$dsn\design.do
 /Data_Forwading_Unit.vhd=-1
 /Forwarding Muxes.vhd=-1
 /instruction_buffer_tb.vhd=-1
+/EX_WB.vhd=-1
 [Files.Data]
 .\src\complete.vhd=VHDL Source Code
 .\src\4_multi_media_alu_tb.vhd=VHDL Source Code
@@ -38,6 +39,7 @@ DesignActivationScript=$dsn\design.do
 .\src\Data_Forwading_Unit.vhd=VHDL Source Code
 .\src\Forwarding Muxes.vhd=VHDL Source Code
 .\src\instruction_buffer_tb.vhd=VHDL Source Code
+.\src\EX_WB.vhd=VHDL Source Code
 [LocalVhdlSets]
 NetlistCompilation=1
 EnableVHDL93Key=0

@@ -85,12 +85,12 @@ begin
 		 
 		
 		port map ( clk => clk,reset=> reset, write=> write,  rs1_data => rs1_data,  rs2_data => rs2_data,  
-		rs3_data => rs3_data, rd_data => rd_data, instrc => instr_out);					   
+		rs3_data => rs3_data, rd_data => rd_data, instrc => ins_IFID);					   
 		
 	
 		
 	E_ID_EX: entity ID_EX port map ( clk => clk, 
-		reset=> reset, instr_out => ins_EXWB, instr_in => instr_out, rs1_data_in => rs1_data,
+		reset=> reset, instr_out => ins_IDEX, instr_in => instr_out, rs1_data_in => rs1_data,
 		rs2_data_in => rs2_data,rs3_data_in => rs3_data, rd_data_in => rd_data, rs1_data_out => rs1_save_IDEX,
 		rs2_data_out => rs2_save_IDEX, rs3_data_out => rs3_save_IDEX, rd_data_out => rsd_save_IDEX );		
 		
@@ -99,7 +99,19 @@ begin
 			ALU_EXE : entity ALU	
 		
 		port map (  r1 => rs1_data,  r2 => rs2_data,  
-		r3 => rs3_data, instrc => ins_EXWB, o => output);	
+		r3 => rs3_data, instrc => ins_IDEX, o => output);	 
+		
+		
+		
+		u_EX_WB: entity EX_WB port map ( clk => clk, instr_out => ins_EXWB, instr_in => instr_out, rs1_data_in => rs1_save_IDEX,
+		rs2_data_in => rs2_save_IDEX,rs3_data_in => rs3_save_IDEX, rd_data_in => rd_data, rs1_data_out => rs1_save_EXWB,
+		rs2_data_out => rs2_save_EXWB, rs3_data_out => rs3_save_EXWB, rd_data_out => rsd_save_EXWB );	
+			
+		
+		
+	
+		
+		
 		
 		--
 --			 clk : in STD_LOGIC;	

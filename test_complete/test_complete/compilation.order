@@ -5,3 +5,4 @@
 .\src\Data_Forwading_Unit.vhd
 .\src\Forwarding Muxes.vhd
 .\src\instruction_buffer_tb.vhd
+.\src\EX_WB.vhd
