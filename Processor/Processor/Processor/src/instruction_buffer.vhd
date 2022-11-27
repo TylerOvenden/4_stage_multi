@@ -56,8 +56,8 @@ entity instruction_buffer is
 --);
 port (
 clk : in std_logic; -- system clock
-clr : in std_logic; -- synchrounous counter clear		  
-write: in std_logic;	--write signal	   
+reset : in std_logic; -- synchrounous counter clear		  
+--write: in std_logic;	--write signal	   
  in_buffer: in InstBuff;
 --pc : in std_logic_vector(n-1 downto 0);
 instr_in : in std_logic_vector(24 downto 0);	
@@ -89,6 +89,7 @@ if rising_edge(clk)		 then
 	
 	
 	instr_out <= in_buffer(pc);	  
+	--in_buffer(pc) <=  std_logic_vector(to_unsigned(0, 25));
 	--			
 	if(pc = 63) then  
 		pc := 0;
@@ -105,7 +106,10 @@ end behaviorhal;
 
 
 library ieee;
-use ieee.std_logic_1164.all;
+use ieee.std_logic_1164.all; 
+
+
+
 
 entity IF_ID is
 	port(
@@ -120,7 +124,8 @@ begin
 	process (clk)
 	begin
 		if rising_edge(clk) then
-				instr_out <= instr_in;
+	
+			instr_out <= instr_in;
 		end if;
 	end process;
 end behavioral;

@@ -1,179 +1,4 @@
-acom -reorder -O3 -e 100 -work Processor -2002  $dsn/src/4_multi_media_alu_tb.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd
-# Compile Entity "four_multi_media_alu_tb"
-# Compile Architecture "tb" of Entity "four_multi_media_alu_tb"
-# Incorrect order of units detected.
-# Automatic reorder and incremental recompilation of required units in progress.
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd
-# Compile Entity "four_multi_media_alu_tb"
-# Compile Architecture "tb" of Entity "four_multi_media_alu_tb"
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd
-# Compile Entity "four_multi_media_alu_tb"
-# Compile Architecture "tb" of Entity "four_multi_media_alu_tb"
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd
-# Compile Entity "four_multi_media_alu_tb"
-# Compile Architecture "tb" of Entity "four_multi_media_alu_tb"
-# Error: COMP96_0055: 4_multi_media_alu_tb.vhd : (14, 10): Cannot find context item "work.instr_pack".
-# Error: COMP96_0055: 4_multi_media_alu_tb.vhd : (15, 10): Cannot find context item "work.regfile_pack".
-# Error: COMP96_0056: 4_multi_media_alu_tb.vhd : (28, 1): Cannot find referenced entity declaration "four_multi_media_alu_tb".
-# Compile failure 3 Errors 0 Warnings  Analysis time :  47.0 [ms]
-acom -reorder -O3 -e 100 -work Processor -2002  $dsn/src/alu.vhd $dsn/src/Data_Forwading_Unit.vhd "$dsn/src/Forwarding Muxes.vhd" $dsn/src/instruction_buffer.vhd $dsn/src/register_file.vhd $dsn/src/4_multi_media_alu_tb.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/alu.vhd
-# Compile Entity "ALU"
-# Compile Architecture "ALU_Behavior" of Entity "ALU"
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Data_Forwading_Unit.vhd
-# Compile Entity "Data_Forwading_Unit"
-# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Forwarding Muxes.vhd
-# Compile Entity "\Forwarding Muxes\"
-# Compile Architecture "\Forwarding Muxes\" of Entity "\Forwarding Muxes\"
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/instruction_buffer.vhd
-# Compile Package "instr_pack"
-# Compile Entity "instruction_buffer"
-# Compile Architecture "behaviorhal" of Entity "instruction_buffer"
-# Compile Entity "IF_ID"
-# Compile Architecture "behavioral" of Entity "IF_ID"
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/register_file.vhd
-# Compile Entity "register_file"
-# Compile Architecture "behaviorhal" of Entity "register_file"
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd
-# Compile Entity "four_multi_media_alu_tb"
-# Compile Architecture "tb" of Entity "four_multi_media_alu_tb"
-# Incorrect order of units detected.
-# Automatic reorder and incremental recompilation of required units in progress.
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd
-# Compile Entity "four_multi_media_alu_tb"
-# Compile Architecture "tb" of Entity "four_multi_media_alu_tb"
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd
-# Compile Entity "four_multi_media_alu_tb"
-# Compile Architecture "tb" of Entity "four_multi_media_alu_tb"
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd
-# Compile Entity "four_multi_media_alu_tb"
-# Compile Architecture "tb" of Entity "four_multi_media_alu_tb"
-# Error: COMP96_0055: 4_multi_media_alu_tb.vhd : (15, 10): Cannot find context item "work.regfile_pack".
-# Error: COMP96_0056: 4_multi_media_alu_tb.vhd : (28, 1): Cannot find referenced entity declaration "four_multi_media_alu_tb".
-# Compile failure 2 Errors 0 Warnings  Analysis time :  0.2 [s]
-acom -O3 -e 100 -work Processor -2002  $dsn/src/4_multi_media_alu_tb.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd
-# Compile Entity "four_multi_media_alu_tb"
-# Error: COMP96_0055: 4_multi_media_alu_tb.vhd : (15, 10): Cannot find context item "work.regfile_pack".
-# Compile Architecture "tb" of Entity "four_multi_media_alu_tb"
-# Error: COMP96_0056: 4_multi_media_alu_tb.vhd : (28, 1): Cannot find referenced entity declaration "four_multi_media_alu_tb".
-# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -O3 -e 100 -work Processor -2002  $dsn/src/alu.vhd $dsn/src/Data_Forwading_Unit.vhd "$dsn/src/Forwarding Muxes.vhd" $dsn/src/instruction_buffer.vhd $dsn/src/register_file.vhd $dsn/src/4_multi_media_alu_tb.vhd $dsn/src/complete.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/alu.vhd
-# Compile Entity "ALU"
-# Compile Architecture "ALU_Behavior" of Entity "ALU"
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Data_Forwading_Unit.vhd
-# Compile Entity "Data_Forwading_Unit"
-# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Forwarding Muxes.vhd
-# Compile Entity "\Forwarding Muxes\"
-# Compile Architecture "\Forwarding Muxes\" of Entity "\Forwarding Muxes\"
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/instruction_buffer.vhd
-# Compile Package "instr_pack"
-# Compile Entity "instruction_buffer"
-# Compile Architecture "behaviorhal" of Entity "instruction_buffer"
-# Compile Entity "IF_ID"
-# Compile Architecture "behavioral" of Entity "IF_ID"
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/register_file.vhd
-# Compile Entity "register_file"
-# Compile Architecture "behaviorhal" of Entity "register_file"
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd
-# Compile Entity "four_multi_media_alu_tb"
-# Error: COMP96_0055: 4_multi_media_alu_tb.vhd : (15, 10): Cannot find context item "work.regfile_pack".
-# Compile Architecture "tb" of Entity "four_multi_media_alu_tb"
-# Error: COMP96_0056: 4_multi_media_alu_tb.vhd : (28, 1): Cannot find referenced entity declaration "four_multi_media_alu_tb".
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd
-# Compile Package "instr_pack"
-# Compile Package "regfile_pack"
-# Compile Entity "instruction_buffer"
-# Warning: COMP96_0994: complete.vhd : (40, 1): Multiple entity "instruction_buffer" found in "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd", "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/instruction_buffer.vhd".
-# Compile Architecture "behaviorhal" of Entity "instruction_buffer"
-# Warning: COMP96_0994: complete.vhd : (67, 1): Multiple architecture "behaviorhal" of entity "instruction_buffer" found in "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd", "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/instruction_buffer.vhd".
-# Compile Entity "IF_ID"
-# Compile Architecture "behavioral" of Entity "IF_ID"
-# Warning: COMP96_0994: complete.vhd : (117, 1): Multiple architecture "behavioral" of entity "IF_ID" found in "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd", "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/instruction_buffer.vhd".
-# Compile Entity "register_file"
-# Warning: COMP96_0994: complete.vhd : (139, 1): Multiple entity "register_file" found in "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd", "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/register_file.vhd".
-# Compile Architecture "behaviorhal" of Entity "register_file"
-# Warning: COMP96_0994: complete.vhd : (171, 1): Multiple architecture "behaviorhal" of entity "register_file" found in "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd", "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/register_file.vhd".
-# Compile Entity "IF_EX"
-# Compile Architecture "behavioral" of Entity "IF_EX"
-# Compile Entity "ALU"
-# Compile Architecture "ALU_Behavior" of Entity "ALU"
-# Warning: COMP96_0994: complete.vhd : (346, 1): Multiple architecture "ALU_Behavior" of entity "ALU" found in "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd", "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/alu.vhd".
-# Compile Entity "alu_model"
-# Compile Architecture "behavior" of Entity "alu_model"
-# Compile failure 2 Errors 6 Warnings  Analysis time :  0.2 [s]
-acom -O3 -e 100 -work Processor -2002  $dsn/src/complete.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd
-# Compile Package "instr_pack"
-# Compile Package "regfile_pack"
-# Compile Entity "instruction_buffer"
-# Compile Architecture "behaviorhal" of Entity "instruction_buffer"
-# Compile Entity "IF_ID"
-# Compile Architecture "behavioral" of Entity "IF_ID"
-# Compile Entity "register_file"
-# Compile Architecture "behaviorhal" of Entity "register_file"
-# Compile Entity "IF_EX"
-# Compile Architecture "behavioral" of Entity "IF_EX"
-# Compile Entity "ALU"
-# Compile Architecture "ALU_Behavior" of Entity "ALU"
-# Compile Entity "alu_model"
-# Compile Architecture "behavior" of Entity "alu_model"
-# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
-acom -O3 -e 100 -work Processor -2002  $dsn/src/4_multi_media_alu_tb.vhd $dsn/src/complete.vhd $dsn/src/alu.vhd $dsn/src/Data_Forwading_Unit.vhd "$dsn/src/Forwarding Muxes.vhd" $dsn/src/instruction_buffer.vhd $dsn/src/register_file.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd
-# Compile Entity "four_multi_media_alu_tb"
-# Compile Architecture "tb" of Entity "four_multi_media_alu_tb"
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd
-# Compile Package "instr_pack"
-# Compile Package "regfile_pack"
-# Compile Entity "instruction_buffer"
-# Compile Architecture "behaviorhal" of Entity "instruction_buffer"
-# Compile Entity "IF_ID"
-# Compile Architecture "behavioral" of Entity "IF_ID"
-# Compile Entity "register_file"
-# Compile Architecture "behaviorhal" of Entity "register_file"
-# Compile Entity "IF_EX"
-# Compile Architecture "behavioral" of Entity "IF_EX"
-# Compile Entity "ALU"
-# Compile Architecture "ALU_Behavior" of Entity "ALU"
-# Compile Entity "alu_model"
-# Compile Architecture "behavior" of Entity "alu_model"
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/alu.vhd
-# Compile Entity "ALU"
-# Compile Architecture "ALU_Behavior" of Entity "ALU"
-# Warning: COMP96_0994: alu.vhd : (43, 1): Multiple architecture "ALU_Behavior" of entity "ALU" found in "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/alu.vhd", "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd".
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Data_Forwading_Unit.vhd
-# Compile Entity "Data_Forwading_Unit"
-# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Forwarding Muxes.vhd
-# Compile Entity "\Forwarding Muxes\"
-# Compile Architecture "\Forwarding Muxes\" of Entity "\Forwarding Muxes\"
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/instruction_buffer.vhd
-# Compile Package "instr_pack"
-# Compile Entity "instruction_buffer"
-# Warning: COMP96_0994: instruction_buffer.vhd : (45, 1): Multiple entity "instruction_buffer" found in "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/instruction_buffer.vhd", "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd".
-# Compile Architecture "behaviorhal" of Entity "instruction_buffer"
-# Warning: COMP96_0994: instruction_buffer.vhd : (72, 1): Multiple architecture "behaviorhal" of entity "instruction_buffer" found in "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/instruction_buffer.vhd", "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd".
-# Compile Entity "IF_ID"
-# Compile Architecture "behavioral" of Entity "IF_ID"
-# Warning: COMP96_0994: instruction_buffer.vhd : (118, 1): Multiple architecture "behavioral" of entity "IF_ID" found in "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/instruction_buffer.vhd", "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd".
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/register_file.vhd
-# Compile Entity "register_file"
-# Warning: COMP96_0994: register_file.vhd : (36, 1): Multiple entity "register_file" found in "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/register_file.vhd", "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd".
-# Compile Architecture "behaviorhal" of Entity "register_file"
-# Warning: COMP96_0994: register_file.vhd : (84, 1): Multiple architecture "behaviorhal" of entity "register_file" found in "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/register_file.vhd", "B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd".
-# Compile success 0 Errors 6 Warnings  Analysis time :  0.2 [s]
-acom -O3 -e 100 -work Processor -2002  $dsn/src/4_multi_media_alu_tb.vhd $dsn/src/alu.vhd $dsn/src/Data_Forwading_Unit.vhd "$dsn/src/Forwarding Muxes.vhd" $dsn/src/instruction_buffer.vhd $dsn/src/register_file.vhd
+acom -O3 -e 100 -work Processor -2002  $dsn/src/4_multi_media_alu_tb.vhd $dsn/src/ALU.vhd $dsn/src/complete.vhd $dsn/src/Data_Forwading_Unit.vhd "$dsn/src/Forwarding Muxes.vhd" $dsn/src/instruction_buffer.vhd $dsn/src/register_file.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd
 # Compile Entity "four_multi_media_alu_tb"
@@ -189,9 +14,23 @@ acom -O3 -e 100 -work Processor -2002  $dsn/src/4_multi_media_alu_tb.vhd $dsn/sr
 # Error: COMP96_0207: 4_multi_media_alu_tb.vhd : (93, 2): No actual specified for local port "read".
 # Error: COMP96_0207: 4_multi_media_alu_tb.vhd : (93, 2): No actual specified for local port "rd_address".
 # Error: COMP96_0207: 4_multi_media_alu_tb.vhd : (93, 2): No actual specified for local port "out_reg".
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/alu.vhd
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/ALU.vhd
 # Compile Entity "ALU"
 # Compile Architecture "ALU_Behavior" of Entity "ALU"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd
+# Compile Entity "alu_model"
+# Compile Architecture "behavior" of Entity "alu_model"
+# Error: COMP96_0078: complete.vhd : (76, 3): Unknown identifier "reset".
+# Error: COMP96_0133: complete.vhd : (76, 3): Cannot find object declaration.
+# Error: COMP96_0112: complete.vhd : (76, 3): "reset" does not match the formal name.
+# Error: COMP96_0207: complete.vhd : (75, 2): No actual specified for local port "clr".
+# Error: COMP96_0207: complete.vhd : (75, 2): No actual specified for local port "write".
+# Error: COMP96_0207: complete.vhd : (75, 2): No actual specified for local port "instr_in".
+# Error: COMP96_0207: complete.vhd : (78, 2): No actual specified for local port "clr_bar".
+# Error: COMP96_0207: complete.vhd : (78, 2): No actual specified for local port "rst_bar".
+# Error: COMP96_0207: complete.vhd : (78, 2): No actual specified for local port "read".
+# Error: COMP96_0207: complete.vhd : (78, 2): No actual specified for local port "rd_address".
+# Error: COMP96_0207: complete.vhd : (78, 2): No actual specified for local port "out_reg".
 # File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Data_Forwading_Unit.vhd
 # Compile Entity "Data_Forwading_Unit"
 # Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
@@ -207,4 +46,55 @@ acom -O3 -e 100 -work Processor -2002  $dsn/src/4_multi_media_alu_tb.vhd $dsn/sr
 # File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/register_file.vhd
 # Compile Entity "register_file"
 # Compile Architecture "behaviorhal" of Entity "register_file"
-# Compile failure 11 Errors 0 Warnings  Analysis time :  0.1 [s]
+# Compile failure 22 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work Processor -2002  $dsn/src/complete.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd
+# Compile Entity "alu_model"
+# Compile Architecture "behavior" of Entity "alu_model"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Processor -2002  $dsn/src/4_multi_media_alu_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd
+# Compile Entity "four_multi_media_alu_tb"
+# Compile Architecture "tb" of Entity "four_multi_media_alu_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work Processor -2002  "$dsn/src/Forwarding Muxes.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Forwarding Muxes.vhd
+# Compile Entity "\Forwarding Muxes\"
+# Compile Architecture "\Forwarding Muxes\" of Entity "\Forwarding Muxes\"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work Processor -2002  $dsn/src/4_multi_media_alu_tb.vhd $dsn/src/ALU.vhd $dsn/src/complete.vhd $dsn/src/Data_Forwading_Unit.vhd "$dsn/src/Forwarding Muxes.vhd" $dsn/src/instruction_buffer.vhd $dsn/src/register_file.vhd $dsn/src/pipeline_reg.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd
+# Compile Entity "four_multi_media_alu_tb"
+# Compile Architecture "tb" of Entity "four_multi_media_alu_tb"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_Behavior" of Entity "ALU"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd
+# Compile Entity "processor_model"
+# Compile Architecture "behavior" of Entity "processor_model"
+# Error: COMP96_0724: complete.vhd : (108, 32): ',' or ')' expected.
+# Error: COMP96_0015: complete.vhd : (108, 35): ';' expected.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Forwarding Muxes.vhd
+# Compile Entity "\Forwarding Muxes\"
+# Compile Architecture "\Forwarding Muxes\" of Entity "\Forwarding Muxes\"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/instruction_buffer.vhd
+# Compile Package "instr_pack"
+# Compile Entity "instruction_buffer"
+# Compile Architecture "behaviorhal" of Entity "instruction_buffer"
+# Compile Entity "IF_ID"
+# Compile Architecture "behavioral" of Entity "IF_ID"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behaviorhal" of Entity "register_file"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/pipeline_reg.vhd
+# Compile Entity "pipeline_reg"
+# Compile Architecture "pipeline_reg" of Entity "pipeline_reg"
+# Warning: DAGGEN_0002: pipeline_reg.vhd : (42, 0): Process has no effect - no sequential statements.
+# Compile failure 2 Errors 1 Warnings  Analysis time :  0.1 [s]

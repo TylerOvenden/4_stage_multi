@@ -27,9 +27,7 @@ entity \Forwarding Muxes\ is
 	port(
 	 	 clk : in STD_LOGIC; -- clk
 	-- Registers in
-		 r1_alu : in STD_LOGIC_VECTOR(127 downto 0);
-		 r2_alu:  in STD_LOGIC_VECTOR(127 downto 0);
-		 r3_alu:  in STD_LOGIC_VECTOR(127 downto 0);
+		 alu_out : in STD_Logic_vector(127 downto 0);
 		 r1_ins : in STD_LOGIC_VECTOR(127 downto 0);
 		 r2_ins:  in STD_LOGIC_VECTOR(127 downto 0);
 		 r3_ins:  in STD_LOGIC_VECTOR(127 downto 0); 
@@ -52,19 +50,19 @@ process(clk)
 begin 
 	--r1 mux
 	if FWD_A = '1' then
-		r1_out <= r1_alu;
+		r1_out <= alu_out;
 	else
 		r1_out <= r1_ins;
 	end if;	
 	--r2 mux
 	if FWD_B = '1' then
-		r2_out <= r2_alu;
+		r2_out <= alu_out;
 	else
 		r2_out <= r2_ins;
 	end if;
 	--r3 mux
 	if FWD_C = '1' then
-		r3_out <= r3_alu;
+		r3_out <= alu_out;
 	else
 		r3_out <= r3_ins;
 	end if;

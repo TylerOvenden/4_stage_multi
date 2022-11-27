@@ -118,11 +118,25 @@ begin
 		
 		variable counter : integer := 0;
 		variable ran : boolean := false;  
-
+		
+		
+		
+		
 		  
 		
 		begin	
+			 reset <= '1';
 
+        wait for period*2;
+
+        reset <= '0';
+			
+			
+			
+			
+			
+			
+			
 				if( ran = false) then 
 		    --  file_open(txt_file, "binary.txt", write_mode);
 			file_open(txt_file, "binary.txt",  read_mode);
@@ -146,9 +160,7 @@ begin
 	--	std.env.finish;
 		wait; 
 		end process;
-		
-		
-		
+
 
 		
 		
@@ -159,7 +171,11 @@ begin
 	  clk<='1';
 	  wait for period;
   end process;
-			
+  
+  
+
+  
+  
 			
 	
 end tb;
