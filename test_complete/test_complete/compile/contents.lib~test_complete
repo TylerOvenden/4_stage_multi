@@ -1,4 +1,4 @@
-44
+57
 ~E 1 "../src/Forwarding Muxes.vhd" 26 \Forwarding Muxes\
 ~A 1 "../src/Forwarding Muxes.vhd" 49 \Forwarding Muxes\
 ~E 1 "../src/ALU.vhd" 6 ALU
@@ -12,10 +12,12 @@
 ~E 1 "../src/complete.vhd" 282 IF_EX
 ~A 1 "../src/complete.vhd" 308 behavioral
 ~E 1 "../src/instruction_buffer.vhd" 114 IF_ID
-~A 1 "../src/instruction_buffer.vhd" 130 behavioral
+~A 1 "../src/instruction_buffer.vhd" 129 behavioral
 ~E 1 "../src/instruction_buffer.vhd" 45 instruction_buffer
-~A 1 "../src/instruction_buffer.vhd" 73 behaviorhal
+~A 1 "../src/instruction_buffer.vhd" 72 behaviorhal
 ~E 1 "../src/instruction_buffer_tb.vhd" 17 instruction_buffer_tb
 ~A 1 "../src/instruction_buffer_tb.vhd" 30 tb
+~E 1 "../src/complete.vhd" 17 processor_model
+~A 1 "../src/complete.vhd" 58 behavior
 ~E 1 "../src/register_file.vhd" 35 register_file
 ~A 1 "../src/register_file.vhd" 67 behaviorhal

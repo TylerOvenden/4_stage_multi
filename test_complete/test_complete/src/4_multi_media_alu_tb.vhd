@@ -47,6 +47,8 @@ architecture tb of four_multi_media_alu_tb is
 	
 	
 	
+	
+	
 	signal instr_out, instr_in : std_logic_vector(24 downto 0);
 	constant period : time := 5us;				 
 --	type InstBuff is array (0 to 63) of std_logic_vector(24 downto 0);	
@@ -64,7 +66,7 @@ begin
 --		buffer_size => buffer_size
 --		)
 		
-		port map (in_buffer => in_buffer, clk => clk, reset=> reset,  instr_out => instr_out, instr_in => instr_in);	
+		port map (in_buffer => in_buffer, clk => clk, reset=> reset,  instr_out => instr_out);	
 		
 		
 		

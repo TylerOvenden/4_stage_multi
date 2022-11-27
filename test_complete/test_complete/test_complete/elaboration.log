@@ -1,4 +1,4 @@
-Active-HDL 13.0.376.8320 2022-11-26 23:36:46
+Active-HDL 13.0.376.8320 2022-11-27 00:50:03
 
 Elaboration top modules:
 Architecture                  tb(instruction_buffer_tb)
@@ -10,6 +10,7 @@ Entity                | Architecture | Library       | Info | Compiler Version  
 instruction_buffer_tb | tb           | test_complete |      | 13.0.376.8320 (Windows64) | -dbg -2008
 instruction_buffer    | behaviorhal  | test_complete |      | 13.0.376.8320 (Windows64) | -dbg -2008
 register_file         | behaviorhal  | test_complete |      | 13.0.376.8320 (Windows64) | -dbg -2008
+ALU                   | ALU_Behavior | test_complete |      | 13.0.376.8320 (Windows64) | -dbg -2008
 --------------------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------------------

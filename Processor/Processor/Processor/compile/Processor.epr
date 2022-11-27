@@ -1,10 +1,11 @@
 "C:/Users/vleen/Documents/GitHub/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd" VHDL Processor 1 0 0 -02
 "C:/Users/vleen/Documents/GitHub/4_stage_multi/Processor/Processor/Processor/src/ALU.vhd" VHDL Processor 1 0 0 -02
-"C:/Users/vleen/Documents/GitHub/4_stage_multi/Processor/Processor/Processor/src/complete.vhd" VHDL Processor 0 0 0 -02
+"C:/Users/vleen/Documents/GitHub/4_stage_multi/Processor/Processor/Processor/src/complete.vhd" VHDL Processor 1 0 0 -02
 "C:/Users/vleen/Documents/GitHub/4_stage_multi/Processor/Processor/Processor/src/Data_Forwading_Unit.vhd" VHDL Processor 1 0 0 -02
 "C:/Users/vleen/Documents/GitHub/4_stage_multi/Processor/Processor/Processor/src/Forwarding Muxes.vhd" VHDL Processor 1 0 0 -02
 "C:/Users/vleen/Documents/GitHub/4_stage_multi/Processor/Processor/Processor/src/instruction_buffer.vhd" VHDL Processor 1 0 0 -02
 "C:/Users/vleen/Documents/GitHub/4_stage_multi/Processor/Processor/Processor/src/register_file.vhd" VHDL Processor 1 0 0 -02
 "C:/Users/vleen/Documents/GitHub/4_stage_multi/Processor/Processor/Processor/src/pipeline_reg.vhd" VHDL Processor 2 0 0 -02
 "C:/Users/vleen/Documents/GitHub/4_stage_multi/Processor/Processor/Processor/src/Test_Bench.vhd" VHDL Processor 1 0 0 -02
+"C:/Users/vleen/Documents/GitHub/4_stage_multi/Processor/Processor/Processor/src/instruction_buffer_tb.vhd" VHDL Processor 1 0 0 -02
 . . 0 0 0

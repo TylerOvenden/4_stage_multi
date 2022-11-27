@@ -17,13 +17,10 @@
 -- Description : 
 -------------------------------------------------------------------------------			   
 
-
---Using this to build array of instr
---https://stackoverflow.com/questions/30651269/synthesizable-multidimensional-arrays-in-vhdl	 
-
 library IEEE;
 use IEEE.std_logic_1164.all;	 
-use ieee.numeric_std.all;
+use ieee.numeric_std.all; 
+use work.all;
 
 
 package instr_pack is 
@@ -60,7 +57,7 @@ reset : in std_logic; -- synchrounous counter clear
 --write: in std_logic;	--write signal	   
  in_buffer: in InstBuff;
 --pc : in std_logic_vector(n-1 downto 0);
-instr_in : in std_logic_vector(24 downto 0);	
+--instr_in : in std_logic_vector(24 downto 0);	
 
 instr_out : out std_logic_vector(24 downto 0)
 --pc : out std_logic_vector(n-1 downto 0)
@@ -84,9 +81,13 @@ begin
 		
 		
 		
-if rising_edge(clk)		 then 		 
-						  
-	
+if rising_edge(clk)		 then 	
+
+	if(reset = '1')then 
+		instr_out <= "0000000000000000000000000";
+		
+	 
+	else 
 	
 	instr_out <= in_buffer(pc);	  
 	--in_buffer(pc) <=  std_logic_vector(to_unsigned(0, 25));
@@ -96,7 +97,10 @@ if rising_edge(clk)		 then
 	else 		
 	pc := pc + 1;
 		 end if;
-end if;
+end if;		
+
+
+	end if;
  --pc := std_logic_vector(to_unsigned(count));
 end process;						   
 

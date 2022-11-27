@@ -20,7 +20,6 @@
 
 --Using this to build array of instr
 --https://stackoverflow.com/questions/30651269/synthesizable-multidimensional-arrays-in-vhdl	 
-
 library IEEE;
 use IEEE.std_logic_1164.all;	 
 use ieee.numeric_std.all; 
@@ -61,7 +60,7 @@ reset : in std_logic; -- synchrounous counter clear
 --write: in std_logic;	--write signal	   
  in_buffer: in InstBuff;
 --pc : in std_logic_vector(n-1 downto 0);
-instr_in : in std_logic_vector(24 downto 0);	
+--instr_in : in std_logic_vector(24 downto 0);	
 
 instr_out : out std_logic_vector(24 downto 0)
 --pc : out std_logic_vector(n-1 downto 0)
@@ -88,7 +87,7 @@ begin
 if rising_edge(clk)		 then 	
 
 	if(reset = '1')then 
-		instr_out <= "0000000000000000000000000";
+	instr_out <= "0000000000000000000000000";
 		
 	 
 	else 
@@ -137,4 +136,3 @@ begin
 		end if;
 	end process;
 end behavioral;
-	

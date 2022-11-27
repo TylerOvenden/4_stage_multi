@@ -1,4 +1,4 @@
-MESSAGE "File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/instruction_buffer_tb.vhd" 
-MESSAGE "Compile Entity "instruction_buffer_tb"" 
-MESSAGE "Compile Architecture "tb" of Entity "instruction_buffer_tb"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]" 
+MESSAGE "File: C:/Users/vleen/Documents/GitHub/4_stage_multi/test_complete/test_complete/src/complete.vhd" 
+MESSAGE "Compile Entity "processor_model"" 
+MESSAGE "Compile Architecture "behavior" of Entity "processor_model"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]" 

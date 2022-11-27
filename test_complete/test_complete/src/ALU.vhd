@@ -19,7 +19,7 @@ end ALU;
 architecture ALU_Behavior of ALU is		
 
 begin
-process(r1, r2, r3, instrc)
+process( instrc)
 
 	
 
@@ -493,7 +493,7 @@ variable temp : std_logic_vector(31 downto 0); -- general temp variable, current
 									tempPos := 32 * i;
 									--o((31 + tempPos) downto (tempPos)) <= std_logic_vector(unsigned(r1((15 + tempPos) downto (tempPos))) * resize(unsigned(instrc(14 downto 10)),16));
 									--switch out if need to resize
-									o((31 + tempPos) downto (tempPos)) <=  std_logic_vector(unsigned(r1((15 + tempPos) downto (tempPos))) * unsigned(instrc(14 downto 10)));
+									o((31 + tempPos) downto (tempPos)) <=  std_logic_vector(unsigned(r1((15 + tempPos) downto (tempPos))) * resize(unsigned(instrc(14 downto 10)),16));
 									end loop;
 								
 							elsif (instrc(18 downto 15) = "1011") then	--or r1 r2
@@ -566,6 +566,3 @@ variable temp : std_logic_vector(31 downto 0); -- general temp variable, current
 end ALU_Behavior;
 
 
-
-
-	  

@@ -79,7 +79,6 @@ begin
 		  		rs1_data  <= std_logic_vector(to_signed(0, 128));
 				rs2_data <=	 std_logic_vector(to_signed(0, 128));
 				rs3_data <=	 std_logic_vector(to_signed(0, 128));
-			
 		
 				regs(0) <= "11111111000000010000110011001011100001101100000001000001100010100010111111101110111111111011010101100111100100011100011111001000";
 				
@@ -159,6 +158,7 @@ begin
 	
 		--load immidate 
 	    elsif (instrc(24 downto 23) = "0") then 
+			rs1_data <= rd_data;
 			regs(to_integer(unsigned(instrc(4 downto 0)))) <= rd_data;	
 			
  

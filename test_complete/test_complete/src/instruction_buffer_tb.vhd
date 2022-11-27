@@ -40,7 +40,7 @@ architecture tb of instruction_buffer_tb is
 	--signal cmptr : std_logic;									 
 	signal instr_out, instr_in : std_logic_vector(24 downto 0);		  
 	
-	signal rs1_data, rs2_data, rs3_data, rd_data, outp : std_logic_vector(127 downto 0);
+	signal rs1_data, rs2_data, rs3_data, rd_data, output : std_logic_vector(127 downto 0);
 	
 	signal instrc : std_logic_vector(24 downto 0);
 	constant period : time := 5us;				 
@@ -62,15 +62,27 @@ begin
 
 
 
-	port map (in_buffer => in_buffer, reset=> reset, clk => clk,  instr_out => instr_out, instr_in => instr_in);	
+	port map (in_buffer => in_buffer, reset=> reset, clk => clk,  instr_out => instr_out);	
   	ID : entity register_file	
 		
 	--	
 		 
 		
 		port map ( clk => clk,reset=> reset, write=> write,  rs1_data => rs1_data,  rs2_data => rs2_data,  
-		rs3_data => rs3_data, rd_data => rd_data, instrc => instr_out);		
+		rs3_data => rs3_data, rd_data => rd_data, instrc => instr_out);					   
+		
 	
+
+		
+			ALU_EXE : entity ALU	
+		
+		port map (  r1 => rs1_data,  r2 => rs2_data,  
+		r3 => rs3_data, instrc => instr_out, o => output);	
+			
+		
+		
+		
+		
 	
 	
 	
@@ -89,6 +101,10 @@ begin
 			
 			reset <= '1';
 			rd_data <= "10100000101000000100111011111101110011100011001000010011001100100010010010011010100101010110110110000111000010000100010000101111";
+	
+			
+				
+			
 			--init
 			
 		
@@ -137,5 +153,7 @@ begin
 	
 end tb;
 			 	
+		
+		 	
 		
 		
