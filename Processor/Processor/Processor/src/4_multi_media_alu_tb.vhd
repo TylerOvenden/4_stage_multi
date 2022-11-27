@@ -125,7 +125,7 @@ begin
 		  
 		
 		begin	
-			 reset <= '1';
+		reset <= '1';
 
         wait for period*2;
 

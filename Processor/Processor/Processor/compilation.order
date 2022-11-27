@@ -6,3 +6,4 @@
 .\src\instruction_buffer.vhd
 .\src\register_file.vhd
 .\src\pipeline_reg.vhd
+.\src\Test_Bench.vhd

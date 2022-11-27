@@ -1,4 +1,4 @@
-18
+35
 ~E 1 "../src/Forwarding Muxes.vhd" 26 \Forwarding Muxes\
 ~A 1 "../src/Forwarding Muxes.vhd" 47 \Forwarding Muxes\
 ~E 1 "../src/alu.vhd" 30 ALU
@@ -18,5 +18,8 @@
 ~E 1 "../src/pipeline_reg.vhd" 25 pipeline_reg
 ~A 1 "../src/pipeline_reg.vhd" 39 pipeline_reg
 ~E 1 "../src/complete.vhd" 17 processor_model
+~A 1 "../src/complete.vhd" 58 behavior
+~E 1 "../src/Test_Bench.vhd" 13 processor_tb
+~A 1 "../src/Test_Bench.vhd" 17 tb
 ~E 1 "../src/register_file.vhd" 35 register_file
 ~A 1 "../src/register_file.vhd" 67 behaviorhal

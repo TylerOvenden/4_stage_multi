@@ -6,3 +6,4 @@ i<>.\src\Forwarding Muxes.vhd
 i<>.\src\instruction_buffer.vhd
 i<>.\src\register_file.vhd
 i<>.\src\pipeline_reg.vhd
+i<>.\src\Test_Bench.vhd

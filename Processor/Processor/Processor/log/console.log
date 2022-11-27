@@ -1,70 +1,3 @@
-acom -O3 -e 100 -work Processor -2002  $dsn/src/4_multi_media_alu_tb.vhd $dsn/src/ALU.vhd $dsn/src/complete.vhd $dsn/src/Data_Forwading_Unit.vhd "$dsn/src/Forwarding Muxes.vhd" $dsn/src/instruction_buffer.vhd $dsn/src/register_file.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd
-# Compile Entity "four_multi_media_alu_tb"
-# Compile Architecture "tb" of Entity "four_multi_media_alu_tb"
-# Error: COMP96_0078: 4_multi_media_alu_tb.vhd : (72, 49): Unknown identifier "reset".
-# Error: COMP96_0133: 4_multi_media_alu_tb.vhd : (72, 49): Cannot find object declaration.
-# Error: COMP96_0112: 4_multi_media_alu_tb.vhd : (72, 49): "reset" does not match the formal name.
-# Error: COMP96_0207: 4_multi_media_alu_tb.vhd : (61, 2): No actual specified for local port "clr".
-# Error: COMP96_0207: 4_multi_media_alu_tb.vhd : (61, 2): No actual specified for local port "write".
-# Error: COMP96_0207: 4_multi_media_alu_tb.vhd : (61, 2): No actual specified for local port "instr_in".
-# Error: COMP96_0207: 4_multi_media_alu_tb.vhd : (93, 2): No actual specified for local port "clr_bar".
-# Error: COMP96_0207: 4_multi_media_alu_tb.vhd : (93, 2): No actual specified for local port "rst_bar".
-# Error: COMP96_0207: 4_multi_media_alu_tb.vhd : (93, 2): No actual specified for local port "read".
-# Error: COMP96_0207: 4_multi_media_alu_tb.vhd : (93, 2): No actual specified for local port "rd_address".
-# Error: COMP96_0207: 4_multi_media_alu_tb.vhd : (93, 2): No actual specified for local port "out_reg".
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "ALU_Behavior" of Entity "ALU"
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd
-# Compile Entity "alu_model"
-# Compile Architecture "behavior" of Entity "alu_model"
-# Error: COMP96_0078: complete.vhd : (76, 3): Unknown identifier "reset".
-# Error: COMP96_0133: complete.vhd : (76, 3): Cannot find object declaration.
-# Error: COMP96_0112: complete.vhd : (76, 3): "reset" does not match the formal name.
-# Error: COMP96_0207: complete.vhd : (75, 2): No actual specified for local port "clr".
-# Error: COMP96_0207: complete.vhd : (75, 2): No actual specified for local port "write".
-# Error: COMP96_0207: complete.vhd : (75, 2): No actual specified for local port "instr_in".
-# Error: COMP96_0207: complete.vhd : (78, 2): No actual specified for local port "clr_bar".
-# Error: COMP96_0207: complete.vhd : (78, 2): No actual specified for local port "rst_bar".
-# Error: COMP96_0207: complete.vhd : (78, 2): No actual specified for local port "read".
-# Error: COMP96_0207: complete.vhd : (78, 2): No actual specified for local port "rd_address".
-# Error: COMP96_0207: complete.vhd : (78, 2): No actual specified for local port "out_reg".
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Data_Forwading_Unit.vhd
-# Compile Entity "Data_Forwading_Unit"
-# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Forwarding Muxes.vhd
-# Compile Entity "\Forwarding Muxes\"
-# Compile Architecture "\Forwarding Muxes\" of Entity "\Forwarding Muxes\"
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/instruction_buffer.vhd
-# Compile Package "instr_pack"
-# Compile Entity "instruction_buffer"
-# Compile Architecture "behaviorhal" of Entity "instruction_buffer"
-# Compile Entity "IF_ID"
-# Compile Architecture "behavioral" of Entity "IF_ID"
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/register_file.vhd
-# Compile Entity "register_file"
-# Compile Architecture "behaviorhal" of Entity "register_file"
-# Compile failure 22 Errors 0 Warnings  Analysis time :  0.1 [s]
-acom -O3 -e 100 -work Processor -2002  $dsn/src/complete.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd
-# Compile Entity "alu_model"
-# Compile Architecture "behavior" of Entity "alu_model"
-# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work Processor -2002  $dsn/src/4_multi_media_alu_tb.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd
-# Compile Entity "four_multi_media_alu_tb"
-# Compile Architecture "tb" of Entity "four_multi_media_alu_tb"
-# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
-acom -O3 -e 100 -work Processor -2002  "$dsn/src/Forwarding Muxes.vhd"
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Forwarding Muxes.vhd
-# Compile Entity "\Forwarding Muxes\"
-# Compile Architecture "\Forwarding Muxes\" of Entity "\Forwarding Muxes\"
-# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
 acom -O3 -e 100 -work Processor -2002  $dsn/src/4_multi_media_alu_tb.vhd $dsn/src/ALU.vhd $dsn/src/complete.vhd $dsn/src/Data_Forwading_Unit.vhd "$dsn/src/Forwarding Muxes.vhd" $dsn/src/instruction_buffer.vhd $dsn/src/register_file.vhd $dsn/src/pipeline_reg.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd
@@ -76,8 +9,6 @@ acom -O3 -e 100 -work Processor -2002  $dsn/src/4_multi_media_alu_tb.vhd $dsn/sr
 # File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd
 # Compile Entity "processor_model"
 # Compile Architecture "behavior" of Entity "processor_model"
-# Error: COMP96_0724: complete.vhd : (108, 32): ',' or ')' expected.
-# Error: COMP96_0015: complete.vhd : (108, 35): ';' expected.
 # File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Data_Forwading_Unit.vhd
 # Compile Entity "Data_Forwading_Unit"
 # Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
@@ -97,4 +28,405 @@ acom -O3 -e 100 -work Processor -2002  $dsn/src/4_multi_media_alu_tb.vhd $dsn/sr
 # Compile Entity "pipeline_reg"
 # Compile Architecture "pipeline_reg" of Entity "pipeline_reg"
 # Warning: DAGGEN_0002: pipeline_reg.vhd : (42, 0): Process has no effect - no sequential statements.
-# Compile failure 2 Errors 1 Warnings  Analysis time :  0.1 [s]
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+four_multi_media_alu_tb four_multi_media_alu_tb tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6667 kB (elbread=427 elab2=6097 kernel=142 sdf=0)
+# KERNEL: ASDB file was created in location B:\Stony Brook\ESE345\4_stage_multi\Processor\Processor\Processor\src\wave.asdb
+#  8:19 PM, Saturday, November 26, 2022
+#  Simulation has been initialized
+# VSIM: 11 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/wave.asdb'.
+run
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /four_multi_media_alu_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /four_multi_media_alu_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /four_multi_media_alu_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /four_multi_media_alu_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /four_multi_media_alu_tb/ID,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /four_multi_media_alu_tb/ID,  Process: line__73.
+# RUNTIME: Fatal Error: RUNTIME_0048 4_multi_media_alu_tb.vhd (143): Cannot open file "binary.txt"; no such file or directory.
+# KERNEL: Time: 10 us,  Iteration: 0,  Instance: /four_multi_media_alu_tb,  Process: line__112.
+# KERNEL: Stopped at time 10 us + 0.
+# VSIM: Error: Fatal error occurred during simulation.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work Processor -2002  $dsn/src/Test_Bench.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Test_Bench.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "tb" of Entity "processor_tb"
+# Error: COMP96_0078: Test_Bench.vhd : (11, 18): Unknown identifier "text".
+# Error: COMP96_0064: Test_Bench.vhd : (11, 18): Unknown type.
+# Error: COMP96_0078: Test_Bench.vhd : (14, 20): Unknown identifier "InstBuff".
+# Error: COMP96_0064: Test_Bench.vhd : (14, 20): Unknown type.
+# Error: COMP96_0078: Test_Bench.vhd : (23, 35): Unknown identifier "length_instr".
+# Error: COMP96_0133: Test_Bench.vhd : (23, 35): Cannot find object declaration.
+# Error: COMP96_0094: Test_Bench.vhd : (23, 35): Locally static expression is required in the range definition.
+# Error: COMP96_0078: Test_Bench.vhd : (25, 66): Unknown identifier "n".
+# Error: COMP96_0133: Test_Bench.vhd : (25, 66): Cannot find object declaration.
+# Error: COMP96_0094: Test_Bench.vhd : (25, 66): Locally static expression is required in the range definition.
+# Error: COMP96_0078: Test_Bench.vhd : (39, 25): Unknown identifier "r1".
+# Error: COMP96_0078: Test_Bench.vhd : (39, 41): Unknown identifier "r2".
+# Error: COMP96_0078: Test_Bench.vhd : (39, 56): Unknown identifier "r3".
+# Error: COMP96_0078: Test_Bench.vhd : (39, 86): Unknown identifier "o".
+# Compile failure 14 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Processor -2002  $dsn/src/Test_Bench.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Test_Bench.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "tb" of Entity "processor_tb"
+# Error: COMP96_0078: Test_Bench.vhd : (17, 20): Unknown identifier "InstBuff".
+# Error: COMP96_0064: Test_Bench.vhd : (17, 20): Unknown type.
+# Error: COMP96_0078: Test_Bench.vhd : (26, 35): Unknown identifier "length_instr".
+# Error: COMP96_0133: Test_Bench.vhd : (26, 35): Cannot find object declaration.
+# Error: COMP96_0094: Test_Bench.vhd : (26, 35): Locally static expression is required in the range definition.
+# Error: COMP96_0078: Test_Bench.vhd : (28, 66): Unknown identifier "n".
+# Error: COMP96_0133: Test_Bench.vhd : (28, 66): Cannot find object declaration.
+# Error: COMP96_0094: Test_Bench.vhd : (28, 66): Locally static expression is required in the range definition.
+# Error: COMP96_0078: Test_Bench.vhd : (42, 25): Unknown identifier "r1".
+# Error: COMP96_0078: Test_Bench.vhd : (42, 41): Unknown identifier "r2".
+# Error: COMP96_0078: Test_Bench.vhd : (42, 56): Unknown identifier "r3".
+# Error: COMP96_0078: Test_Bench.vhd : (42, 86): Unknown identifier "o".
+# Compile failure 12 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work Processor -2002  $dsn/src/Test_Bench.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Test_Bench.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "tb" of Entity "processor_tb"
+# Error: COMP96_0078: Test_Bench.vhd : (30, 35): Unknown identifier "length_instr".
+# Error: COMP96_0133: Test_Bench.vhd : (30, 35): Cannot find object declaration.
+# Error: COMP96_0094: Test_Bench.vhd : (30, 35): Locally static expression is required in the range definition.
+# Error: COMP96_0078: Test_Bench.vhd : (32, 66): Unknown identifier "n".
+# Error: COMP96_0133: Test_Bench.vhd : (32, 66): Cannot find object declaration.
+# Error: COMP96_0094: Test_Bench.vhd : (32, 66): Locally static expression is required in the range definition.
+# Error: COMP96_0078: Test_Bench.vhd : (46, 25): Unknown identifier "r1".
+# Error: COMP96_0078: Test_Bench.vhd : (46, 41): Unknown identifier "r2".
+# Error: COMP96_0078: Test_Bench.vhd : (46, 56): Unknown identifier "r3".
+# Error: COMP96_0078: Test_Bench.vhd : (46, 86): Unknown identifier "o".
+# Compile failure 10 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work Processor -2002  $dsn/src/Test_Bench.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Test_Bench.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "tb" of Entity "processor_tb"
+# Error: COMP96_0078: Test_Bench.vhd : (48, 25): Unknown identifier "r1".
+# Error: COMP96_0078: Test_Bench.vhd : (48, 41): Unknown identifier "r2".
+# Error: COMP96_0078: Test_Bench.vhd : (48, 56): Unknown identifier "r3".
+# Error: COMP96_0078: Test_Bench.vhd : (48, 86): Unknown identifier "o".
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work Processor -2002  $dsn/src/4_multi_media_alu_tb.vhd $dsn/src/ALU.vhd $dsn/src/complete.vhd $dsn/src/Data_Forwading_Unit.vhd "$dsn/src/Forwarding Muxes.vhd" $dsn/src/instruction_buffer.vhd $dsn/src/register_file.vhd $dsn/src/pipeline_reg.vhd $dsn/src/Test_Bench.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd
+# Compile Entity "four_multi_media_alu_tb"
+# Compile Architecture "tb" of Entity "four_multi_media_alu_tb"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_Behavior" of Entity "ALU"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd
+# Compile Entity "processor_model"
+# Compile Architecture "behavior" of Entity "processor_model"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Forwarding Muxes.vhd
+# Compile Entity "\Forwarding Muxes\"
+# Compile Architecture "\Forwarding Muxes\" of Entity "\Forwarding Muxes\"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/instruction_buffer.vhd
+# Compile Package "instr_pack"
+# Compile Entity "instruction_buffer"
+# Compile Architecture "behaviorhal" of Entity "instruction_buffer"
+# Compile Entity "IF_ID"
+# Compile Architecture "behavioral" of Entity "IF_ID"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behaviorhal" of Entity "register_file"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/pipeline_reg.vhd
+# Compile Entity "pipeline_reg"
+# Compile Architecture "pipeline_reg" of Entity "pipeline_reg"
+# Warning: DAGGEN_0002: pipeline_reg.vhd : (42, 0): Process has no effect - no sequential statements.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Test_Bench.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "tb" of Entity "processor_tb"
+# Error: COMP96_0078: Test_Bench.vhd : (48, 25): Unknown identifier "r1".
+# Error: COMP96_0078: Test_Bench.vhd : (48, 41): Unknown identifier "r2".
+# Error: COMP96_0078: Test_Bench.vhd : (48, 56): Unknown identifier "r3".
+# Compile failure 3 Errors 1 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work Processor -2002  $dsn/src/Test_Bench.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Test_Bench.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "tb" of Entity "processor_tb"
+# Error: COMP96_0078: Test_Bench.vhd : (48, 25): Unknown identifier "r1_data".
+# Error: COMP96_0078: Test_Bench.vhd : (48, 46): Unknown identifier "r2_data".
+# Error: COMP96_0078: Test_Bench.vhd : (48, 66): Unknown identifier "r3_data".
+# Compile failure 3 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work Processor -2002  $dsn/src/Test_Bench.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Test_Bench.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "tb" of Entity "processor_tb"
+# Error: COMP96_0078: Test_Bench.vhd : (48, 96): Unknown identifier "instrc_in".
+# Error: COMP96_0133: Test_Bench.vhd : (48, 96): Cannot find object declaration.
+# Error: COMP96_0112: Test_Bench.vhd : (48, 96): "instrc_in" does not match the formal name.
+# Error: COMP96_0207: Test_Bench.vhd : (47, 2): No actual specified for local port "clk".
+# Error: COMP96_0207: Test_Bench.vhd : (47, 2): No actual specified for local port "write".
+# Error: COMP96_0207: Test_Bench.vhd : (47, 2): No actual specified for local port "reset".
+# Error: COMP96_0207: Test_Bench.vhd : (47, 2): No actual specified for local port "in_buffer".
+# Error: COMP96_0207: Test_Bench.vhd : (47, 2): No actual specified for local port "instr_in".
+# Error: COMP96_0207: Test_Bench.vhd : (47, 2): No actual specified for local port "rd_address".
+# Error: COMP96_0207: Test_Bench.vhd : (47, 2): No actual specified for local port "regs".
+# Compile failure 10 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Processor -2002  $dsn/src/4_multi_media_alu_tb.vhd $dsn/src/ALU.vhd $dsn/src/complete.vhd $dsn/src/Data_Forwading_Unit.vhd "$dsn/src/Forwarding Muxes.vhd" $dsn/src/instruction_buffer.vhd $dsn/src/register_file.vhd $dsn/src/pipeline_reg.vhd $dsn/src/Test_Bench.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd
+# Compile Entity "four_multi_media_alu_tb"
+# Compile Architecture "tb" of Entity "four_multi_media_alu_tb"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_Behavior" of Entity "ALU"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd
+# Compile Entity "processor_model"
+# Compile Architecture "behavior" of Entity "processor_model"
+# Error: COMP96_0078: complete.vhd : (90, 55): Unknown identifier "in_buffer".
+# Error: COMP96_0078: complete.vhd : (91, 53): Unknown identifier "instr_in".
+# Error: COMP96_0078: complete.vhd : (94, 53): Unknown identifier "rd_data".
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Forwarding Muxes.vhd
+# Compile Entity "\Forwarding Muxes\"
+# Compile Architecture "\Forwarding Muxes\" of Entity "\Forwarding Muxes\"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/instruction_buffer.vhd
+# Compile Package "instr_pack"
+# Compile Entity "instruction_buffer"
+# Compile Architecture "behaviorhal" of Entity "instruction_buffer"
+# Compile Entity "IF_ID"
+# Compile Architecture "behavioral" of Entity "IF_ID"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behaviorhal" of Entity "register_file"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/pipeline_reg.vhd
+# Compile Entity "pipeline_reg"
+# Compile Architecture "pipeline_reg" of Entity "pipeline_reg"
+# Warning: DAGGEN_0002: pipeline_reg.vhd : (42, 0): Process has no effect - no sequential statements.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Test_Bench.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "tb" of Entity "processor_tb"
+# Error: COMP96_0207: Test_Bench.vhd : (47, 2): No actual specified for local port "regs".
+# Compile failure 4 Errors 1 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work Processor -2002  $dsn/src/4_multi_media_alu_tb.vhd $dsn/src/ALU.vhd $dsn/src/complete.vhd $dsn/src/Data_Forwading_Unit.vhd "$dsn/src/Forwarding Muxes.vhd" $dsn/src/instruction_buffer.vhd $dsn/src/register_file.vhd $dsn/src/pipeline_reg.vhd $dsn/src/Test_Bench.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/4_multi_media_alu_tb.vhd
+# Compile Entity "four_multi_media_alu_tb"
+# Compile Architecture "tb" of Entity "four_multi_media_alu_tb"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_Behavior" of Entity "ALU"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd
+# Compile Entity "processor_model"
+# Compile Architecture "behavior" of Entity "processor_model"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Forwarding Muxes.vhd
+# Compile Entity "\Forwarding Muxes\"
+# Compile Architecture "\Forwarding Muxes\" of Entity "\Forwarding Muxes\"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/instruction_buffer.vhd
+# Compile Package "instr_pack"
+# Compile Entity "instruction_buffer"
+# Compile Architecture "behaviorhal" of Entity "instruction_buffer"
+# Compile Entity "IF_ID"
+# Compile Architecture "behavioral" of Entity "IF_ID"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behaviorhal" of Entity "register_file"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/pipeline_reg.vhd
+# Compile Entity "pipeline_reg"
+# Compile Architecture "pipeline_reg" of Entity "pipeline_reg"
+# Warning: DAGGEN_0002: pipeline_reg.vhd : (42, 0): Process has no effect - no sequential statements.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Test_Bench.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "tb" of Entity "processor_tb"
+# Error: COMP96_0207: Test_Bench.vhd : (47, 2): No actual specified for local port "in_buffer".
+# Error: COMP96_0207: Test_Bench.vhd : (47, 2): No actual specified for local port "instr_in".
+# Error: COMP96_0207: Test_Bench.vhd : (47, 2): No actual specified for local port "rd_address".
+# Error: COMP96_0207: Test_Bench.vhd : (47, 2): No actual specified for local port "rd_data".
+# Error: COMP96_0207: Test_Bench.vhd : (47, 2): No actual specified for local port "regs".
+# Compile failure 5 Errors 1 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work Processor -2002  $dsn/src/complete.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd
+# Compile Entity "processor_model"
+# Compile Architecture "behavior" of Entity "processor_model"
+# Error: COMP96_0078: complete.vhd : (94, 53): Unknown identifier "rd_data".
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Processor -2002  $dsn/src/complete.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd
+# Compile Entity "processor_model"
+# Compile Architecture "behavior" of Entity "processor_model"
+# Error: COMP96_0078: complete.vhd : (91, 29): Unknown identifier "instr_out".
+# Error: COMP96_0078: complete.vhd : (93, 55): Unknown identifier "rs1_data".
+# Error: COMP96_0078: complete.vhd : (93, 83): Unknown identifier "rs2_data".
+# Error: COMP96_0078: complete.vhd : (94, 20): Unknown identifier "rs3_data".
+# Error: COMP96_0078: complete.vhd : (94, 57): Unknown identifier "rd_data".
+# Compile failure 5 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Processor -2002  $dsn/src/complete.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd
+# Compile Entity "processor_model"
+# Compile Architecture "behavior" of Entity "processor_model"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Processor -2002  $dsn/src/complete.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd
+# Compile Entity "processor_model"
+# Compile Architecture "behavior" of Entity "processor_model"
+# Error: COMP96_0078: complete.vhd : (91, 53): Unknown identifier "instr_in".
+# Error: COMP96_0078: complete.vhd : (94, 53): Unknown identifier "rd_data".
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work Processor -2002  $dsn/src/complete.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd
+# Compile Entity "processor_model"
+# Compile Architecture "behavior" of Entity "processor_model"
+# Error: COMP96_0078: complete.vhd : (94, 53): Unknown identifier "rd_data".
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work Processor -2002  $dsn/src/complete.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd
+# Compile Entity "processor_model"
+# Compile Architecture "behavior" of Entity "processor_model"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work Processor -2002  $dsn/src/Test_Bench.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Test_Bench.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "tb" of Entity "processor_tb"
+# Error: COMP96_0207: Test_Bench.vhd : (47, 2): No actual specified for local port "write".
+# Error: COMP96_0207: Test_Bench.vhd : (47, 2): No actual specified for local port "regs".
+# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work Processor -2002  $dsn/src/Test_Bench.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Test_Bench.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "tb" of Entity "processor_tb"
+# Error: COMP96_0207: Test_Bench.vhd : (47, 2): No actual specified for local port "write".
+# Error: COMP96_0207: Test_Bench.vhd : (47, 2): No actual specified for local port "regs".
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work Processor -2002  $dsn/src/complete.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd
+# Compile Entity "processor_model"
+# Compile Architecture "behavior" of Entity "processor_model"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Processor -2002  $dsn/src/Test_Bench.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Test_Bench.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "tb" of Entity "processor_tb"
+# Error: COMP96_0207: Test_Bench.vhd : (47, 2): No actual specified for local port "regs".
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Processor -2002  $dsn/src/Test_Bench.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Test_Bench.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "tb" of Entity "processor_tb"
+# Error: COMP96_0018: Test_Bench.vhd : (36, 15): Identifier expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work Processor -2002  $dsn/src/complete.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd
+# Compile Entity "processor_model"
+# Compile Architecture "behavior" of Entity "processor_model"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Processor -2002  $dsn/src/Test_Bench.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Test_Bench.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "tb" of Entity "processor_tb"
+# Error: COMP96_0018: Test_Bench.vhd : (36, 15): Identifier expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work Processor -2002  $dsn/src/Test_Bench.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Test_Bench.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "tb" of Entity "processor_tb"
+# Warning: DAGGEN_0001: Test_Bench.vhd : (50, 0): Process without explicit or implicit wait statement - possible infinite loop.
+# Compile success 0 Errors 1 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work Processor -2002  $dsn/src/Test_Bench.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/Test_Bench.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "tb" of Entity "processor_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+processor_tb processor_tb tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work Processor -2002  $dsn/src/complete.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/complete.vhd
+# Compile Entity "processor_model"
+# Compile Architecture "behavior" of Entity "processor_model"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6717 kB (elbread=427 elab2=6146 kernel=142 sdf=0)
+# KERNEL: ASDB file was created in location B:\Stony Brook\ESE345\4_stage_multi\Processor\Processor\Processor\src\wave.asdb
+#  10:18 PM, Saturday, November 26, 2022
+#  Simulation has been initialized
+# VSIM: 11 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'B:/Stony Brook/ESE345/4_stage_multi/Processor/Processor/Processor/src/wave.asdb'.
+run
+# RUNTIME: Info: RUNTIME_0142 Test_Bench.vhd (106): finish called.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb,  Process: line__106.
+# KERNEL: stopped at time: 0 ps
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+run

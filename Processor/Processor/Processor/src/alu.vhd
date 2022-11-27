@@ -10,6 +10,7 @@ entity ALU is
 		 r2 : in STD_LOGIC_VECTOR(127 downto 0);
 		 r3 : in STD_LOGIC_VECTOR(127 downto 0);
 		 instrc: in STD_LOGIC_VECTOR(24 downto 0);
+		 clk : in STD_LOGIC;
 		 o : out STD_LOGIC_VECTOR(127 downto 0)
 	     );
 end ALU;
@@ -19,7 +20,7 @@ end ALU;
 architecture ALU_Behavior of ALU is		
 
 begin
-process(r1, r2, r3, instrc)
+process(clk)
 
 	
 
