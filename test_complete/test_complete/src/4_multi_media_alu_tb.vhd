@@ -43,7 +43,7 @@ architecture tb of four_multi_media_alu_tb is
 	--signal rd_address	  : std_logic_vector(4 downto 0);
 	signal instrc : std_logic_vector(length_instr-1 downto 0);
 	--signal cmptr : std_logic;									 
-	signal rs1_data, rs2_data, rs3_data, rd_data : std_logic_vector(n-1 downto 0);
+	signal rs1_data, rs2_data, rs3_data, rd_data, outp : std_logic_vector(n-1 downto 0);
 	
 	
 	
@@ -102,6 +102,17 @@ begin
 		port map ( clk => clk,reset=> reset, instrc=> instrc, write=> write,  rs1_data => rs1_data,  rs2_data => rs2_data,  
 		rs3_data => rs3_data, rd_data => rd_data);		
 		
+	
+		alu_ex : entity ALU	
+		
+	--	
+		 
+		
+		port map (instrc=> instrc,  r1 => rs1_data,  r2 => rs2_data,  
+		r3 => rs3_data , o => outp);	
+		
+		
+		
 		
 		
 		
@@ -125,8 +136,11 @@ begin
 		  
 		
 		begin	
-			 reset <= '1';
-
+			reset <= '1'; 								 
+			--init
+			
+		
+			
         wait for period*2;
 
         reset <= '0';

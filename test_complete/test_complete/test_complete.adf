@@ -16,7 +16,10 @@ LANGUAGE=VHDL
 REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=
-fileopenfolder=C:\Users\vleen\Documents\GitHub\4_stage_multi\Data Forwarding\Data_Forwarding\Data Forwarding\src
+fileopenfolder=C:\Users\vleen\Documents\GitHub\4_stage_multi\src
+AddGeneratedFilesToDesignBrowser=0
+DesignStatusPath=$dsn\src\DESIGN_STATUS
+DesignActivationScript=$dsn\design.do
 [Files]
 /complete.vhd=-1
 /4_multi_media_alu_tb.vhd=-1
@@ -25,6 +28,7 @@ fileopenfolder=C:\Users\vleen\Documents\GitHub\4_stage_multi\Data Forwarding\Dat
 /register_file.vhd=-1
 /Data_Forwading_Unit.vhd=-1
 /Forwarding Muxes.vhd=-1
+/instruction_buffer_tb.vhd=-1
 [Files.Data]
 .\src\complete.vhd=VHDL Source Code
 .\src\4_multi_media_alu_tb.vhd=VHDL Source Code
@@ -33,3 +37,63 @@ fileopenfolder=C:\Users\vleen\Documents\GitHub\4_stage_multi\Data Forwarding\Dat
 .\src\register_file.vhd=VHDL Source Code
 .\src\Data_Forwading_Unit.vhd=VHDL Source Code
 .\src\Forwarding Muxes.vhd=VHDL Source Code
+.\src\instruction_buffer_tb.vhd=VHDL Source Code
+[LocalVhdlSets]
+NetlistCompilation=1
+EnableVHDL93Key=0
+EnableVHDL2002Key=0
+EnableVHDL2008Key=1
+EnableVHDL2019Key=0
+DisableVHDL87Key=0
+Syntax RelaxLRM=0
+MaxErrorsKey=100
+CompileWithDebug=1
+OptimizationLevel=3
+DisableRangeChecks=0
+ProtectLevel=0
+IncrementalCompilation=0
+AdditionalOptions=
+[DesignStructure]
+ExternalFile=.\src
+WaveformASDBC=.\src
+EDIFNetlist=.\src
+WaveformASDBE=.\src
+BlockDiagram=.\src
+HTMLDocument=.\src
+Drawing=.\src
+VerilogSourceCode=.\src
+adc=.\src
+Cpp=.\src
+SymbolSheet=.\src
+PerlScript=.\src
+VHDLSourceCode=.\src
+SystemVerilogSourceCode=.\src
+Macro=.\src
+WaveformASDBAWC=.\src
+SDF=.\src
+TclScript=.\src
+StateDiagram=.\src
+PslSourceCode=.\src
+WaveformASDB=.\src
+EDIFSchematic=.\src
+Text=.\src
+MemFile=.\src
+GenerateToCustomFolder=0
+[LocalVerilogSets]
+VerilogLanguage=8
+WarningPrnLevel=1
+OptimizationLevel=2
+ProtectLevel=0
+Strict=0
+VerilogNoSpecify=0
+EnableDebug=0
+AdditionalOptions=
+ErrorOutputLimit=0
+[DefineMacro]
+Global=
+[LocalVerilogDirs]
+Count=0
+[HierarchyViewer]
+HierarchyInformation=four_multi_media_alu_tb|tb|0 instruction_buffer_tb|tb|0
+ShowHide=ShowTopLevel
+Selected=
