@@ -23,7 +23,8 @@
 
 library IEEE;
 use IEEE.std_logic_1164.all;	 
-use ieee.numeric_std.all;
+use ieee.numeric_std.all; 
+use work.all;
 
 
 package instr_pack is 
@@ -84,9 +85,13 @@ begin
 		
 		
 		
-if rising_edge(clk)		 then 		 
-						  
-	
+if rising_edge(clk)		 then 	
+
+	if(reset = '1')then 
+		instr_out <= "0000000000000000000000000";
+		
+	 
+	else 
 	
 	instr_out <= in_buffer(pc);	  
 	--in_buffer(pc) <=  std_logic_vector(to_unsigned(0, 25));
@@ -96,7 +101,10 @@ if rising_edge(clk)		 then
 	else 		
 	pc := pc + 1;
 		 end if;
-end if;
+end if;		
+
+
+	end if;
  --pc := std_logic_vector(to_unsigned(count));
 end process;						   
 
