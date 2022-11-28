@@ -158,7 +158,7 @@ begin
 	
 			--load immidate 
 		    elsif (instrc(24 downto 23) = "0") then 
-				rs1_data <= rd_data;
+			--	rs1_data <= "10100000101000000100111011111101110011100011001000010011001100100010010010011010100101010110110110000111000010000100010000101111";
 				--regs(to_integer(unsigned(instrc(4 downto 0)))) <= rd_data;	
 				 write <= '1';
 	 
