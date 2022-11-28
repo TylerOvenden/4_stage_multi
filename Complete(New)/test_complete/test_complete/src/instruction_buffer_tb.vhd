@@ -83,13 +83,13 @@ architecture tb of instruction_buffer_tb is
 	 signal FWD_B : STD_LOGIC;
 	 signal FWD_C : STD_LOGIC; 
 --EX/FWD
-	signal ins_FWDALU: std_logic_vector(24 downto 0);		   
+--	signal ins_FWDALU: std_logic_vector(24 downto 0);		   
 	signal rs1_FWDALU: std_logic_vector(127 downto 0);
 	signal rs2_FWDALU: std_logic_vector(127 downto 0);
 	signal rs3_FWDALU: std_logic_vector(127 downto 0);
-	signal rsd_FWDALU: std_logic_vector(127 downto 0);
+--	signal rsd_FWDALU: std_logic_vector(127 downto 0);
 --EX/WB
-	signal ins_EXWB: std_logic_vector(24 downto 0);		   
+--	signal ins_EXWB: std_logic_vector(24 downto 0);		   
 	signal rsd_EXWB: std_logic_vector(127 downto 0);
 	signal write_EXWB : std_logic;
 --WB/REG
@@ -125,24 +125,24 @@ begin
 	E_ID_EX: entity ID_EX 
 		port map (clk => clk, reset => reset, instr_in =>ins_IFID, rs1_data_in=>rs1_IDEX, rs2_data_in=>rs2_IDEX,
 		rs3_data_in=>rs3_IDEX, write_in => write_IDEX, instr_out => ins_EXFWD,rs1_data_out => rs1_EXFWD, 
-		rs2_data_out => rs2_EXFWD,rs3_data_out => rs3_EXFWD,write_out=>write_EXFWD
+		rs2_data_out => rs2_EXFWD,rs3_data_out => rs3_EXFWD,write_out=>write_EXWB
 		);
 		
 	ALU_EXE : entity ALU	
-		port map (  r1 => rs1_IDEX,  r2 => rs2_IDEX,  
-		r3 => rs2_IDEX, instrc => ins_EXFWD, o => rsd_EXWB);	
+		port map ( clk => clk, r1 => rs1_FWDALU,  r2 => rs2_FWDALU,  
+		r3 => rs3_FWDALU, instrc => ins_EXFWD, o => rsd_EXWB);	
 		
 		
 		-- might need to add write signal inbetween	(in the fwd or alu to pass to this for timing purposes)
 	u_EX_WB: entity EX_WB 
-		port map ( clk => clk, instr_in => ins_EXFWD, rd_data_in => rsd_EXWB,
+		port map ( clk => clk, reset=>reset, instr_in => ins_EXFWD, rd_data_in => rsd_EXWB,
 		rd_data_out => rsd_WBREG, rd_data_num => rd_data_num, write_in =>write_EXWB, write_out => write_WBREG);		
 
 		
 		
 		
 	FWD_MUX : entity \Forwarding Muxes\ 
-		port map (r1_ins => rs1_EXFWD,  r2_ins => rs2_EXFWD,
+		port map (clk=>clk,r1_ins => rs1_EXFWD,  r2_ins => rs2_EXFWD,
 		r3_ins => rs3_EXFWD,alu_out => rsd_EXWB ,FWD_A => FWD_A,FWD_B => FWD_B,FWD_C => FWD_C,
 		r1_out => rs1_FWDALU,  r2_out => rs2_FWDALU,r3_out => rs3_FWDALU
 		);
@@ -155,7 +155,7 @@ begin
 		
 	
 	forward_unit : entity Data_Forwading_Unit	
-		port map (instr=>ins_EXFWD,next_instr => ins_IFID ,FWD_A => FWD_A,FWD_B => FWD_B,FWD_C => FWD_C);
+		port map (clk => clk,instr=>ins_EXFWD,next_instr => ins_IFID ,FWD_A => FWD_A,FWD_B => FWD_B,FWD_C => FWD_C);
 		
 		
 		

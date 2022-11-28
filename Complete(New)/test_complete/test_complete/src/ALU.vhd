@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 
 entity ALU is
 	port(
-		 
+		 clk : in std_logic;
 		 r1 : in STD_LOGIC_VECTOR(127 downto 0);
 		 r2 : in STD_LOGIC_VECTOR(127 downto 0);
 		 r3 : in STD_LOGIC_VECTOR(127 downto 0);
@@ -19,7 +19,7 @@ end ALU;
 architecture ALU_Behavior of ALU is		
 
 begin
-process(r1, r2, r3, instrc)
+process(clk)
  
 	
 

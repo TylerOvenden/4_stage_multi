@@ -236,7 +236,7 @@ variable rs3_IDEX: std_logic_vector(127 downto 0);
 				rs2_data_out <= rs2_IDEX;
 				rs3_data_out <= rs3_IDEX;
 				write_out <= write_IDEX;
-			--elsif falling_edge(clk) then --update reg	
+			elsif falling_edge(clk) then --update reg	
 				ins_IDEX := instr_in;	
 				rs1_IDEX := rs1_data_in;  
 				rs2_IDEX := rs2_data_in;

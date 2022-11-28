@@ -25,7 +25,7 @@ use IEEE.std_logic_1164.all;
 
 entity \Forwarding Muxes\ is
 	port(
-	 	-- clk : in STD_LOGIC; -- clk
+	 clk : in STD_LOGIC; -- clk
 	-- Registers in
 		 alu_out : in STD_Logic_vector(127 downto 0);
 		 r1_ins : in STD_LOGIC_VECTOR(127 downto 0);
@@ -43,8 +43,9 @@ entity \Forwarding Muxes\ is
 end \Forwarding Muxes\;
 architecture \Forwarding Muxes\ of \Forwarding Muxes\ is
 begin
-process(FWD_A, FWD_B, FWD_C)
-begin 
+process(clk)
+begin
+	if rising_edge(clk) then
 	--r1 mux
 	if FWD_A = '1' then
 		r1_out <= alu_out;
@@ -61,7 +62,8 @@ begin
 	if FWD_C = '1' then
 		r3_out <= alu_out;
 	else
-		r3_out <= r3_ins;
+		r3_out <= r3_ins; 
+		end if;
 	end if;
 end process;
 end \Forwarding Muxes\;

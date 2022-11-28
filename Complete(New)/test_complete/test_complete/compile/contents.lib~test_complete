@@ -1,27 +1,19 @@
-184
+205
 ~E 1 "../src/Forwarding Muxes.vhd" 26 \Forwarding Muxes\
 ~A 1 "../src/Forwarding Muxes.vhd" 44 \Forwarding Muxes\
 ~E 1 "../src/ALU.vhd" 6 ALU
 ~A 1 "../src/ALU.vhd" 19 ALU_Behavior
-~E 0 "" 0 alu_model
-~A 0 "" 0 behavior
 ~E 1 "../src/Data_Forwading_Unit.vhd" 28 Data_Forwading_Unit
 ~A 1 "../src/Data_Forwading_Unit.vhd" 44 behavior
 ~E 1 "../src/EX_WB.vhd" 6 EX_WB
-~A 1 "../src/EX_WB.vhd" 23 behavioral
-~E 0 "" 0 four_multi_media_alu_tb
-~A 0 "" 0 tb
+~A 1 "../src/EX_WB.vhd" 24 behavioral
 ~E 1 "../src/register_file.vhd" 185 ID_EX
 ~A 1 "../src/register_file.vhd" 206 behavioral
-~E 0 "" 0 IF_EX
-~A 0 "" 0 behavioral
 ~E 1 "../src/instruction_buffer.vhd" 121 IF_ID
 ~A 1 "../src/instruction_buffer.vhd" 130 behavioral
 ~E 1 "../src/instruction_buffer.vhd" 45 instruction_buffer
 ~A 1 "../src/instruction_buffer.vhd" 72 behaviorhal
 ~E 1 "../src/instruction_buffer_tb.vhd" 17 instruction_buffer_tb
 ~A 1 "../src/instruction_buffer_tb.vhd" 21 tb
-~E 0 "" 0 processor_model
-~A 0 "" 0 behavior
 ~E 1 "../src/register_file.vhd" 35 register_file
 ~A 1 "../src/register_file.vhd" 68 behaviorhal

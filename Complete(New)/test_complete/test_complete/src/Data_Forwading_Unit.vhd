@@ -27,7 +27,7 @@ use IEEE.std_logic_1164.all;
 
 entity Data_Forwading_Unit is
 	port(
-		-- clk : in STD_LOGIC;	
+		clk : in STD_LOGIC;	
 		-- r1 : in STD_LOGIC_VECTOR(127 downto 0);
 		-- r2 : in STD_LOGIC_VECTOR(127 downto 0);
 		-- r3 : in STD_LOGIC_VECTOR(127 downto 0);
@@ -46,13 +46,14 @@ architecture behavior of Data_Forwading_Unit is
 
 begin 
 
-	process(instr, next_instr)  
+	process(clk)  
 	variable curr_rd : std_logic_vector(4 downto 0);
 --variable next_rd : std_logic_vector(4 downto 0);
 --variable rs1 : std_logic_vector(4 downto 0);
 --variable rs2 : std_logic_vector(4 downto 0); 
 --variable rs3 : std_logic_vector(4 downto 0);
-begin
+begin 
+	if rising_edge(clk) then
 	curr_rd := instr(4 downto 0);
 	if instr(24) = '0'  or next_instr(24) = '0' then   -- if load immediate function no forwarding
 			FWD_A <= '0';
@@ -99,7 +100,7 @@ begin
 		end if;	
 	end if;
 	
-	
+	 end if;
 	end if;
 	end process;
    end behavior;

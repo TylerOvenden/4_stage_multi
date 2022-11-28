@@ -138,7 +138,7 @@ begin
 		else
 		if rising_edge(clk)	then
 			instr_out <= instr_IFID;
-		--elsif falling_edge(clk) then
+		elsif falling_edge(clk) then
 			instr_IFID := instr_in;
 			end if;
 		end if;
