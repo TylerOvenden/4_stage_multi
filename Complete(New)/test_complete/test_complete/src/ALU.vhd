@@ -20,7 +20,7 @@ architecture ALU_Behavior of ALU is
 
 begin
 process(r1, r2, r3, instrc)
-
+ 
 	
 
 

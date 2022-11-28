@@ -112,16 +112,34 @@ begin
 	
   	RegFile: entity register_file	
 		port map ( clk => clk,reset=> reset, write=> write_IDEX,  rs1_data => rs1_IDEX,  rs2_data => rs2_IDEX,  
-		rs3_data => rs3_IDEX, instrc => ins_IFID,rd_data => rsd_WBREG, 
+		rs3_data => rs3_IDEX, instrc => ins_IFID,rd_data => rsd_EXWB, 
 		write_wbex => write_WBREG, rd_num => rd_data_num );					   
 		
 	
+	
+	--ALU_EXE : entity ALU	
+--		port map (  r1 => rs1_FWDALU,  r2 => rs2_FWDALU,  
+--		r3 => rs2_FWDALU, instrc => ins_EXFWD, o => rsd_EXWB);	 
+		
 		
 	E_ID_EX: entity ID_EX 
 		port map (clk => clk, reset => reset, instr_in =>ins_IFID, rs1_data_in=>rs1_IDEX, rs2_data_in=>rs2_IDEX,
 		rs3_data_in=>rs3_IDEX, write_in => write_IDEX, instr_out => ins_EXFWD,rs1_data_out => rs1_EXFWD, 
 		rs2_data_out => rs2_EXFWD,rs3_data_out => rs3_EXFWD,write_out=>write_EXFWD
-		);		
+		);
+		
+	ALU_EXE : entity ALU	
+		port map (  r1 => rs1_IDEX,  r2 => rs2_IDEX,  
+		r3 => rs2_IDEX, instrc => ins_EXFWD, o => rsd_EXWB);	
+		
+		
+		-- might need to add write signal inbetween	(in the fwd or alu to pass to this for timing purposes)
+	u_EX_WB: entity EX_WB 
+		port map ( clk => clk, instr_in => ins_EXFWD, rd_data_in => rsd_EXWB,
+		rd_data_out => rsd_WBREG, rd_data_num => rd_data_num, write_in =>write_EXWB, write_out => write_WBREG);		
+
+		
+		
 		
 	FWD_MUX : entity \Forwarding Muxes\ 
 		port map (r1_ins => rs1_EXFWD,  r2_ins => rs2_EXFWD,
@@ -129,16 +147,10 @@ begin
 		r1_out => rs1_FWDALU,  r2_out => rs2_FWDALU,r3_out => rs3_FWDALU
 		);
 		
-		
-	ALU_EXE : entity ALU	
-		port map (  r1 => rs1_FWDALU,  r2 => rs2_FWDALU,  
-		r3 => rs2_FWDALU, instrc => ins_EXFWD, o => rsd_EXWB);	 
+	
 		
 		
-	-- might need to add write signal inbetween	(in the fwd or alu to pass to this for timing purposes)
-	u_EX_WB: entity EX_WB 
-		port map ( clk => clk, instr_in => ins_EXFWD, rd_data_in => rsd_EXWB,
-		rd_data_out => rsd_WBREG, rd_data_num => rd_data_num, write_in =>write_EXWB, write_out => write_WBREG);	
+
 			
 		
 	
@@ -198,9 +210,13 @@ begin
 				
 				
 				
+				if(counter = 63) then  
+				counter := 0;
+			else 		
 				counter := counter + 1;
-
-				
+	
+			end if;
+			
 			end loop; 		  
 			counter	:= 0;
 			ran := true;

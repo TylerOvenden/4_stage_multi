@@ -1,4 +1,4 @@
-165
+184
 ~E 1 "../src/Forwarding Muxes.vhd" 26 \Forwarding Muxes\
 ~A 1 "../src/Forwarding Muxes.vhd" 44 \Forwarding Muxes\
 ~E 1 "../src/ALU.vhd" 6 ALU
@@ -21,7 +21,7 @@
 ~A 1 "../src/instruction_buffer.vhd" 72 behaviorhal
 ~E 1 "../src/instruction_buffer_tb.vhd" 17 instruction_buffer_tb
 ~A 1 "../src/instruction_buffer_tb.vhd" 21 tb
-~E 1 "../src/complete.vhd" 16 processor_model
+~E 0 "" 0 processor_model
 ~A 0 "" 0 behavior
 ~E 1 "../src/register_file.vhd" 35 register_file
 ~A 1 "../src/register_file.vhd" 68 behaviorhal

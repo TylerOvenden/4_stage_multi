@@ -4,5 +4,4 @@
 .\src\Forwarding Muxes.vhd
 .\src\EX_WB.vhd
 .\src\ALU.vhd
-.\src\complete.vhd
 .\src\instruction_buffer_tb.vhd

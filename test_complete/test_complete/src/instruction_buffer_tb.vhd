@@ -202,7 +202,23 @@ begin
 	  clk<='1';
 	  wait for period;
   end process;
-			
+  
+  
+  
+ -- update: process
+--  begin 
+--	 
+--	  wait for 15us;
+--	   for i in 0 to 20 loop
+--	  rd_data <= rsd_save_EXWB;	   
+--	  
+--	  wait for 10us;				   
+--	  end loop;
+--  end process;
+  
+  
+  
+  
 			
 	
 end tb;

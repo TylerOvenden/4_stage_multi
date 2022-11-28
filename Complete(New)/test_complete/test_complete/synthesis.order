@@ -1,4 +1,3 @@
-i<>.\src\complete.vhd
 i<>.\src\ALU.vhd
 i<>.\src\instruction_buffer.vhd
 i<>.\src\register_file.vhd
