@@ -1,0 +1,2 @@
+instruction_buffer_tb ENTITY
+processor_model ENTITY

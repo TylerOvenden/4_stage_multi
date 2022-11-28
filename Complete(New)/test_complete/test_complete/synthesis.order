@@ -1,0 +1,7 @@
+i<>.\src\complete.vhd
+i<>.\src\ALU.vhd
+i<>.\src\instruction_buffer.vhd
+i<>.\src\register_file.vhd
+i<>.\src\Data_Forwading_Unit.vhd
+i<>.\src\instruction_buffer_tb.vhd
+i<>.\src\EX_WB.vhd

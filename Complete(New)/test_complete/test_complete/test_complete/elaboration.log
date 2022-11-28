@@ -1,0 +1,40 @@
+Active-HDL 13.0.376.8320 2022-11-28 05:09:07
+
+Elaboration top modules:
+Architecture                  tb(instruction_buffer_tb)
+
+
+--------------------------------------------------------------------------------------------------------------------
+Entity                | Architecture       | Library       | Info | Compiler Version          | Compilation Options
+--------------------------------------------------------------------------------------------------------------------
+instruction_buffer_tb | tb                 | test_complete |      | 13.0.376.8320 (Windows64) | -dbg -2008
+instruction_buffer    | behaviorhal        | test_complete |      | 13.0.376.8320 (Windows64) | -dbg -2008
+IF_ID                 | behavioral         | test_complete |      | 13.0.376.8320 (Windows64) | -dbg -2008
+register_file         | behaviorhal        | test_complete |      | 13.0.376.8320 (Windows64) | -dbg -2008
+ID_EX                 | behavioral         | test_complete |      | 13.0.376.8320 (Windows64) | -dbg -2008
+\Forwarding Muxes\    | \Forwarding Muxes\ | test_complete |      |                           | 
+ALU                   | ALU_Behavior       | test_complete |      | 13.0.376.8320 (Windows64) | -dbg -2008
+EX_WB                 | behavioral         | test_complete |      | 13.0.376.8320 (Windows64) | -dbg -2008
+Data_Forwading_Unit   | behavior           | test_complete |      | 13.0.376.8320 (Windows64) | -dbg -2008
+--------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------
+VHDL Package                               | Library       | Info | Compiler Version          | Compilation Options
+--------------------------------------------------------------------------------------------------------------------
+standard                                   | std           |      |                           | <unavailable>
+TEXTIO                                     | std           |      | 13.0.376.8320 (Windows64) |  -2019
+std_logic_1164                             | ieee          |      | 13.0.376.8320 (Windows64) |  -2008
+NUMERIC_STD                                | ieee          |      | 13.0.376.8320 (Windows64) |  -2008
+instr_pack                                 | test_complete |      | 13.0.376.8320 (Windows64) | -dbg -2008
+STD_LOGIC_TEXTIO                           | ieee          |      | 13.0.376.8320 (Windows64) | <unavailable>
+std_logic_arith                            | ieee          |      | 13.0.376.8320 (Windows64) | <unavailable>
+STD_LOGIC_UNSIGNED                         | ieee          |      | 13.0.376.8320 (Windows64) | <unavailable>
+--------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------
+Library                                    | Comment
+--------------------------------------------------------------------------------------------------------------------
+ieee                                       | Standard IEEE packages library
+std                                        | Standard VHDL library
+test_complete                              | None
+--------------------------------------------------------------------------------------------------------------------
