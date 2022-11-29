@@ -233,7 +233,7 @@ string_code hashit(std::string const& inString) {
     if (inString == "AHS") return string_code::AHS;
 
     if (inString == "AND") return string_code::NOP;
-    if (inString == "BCW") return string_code::AU;
+    if (inString == "BCW") return string_code::BCW;
     if (inString == "MAXWS") return string_code::MAXWS;
     if (inString == "MINWS") return string_code::MINWS;
 
@@ -242,9 +242,9 @@ string_code hashit(std::string const& inString) {
     if (inString == "OR") return string_code::OR;
     if (inString == "PCNTW") return string_code::PCNTW;
 
-    if (inString == "AND") return string_code::ROTW;
-    if (inString == "BCW") return string_code::SFWU;
-    if (inString == "MAXWS") return string_code::SFHS;
+    if (inString == "ROTW") return string_code::ROTW;
+    if (inString == "SFWU") return string_code::SFWU;
+    if (inString == "SFHS") return string_code::SFHS;
     if (inString == "LDI") return string_code::LDI;
 
 
