@@ -209,13 +209,13 @@ begin
 				--instr_in <= temp_inst;   
 				
 				
-				
-				if(counter = 63) then  
-				counter := 0;
-			else 		
+				--
+--				if(counter = 63) then  
+--				counter := 0;
+--			else 		
 				counter := counter + 1;
 	
-			end if;
+			--end if;
 			
 			end loop; 		  
 			counter	:= 0;
@@ -224,24 +224,48 @@ begin
 		  end if;
 	--	std.env.finish;
 		wait; 
+		
 		end process;
 		
 		
-		 clock: process
-  begin
-	 --if(reset = '0') then 
+		
+		
+		clock: process	
+		File result : TEXT; 		 
+		File expected : TEXT; 
+		variable lin : line; 
+		variable lin2     : line;
+		--variable v_OLINE     : line;
+		variable temp_result : std_logic_vector(127 downto 0);
+		
+		
+	
+		
+  begin	
+	  file_open(result, "output.txt", write_mode);			
+	   file_open(expected, "expected.txt", read_mode);
+	  for i in 0 to 68 loop
+	
 	  clk <='0';
-	  wait for period;
+	  wait for period/2;
 	  clk<='1';
-	  wait for period;	  
-	 --end if;
+	  wait for period/2;	  
+	 --end if;			  			  
+	 if(i > 3) then 
+		readline(expected, lin2);
+	read(lin2, temp_result);	 
+		 
+	  assert rsd_EXWB = temp_result  report " incorrect output"
+   severity warning;
+			 
+	 write(lin, string'("output :"));	 
+	  write(lin, rsd_EXWB);
+	  writeLine(result, lin);
+	 			end if;
+	end loop; 
+file_close(txt_file);		
   end process;
 			
 			
 	
 end tb;
-			 	
-		
-		 	
-		
-		
