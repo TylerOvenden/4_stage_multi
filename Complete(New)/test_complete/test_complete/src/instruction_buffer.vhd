@@ -134,7 +134,7 @@ begin
 	variable instr_IFID : std_logic_vector(24 downto 0);
 	begin
 		if reset = '1' then
-			instr_out <= "0000011101001001001000000";
+			instr_out <= "0000000000000000000000000";
 		else
 		if rising_edge(clk)	then
 			instr_out <= instr_IFID;
