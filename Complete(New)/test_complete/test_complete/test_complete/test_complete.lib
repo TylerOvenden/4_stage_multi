@@ -1,13 +1,13 @@
-timestamp=1669690376515
+timestamp=1669690607727
 
 [~A]
-ModifyID=208
+ModifyID=210
 Version=74
 
 [~MFT]
-0=29|0test_complete.mgf|79180|37877
-1=17|1test_complete.mgf|186697|127833
-3=17|3test_complete.mgf|130239|110083
+0=3|0test_complete.mgf|83717|37877
+1=1|1test_complete.mgf|192751|127833
+3=0|3test_complete.mgf|130239|110083
 
 [\Forwarding Muxes\]
 A/\Forwarding Muxes\=21|../src/Forwarding Muxes.vhd|44|1*120313
@@ -126,6 +126,16 @@ R=../src/instruction_buffer_tb.vhd|17
 Version=13.0.376.8320 (Windows64)|0000000a789cd34d494a57d0353230b000000ec20272|ca35fc9534a8cfce866c0066a9a678c81cd00d069f1b1545f5faae887e5e59148d64c0291c73247b0e2f8fec42d467df
 Version/tb=13.0.376.8320 (Windows64)|0000000a789cd34d494a57d0353230b000000ec20272|8db8692708dc0985d408d2497dbc95fab566b33a389bfa1c13480d1ec60f95b1
 
+[processor_model]
+A/behavior=21|../src/complete.vhd|57|1*192751
+I=0*80718
+I/behavior=0*83717
+M=11|2|vef|1669690588752|../src/complete.vhd|0*80071*0x9c64a6fe3f606923dafa731566c365de43f281b2|0*80630*0xd986fd7175c8cf28cd774bcadde79966
+M/behavior=21|2|vef|1669690607723|../src/complete.vhd|0*81077*0x6081c0eaa833265898575bc40c472bc6a92423cd|0*83617*0x3666052002612506830c83371aef600f
+R=../src/complete.vhd|16
+Version=13.0.376.8320 (Windows64)|0000000a789cd34d494a57d0353230b000000ec20272|ee93163347cd5f12de49d711f0190d66eb3074975403e1d92b62a8b65cc44cfc7353f945269a21273636ec18e8fd3817
+Version/behavior=13.0.376.8320 (Windows64)|0000000a789cd34d494a57d0353230b000000ec20272|f9bccf16e2dce5a640f0ad5e8eaa0283e08d679eaf1bc9de9439630905b37e5fcd20b2d693540a3dfa9ae154f2777a97
+
 [register_file]
 A/behaviorhal=21|../src/register_file.vhd|68|1*164539
 BinW64/behaviorhal=3*114082
@@ -149,4 +159,5 @@ if_id=IF_ID 11|0*7307|
 instr_pack=3|0*4275|0*4471
 instruction_buffer=11|0*5284|
 instruction_buffer_tb=11|0*34846|
+processor_model=11|0*79790|
 register_file=11|0*8812|

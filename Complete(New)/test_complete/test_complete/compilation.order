@@ -5,3 +5,4 @@
 .\src\EX_WB.vhd
 .\src\ALU.vhd
 .\src\instruction_buffer_tb.vhd
+.\src\complete.vhd
