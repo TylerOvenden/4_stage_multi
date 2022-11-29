@@ -222,7 +222,7 @@ variable rs3_IDEX: std_logic_vector(127 downto 0);
 		
 		
 		if reset = '1' then
-			instr_out <= "0000011101001001001000000";
+			instr_out <= "0000000000000000000000000";
 			rs1_data_out <= rs1_data_in;  
 			rs2_data_out <= rs2_data_in;
 			rs3_data_out <= rs3_data_in;
