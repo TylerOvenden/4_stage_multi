@@ -132,7 +132,7 @@ begin
 		port map ( clk => clk, r1 => rs1_FWDALU,  r2 => rs2_FWDALU,  
 		r3 => rs3_FWDALU, instrc => ins_EXFWD, o => rsd_EXWB);	
 		
-		
+											 
 		-- might need to add write signal inbetween	(in the fwd or alu to pass to this for timing purposes)
 	u_EX_WB: entity EX_WB 
 		port map ( clk => clk, reset=>reset, instr_in => ins_EXFWD, rd_data_in => rsd_EXWB,
@@ -248,15 +248,42 @@ begin
 	
 	  clk <='0';
 	  wait for period/2;
-	  clk<='1';
+	  clk<='1';			  
+    
+  	  write(lin, string'("cycle :"));	 
+	  write(lin, i+1); 			
+	  writeLine(result, lin);
+	  if(i > 3) then 	
+	    write(lin, string'("executed instruction  :"));	 
+	  write(lin, ins_EXFWD); 	   
+	   writeLine(result, lin);
+	   
+	   end if;
 	  wait for period/2;	  
-	 --end if;			  			  
-	 if(i > 3) then 
-		readline(expected, lin2);
-	read(lin2, temp_result);	 
+	-- end if;			  			  
+
 		 
-	  assert rsd_EXWB = temp_result  report " incorrect output"
-   severity warning;
+	 if(i > 4) then 		
+				 
+	
+		 
+	readline(expected, lin2);
+	read(lin2, temp_result);	 
+	
+	
+	  							
+	   write(lin, string'("rs1 value  :"));	 
+	  write(lin, rs1_FWDALU); 	
+	   writeLine(result, lin);
+	   write(lin, string'("rs2 value  :"));	 
+	  write(lin, rs2_FWDALU); 
+	   writeLine(result, lin);
+	   write(lin, string'("rs3 value  :"));	 
+	  write(lin, rs3_FWDALU); 
+	   writeLine(result, lin);
+	 
+  assert rsd_EXWB = temp_result  report " incorrect output"
+ severity warning;
 			 
 	 write(lin, string'("output :"));	 
 	  write(lin, rsd_EXWB);
@@ -268,4 +295,4 @@ file_close(txt_file);
 			
 			
 	
-end tb;
+end tb;	
