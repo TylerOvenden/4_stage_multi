@@ -1,2 +1,58 @@
 # ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Error: Architecture 'tb' of entity 'instruction_buffer_tb' not found in library 'test_complete'.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+acom -dbg -e 100 -work test_complete -2008  "$dsn/src/Forwarding Muxes.vhd"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Complete(New)/test_complete/test_complete/src/Forwarding Muxes.vhd
+# Compile Entity "\Forwarding_Muxes\"
+# Compile Architecture "\Forwarding_Muxes\" of Entity "\Forwarding Muxes\"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -dbg -e 100 -work test_complete -2008  $dsn/src/Data_Forwading_Unit.vhd $dsn/src/instruction_buffer.vhd $dsn/src/register_file.vhd "$dsn/src/Forwarding Muxes.vhd" $dsn/src/EX_WB.vhd $dsn/src/ALU.vhd $dsn/src/instruction_buffer_tb.vhd
+# File: B:/Stony Brook/ESE345/4_stage_multi/Complete(New)/test_complete/test_complete/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Complete(New)/test_complete/test_complete/src/instruction_buffer.vhd
+# Compile Package "instr_pack"
+# Compile Entity "instruction_buffer"
+# Compile Architecture "behaviorhal" of Entity "instruction_buffer"
+# Compile Entity "IF_ID"
+# Compile Architecture "behavioral" of Entity "IF_ID"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Complete(New)/test_complete/test_complete/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behaviorhal" of Entity "register_file"
+# Compile Entity "ID_EX"
+# Compile Architecture "behavioral" of Entity "ID_EX"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Complete(New)/test_complete/test_complete/src/Forwarding Muxes.vhd
+# Compile Entity "\Forwarding_Muxes\"
+# Compile Architecture "\Forwarding_Muxes\" of Entity "\Forwarding Muxes\"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Complete(New)/test_complete/test_complete/src/EX_WB.vhd
+# Compile Entity "EX_WB"
+# Compile Architecture "behavioral" of Entity "EX_WB"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Complete(New)/test_complete/test_complete/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_Behavior" of Entity "ALU"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Complete(New)/test_complete/test_complete/src/instruction_buffer_tb.vhd
+# Compile Entity "instruction_buffer_tb"
+# Compile Architecture "tb" of Entity "instruction_buffer_tb"
+# Error: COMP96_0078: instruction_buffer_tb.vhd : (144, 19): Unknown identifier "Forwarding_Muxes".
+# Error: COMP96_0056: instruction_buffer_tb.vhd : (144, 19): Cannot find referenced entity declaration "Forwarding_Muxes".
+# Error: COMP96_0055: instruction_buffer_tb.vhd : (144, 19): Cannot find context item "Forwarding_Muxes".
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -dbg -e 100 -work test_complete -2008  $dsn/src/Data_Forwading_Unit.vhd $dsn/src/instruction_buffer.vhd $dsn/src/register_file.vhd "$dsn/src/Forwarding Muxes.vhd" $dsn/src/EX_WB.vhd $dsn/src/ALU.vhd $dsn/src/instruction_buffer_tb.vhd
+# File: B:/Stony Brook/ESE345/4_stage_multi/Complete(New)/test_complete/test_complete/src/Data_Forwading_Unit.vhd
+# Compile Entity "Data_Forwading_Unit"
+# Compile Architecture "behavior" of Entity "Data_Forwading_Unit"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Complete(New)/test_complete/test_complete/src/instruction_buffer.vhd
+# Compile Package "instr_pack"
+# Compile Entity "instruction_buffer"
+# Compile Architecture "behaviorhal" of Entity "instruction_buffer"
+# Compile Entity "IF_ID"
+# Compile Architecture "behavioral" of Entity "IF_ID"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Complete(New)/test_complete/test_complete/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behaviorhal" of Entity "register_file"
+# Compile Entity "ID_EX"
+# Compile Architecture "behavioral" of Entity "ID_EX"
+# File: B:/Stony Brook/ESE345/4_stage_multi/Complete(New)/test_complete/test_complete/src/Forwarding Muxes.vhd
+# Compile Entity "Forwarding_Muxes"
+# Compile Archit

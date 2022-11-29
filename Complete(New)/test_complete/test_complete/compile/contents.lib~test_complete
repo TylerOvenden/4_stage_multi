@@ -1,12 +1,16 @@
-205
+208
 ~E 1 "../src/Forwarding Muxes.vhd" 26 \Forwarding Muxes\
 ~A 1 "../src/Forwarding Muxes.vhd" 44 \Forwarding Muxes\
+~A 1 "../src/Forwarding Muxes.vhd" 44 \Forwarding_Muxes\
+~E 1 "../src/Forwarding Muxes.vhd" 26 \Forwarding_Muxes\
 ~E 1 "../src/ALU.vhd" 6 ALU
 ~A 1 "../src/ALU.vhd" 19 ALU_Behavior
 ~E 1 "../src/Data_Forwading_Unit.vhd" 28 Data_Forwading_Unit
 ~A 1 "../src/Data_Forwading_Unit.vhd" 44 behavior
 ~E 1 "../src/EX_WB.vhd" 6 EX_WB
 ~A 1 "../src/EX_WB.vhd" 24 behavioral
+~E 1 "../src/Forwarding Muxes.vhd" 26 Forwarding_Muxes
+~A 1 "../src/Forwarding Muxes.vhd" 44 Forwarding_Muxes
 ~E 1 "../src/register_file.vhd" 185 ID_EX
 ~A 1 "../src/register_file.vhd" 206 behavioral
 ~E 1 "../src/instruction_buffer.vhd" 121 IF_ID

@@ -23,7 +23,7 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity \Forwarding Muxes\ is
+entity Forwarding_Muxes is
 	port(
 	 clk : in STD_LOGIC; -- clk
 	-- Registers in
@@ -40,8 +40,8 @@ entity \Forwarding Muxes\ is
 		 r2_out : out STD_LOGIC_VECTOR(127 downto 0);
 		 r3_out: out STD_LOGIC_VECTOR(127 downto 0)
 	     );
-end \Forwarding Muxes\;
-architecture \Forwarding Muxes\ of \Forwarding Muxes\ is
+end Forwarding_Muxes;
+architecture Forwarding_Muxes of Forwarding_Muxes is
 begin
 process(clk)
 begin
@@ -66,4 +66,4 @@ begin
 		end if;
 	end if;
 end process;
-end \Forwarding Muxes\;
+end Forwarding_Muxes;

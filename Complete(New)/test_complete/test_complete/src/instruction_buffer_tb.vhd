@@ -141,7 +141,7 @@ begin
 		
 		
 		
-	FWD_MUX : entity \Forwarding Muxes\ 
+	FWD_MUX : entity Forwarding_Muxes 
 		port map (clk=>clk,r1_ins => rs1_EXFWD,  r2_ins => rs2_EXFWD,
 		r3_ins => rs3_EXFWD,alu_out => rsd_EXWB ,FWD_A => FWD_A,FWD_B => FWD_B,FWD_C => FWD_C,
 		r1_out => rs1_FWDALU,  r2_out => rs2_FWDALU,r3_out => rs3_FWDALU
