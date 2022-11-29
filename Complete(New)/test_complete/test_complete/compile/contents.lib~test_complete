@@ -1,8 +1,7 @@
-210
-~E 1 "../src/Forwarding Muxes.vhd" 26 \Forwarding Muxes\
-~A 1 "../src/Forwarding Muxes.vhd" 44 \Forwarding Muxes\
-~A 1 "../src/Forwarding Muxes.vhd" 44 \Forwarding_Muxes\
-~E 1 "../src/Forwarding Muxes.vhd" 26 \Forwarding_Muxes\
+215
+~E 0 "" 0 \Forwarding Muxes\
+~A 0 "" 0 \Forwarding Muxes\
+~A 0 "" 0 \Forwarding_Muxes\
 ~E 1 "../src/ALU.vhd" 6 ALU
 ~A 1 "../src/ALU.vhd" 19 ALU_Behavior
 ~E 1 "../src/Data_Forwading_Unit.vhd" 28 Data_Forwading_Unit

@@ -59,12 +59,12 @@ begin
 			FWD_A <= '0';
 			FWD_B <= '0';
 			FWD_C <= '0';
-	elsif (instr(24 downto 23) = "11") then
-		if instr(18 downto 15) = "0000" then	-- if  Nop no forwarding 
+	elsif ((instr(24 downto 23) = "11")and(instr(18 downto 15) = "0000")) or ((next_instr(24 downto 23) = "11")and(next_instr(18 downto 15) = "0000")) then
+		--if instr(18 downto 15) = "0000" then	-- if  Nop no forwarding 
 			FWD_A <= '0';
 			FWD_B <= '0';
 			FWD_C <= '0';
-		end if;
+		--end if;
 	else	
 	
 	if( next_instr(24 downto 23) = "11") then	 -- if r3 instruction (not nop)

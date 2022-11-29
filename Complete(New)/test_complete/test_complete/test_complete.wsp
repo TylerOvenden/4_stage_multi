@@ -8,7 +8,7 @@ Status=Error
 [COMPILESTATUS|.\src\complete.vhd]
 FileTimeLow=1126728328
 FileTimeHigh=30999454
-Status=Modified
+Status=Compiled
 [COMPILESTATUS|.\src\ALU.vhd]
 FileTimeLow=3213759114
 FileTimeHigh=30999416
@@ -16,14 +16,14 @@ Status=Compiled
 [COMPILESTATUS|.\src\instruction_buffer.vhd]
 FileTimeLow=3113405857
 FileTimeHigh=30999453
-Status=Modified
+Status=Compiled
 [COMPILESTATUS|.\src\register_file.vhd]
 FileTimeLow=3421343069
 FileTimeHigh=30999453
-Status=Modified
+Status=Compiled
 [COMPILESTATUS|.\src\Data_Forwading_Unit.vhd]
-FileTimeLow=2502430681
-FileTimeHigh=30999411
+FileTimeLow=1919326805
+FileTimeHigh=30999461
 Status=Compiled
 [COMPILESTATUS|.\src\Forwarding Muxes.vhd]
 FileTimeLow=2908998864
